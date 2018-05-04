@@ -1,0 +1,25 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+unmap F
+unmap s
+unmap [fullscreen] F
+unmap [fullscreen] s
+
+map F toggle_fullscreen
+map + zoom in
+map - zoom out
+map [fullscreen] F toggle_fullscreen
+map [fullscreen] + zoom in
+map [fullscreen] - zoom out
+
+set statusbar-bg "#ECF20D"
+set statusbar-fg "#000000"
+set inputbar-fg "#52C23D"
+set font "monospace normal 16"
+
+set show-v-scrollbar "true"
+set smooth-scroll "true"
+
+# copy to clipboard
+set selection-clipboard clipboard

@@ -1,0 +1,4 @@
+## Installation
+```
+zathurac -> ~/.config/zathura
+```
