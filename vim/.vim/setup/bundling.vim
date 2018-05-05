@@ -1,7 +1,3 @@
-" solarized8 ----------------------{{{
-" https://github.com/lifepillar/vim-solarized8
-" colorscheme solarized8_dark_low
-" }}}
 " gruvbox ----------------------{{{
 " https://github.com/morhetz/gruvbox
 colorscheme gruvbox
@@ -20,7 +16,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pep8', 'python']
-"let g:syntastic_python_checkers = ['pylint', 'flake8', 'pyflakes', 'python']
 " }}}
 " vim-airline ----------------------{{{
 " https://github.com/vim-airline/vim-airline#smarter-tab-line
@@ -37,11 +32,7 @@ set guifont=Go\ Mono\ for\ Powerline
 " https://github.com/wikitopian/hardmode
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 " }}}
-" vim-latex-live-preview ----------------------{{{
-"autocmd Filetype tex setl updatetime=1
-set updatetime=1
-let g:livepreview_previewer = 'open -a Preview'
-" }}}
-" vim-tmux-focus-events ----------------------{{{
-set autoread
+" hardtime ----------------------{{{
+" make hardtime run in every buffer
+let g:hardtime_default_on = 1
 " }}}

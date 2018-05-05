@@ -1,6 +1,3 @@
-" clipboard ----------------------{{{
-set clipboard=unnamed
-" }}}
 " Find File ----------------------{{{
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
@@ -71,38 +68,6 @@ set cursorline
 " }}}
 " Relative line numbers ----------------------{{{
 set relativenumber
-" }}}
-" Filetype settings ----------------------{{{
-" augroup with autocmd! to prevent Vim from adding duplicate autocommands
-augroup filetype_python
-	" comment
-	autocmd FileType python nnoremap <buffer> <localleader>c I#<Space><Esc>
-	" uncomment
-	autocmd FileType python nnoremap <buffer> <localleader>u ^2x
-	" if
-	autocmd FileType python :iabbrev <buffer> iff if :<Left>
-augroup END
-
-
-augroup filetype_java
-	autocmd!
-	" comment
-	autocmd FileType java nnoremap <buffer> <localleader>c I//<Space><Esc>
-	" uncomment
-	autocmd FileType java nnoremap <buffer> <localleader>u ^3x
-	" if
-	autocmd FileType java :iabbrev <buffer> iff if ()<Left>
-augroup END
-
-
-augroup filetype_javascript
-	" comment
-	autocmd FileType javascript nnoremap <buffer> <localleader>c I//<Space><Esc>
-	" uncomment
-	autocmd FileType javascript nnoremap <buffer> <localleader>u ^3x
-	" if
-	autocmd FileType javascript :iabbrev <buffer> iff if ()<Left>
-augroup END
 " }}}
 " Textwidth setting ----------------------{{{
 " This will highlight all characters past 79 columns
