@@ -22,3 +22,5 @@
 [tpope/vim-repeat](https://github.com/tpope/vim-repeat)<br>
 [tpope/vim-surround](https://github.com/tpope/vim-surround)<br>
 [tpope/vim-commentary](https://github.com/tpope/vim-commentary)<br>
+[simeji/winresizer](https://github.com/simeji/winresizer)<br>
+[dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)<br>

@@ -10,12 +10,6 @@ inoremap ( ()<Esc>
 inoremap [ []<Esc>
 inoremap { {}<Esc>
 " }}}
-" Move between windows ----------------------{{{
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
-" }}}
 " Constrain arrow ----------------------{{{
 nnoremap <Down>  <Nop>
 nnoremap <Left>  <Nop>
