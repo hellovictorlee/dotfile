@@ -36,3 +36,6 @@ set guifont=Go\ Mono\ for\ Powerline
 " make hardtime run in every buffer
 let g:hardtime_default_on = 1
 " }}}
+" mru ----------------------{{{
+let MRU_Window_Height = 15
+" }}}

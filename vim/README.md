@@ -11,7 +11,6 @@
 [morhetz/gruvbox](https://github.com/morhetz/gruvbox)<br>
 [takac/vim-hardtime](https://github.com/takac/vim-hardtime)<br>
 [christoomey/vim-system-copy](https://github.com/christoomey/vim-system-copy)<br>
-[davidhalter/jedi-vim](https://github.com/davidhalter/jedi-vim)<br>
 [yegappan/mru](https://github.com/yegappan/mru)<br>
 [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)<br>
 [ervandew/supertab](https://github.com/ervandew/supertab)<br>
@@ -22,5 +21,10 @@
 [tpope/vim-repeat](https://github.com/tpope/vim-repeat)<br>
 [tpope/vim-surround](https://github.com/tpope/vim-surround)<br>
 [tpope/vim-commentary](https://github.com/tpope/vim-commentary)<br>
+[tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
 [simeji/winresizer](https://github.com/simeji/winresizer)<br>
 [dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)<br>
+[airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
+[francoiscabrol/ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
+[ap/vim-css-color](https://github.com/ap/vim-css-color)<br>
+[maralla/completor.vim](https://github.com/maralla/completor.vim)<br>
