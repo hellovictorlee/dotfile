@@ -27,4 +27,3 @@
 [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
 [francoiscabrol/ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
 [ap/vim-css-color](https://github.com/ap/vim-css-color)<br>
-[maralla/completor.vim](https://github.com/maralla/completor.vim)<br>
