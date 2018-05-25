@@ -46,6 +46,12 @@ cnoremap <C-B> <Left>
 cnoremap <C-D> <Del>
 cnoremap <C-H> <BS>
 " }}}
+" Move between windows ----------------------{{{
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+" }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
 

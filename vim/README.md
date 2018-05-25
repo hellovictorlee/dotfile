@@ -27,3 +27,9 @@
 [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
 [francoiscabrol/ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
 [ap/vim-css-color](https://github.com/ap/vim-css-color)<br>
+
+[Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
+NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
+```
+pip install jedi
+```

@@ -39,3 +39,10 @@ let g:hardtime_default_on = 1
 " mru ----------------------{{{
 let MRU_Window_Height = 15
 " }}}
+" table model ----------------------{{{
+" Markdown-compatible tables
+let g:table_mode_corner='|'
+" }}}
+" YouCompleteMe ----------------------{{{
+let g:ycm_python_binary_path = 'python'
+" }}}
