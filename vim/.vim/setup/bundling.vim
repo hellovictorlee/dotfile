@@ -15,7 +15,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['pep8', 'python']
+let g:syntastic_python_checkers = ['python']
 " }}}
 " vim-airline ----------------------{{{
 " https://github.com/vim-airline/vim-airline#smarter-tab-line
@@ -44,5 +44,9 @@ let MRU_Window_Height = 15
 let g:table_mode_corner='|'
 " }}}
 " YouCompleteMe ----------------------{{{
+" YCM will use the first python executable it finds in the PATH to run jedi
+" This means that if you are in a virtual environment and you start vim in that directory
+" The first python that YCM will find will be the one in the virtual environment
+" So, jedi will be able to provide completions for every package you have in the virtual environment
 let g:ycm_python_binary_path = 'python'
 " }}}

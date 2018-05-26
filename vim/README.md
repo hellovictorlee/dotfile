@@ -7,30 +7,98 @@
 ```
 
 ## Preferred Plugin
-[skywind3000/asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)<br>
-[morhetz/gruvbox](https://github.com/morhetz/gruvbox)<br>
-[takac/vim-hardtime](https://github.com/takac/vim-hardtime)<br>
-[christoomey/vim-system-copy](https://github.com/christoomey/vim-system-copy)<br>
-[yegappan/mru](https://github.com/yegappan/mru)<br>
-[scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)<br>
-[ervandew/supertab](https://github.com/ervandew/supertab)<br>
-[vim-syntastic/syntastic](https://github.com/vim-syntastic/syntastic)<br>
-[vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)<br>
-[vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)<br>
-[henrik/vim-indexed-search](https://github.com/henrik/vim-indexed-search)<br>
-[tpope/vim-repeat](https://github.com/tpope/vim-repeat)<br>
-[tpope/vim-surround](https://github.com/tpope/vim-surround)<br>
-[tpope/vim-commentary](https://github.com/tpope/vim-commentary)<br>
-[tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
-[simeji/winresizer](https://github.com/simeji/winresizer)<br>
-[dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)<br>
-[airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
-[francoiscabrol/ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
-[ap/vim-css-color](https://github.com/ap/vim-css-color)<br>
-[terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)<br>
+Based on my personal usage, and experience, I make a simple rating.<br>
+NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn't give a high rating<br>
 
-[Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
+<span style="color: #fab516">★ ★ ★ </span>[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
 NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
 ```
 pip install jedi
 ```
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[gruvbox](https://github.com/morhetz/gruvbox)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[hardmode](https://github.com/wikitopian/hardmode)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ☆ </span>[mru](https://github.com/yegappan/mru)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[nerdtree](https://github.com/scrooloose/nerdtree)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[supertab](https://github.com/ervandew/supertab)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[syntastic](https://github.com/vim-syntastic/syntastic)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[vim-airline](https://github.com/vim-airline/vim-airline)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[vim-commentary](https://github.com/tpope/vim-commentary)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-css-color](https://github.com/ap/vim-css-color)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ☆ </span>[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-hardtime](https://github.com/takac/vim-hardtime)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-indexed-search](https://github.com/henrik/vim-indexed-search)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)<br>
+Before using vim-markdown-composer, we have to install [cargo](https://github.com/terryma/vim-multiple-cursor://github.com/rust-lang/cargo).<br>
+Go to vim-markdown-composer
+```
+cd ~/.vim/bundle/vim-markdown-composer
+```
+Compile the current project
+```
+cargo build --release
+```
+NOTE:
+Cargo requires the following tools and packages to build:
+
+* `python`
+* `curl` (on Unix)
+* `cmake`
+* OpenSSL headers (only for Unix, this is the `libssl-dev` package on ubuntu)
+* `cargo` and `rustc`
+<hr>
+
+<span style="color: #fab516 ">★ ☆ ☆ </span>[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ☆ ☆ </span>[vim-repeat](https://github.com/tpope/vim-repeat)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ★ ★ </span>[vim-surround](https://github.com/tpope/vim-surround)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ★ ★ </span>[vim-system-copy](https://github.com/christoomey/vim-system-copy)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ★ ☆ </span>[vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ☆ ☆ </span>[winresizer](https://github.com/simeji/winresizer)<br>
+<hr>
