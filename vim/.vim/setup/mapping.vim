@@ -81,10 +81,6 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 " hardmode mapping ----------------------{{{
 nnoremap <leader><space> <Esc>:call ToggleHardMode()<CR>
 " }}}
-" Ctags ----------------------{{{
-noremap <leader>% :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-noremap <leader>" :sp <CR>:exec("tag ".expand("<cword>"))<CR>
-" }}}
 " NERDTree ----------------------{{{
 map <leader>n :NERDTreeToggle<CR>
 " close vim if the only window left open is a NERDTree
@@ -121,4 +117,7 @@ nnoremap <leader>r :tabe %<CR> :MRU<CR>
 if !exists('g:ranger_map_keys') || g:ranger_map_keys
     nnoremap <leader>f :tabe %<CR> :Ranger<CR>
 endif
+" }}}
+" ctags with CtrlP ----------------------{{{
+noremap <leader>. :CtrlPTag<CR>
 " }}}
