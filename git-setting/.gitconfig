@@ -1,0 +1,26 @@
+[user]
+	name =
+	email =
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[core]
+	editor = vim
+	excludesfile =
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	grep = auto
+	ui = true
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	st = status
+	dfs = diff --staged
+	logg = log --graph --oneline --pretty=format:\"%C(yellow)%h%Creset %C(bold)<%Creset%C(ul cyan)%an%Creset%C(bold)>%Creset %C(red)%ar%Creset %C(green)%s%Creset\"
