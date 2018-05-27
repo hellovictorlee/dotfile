@@ -50,3 +50,9 @@ let g:table_mode_corner='|'
 " So, jedi will be able to provide completions for every package you have in the virtual environment
 let g:ycm_python_binary_path = 'python'
 " }}}
+" CtrlP ----------------------{{{
+" 'c' - the directory of the current file.
+" 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs
+" 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the 
+let g:ctrlp_working_path_mode = 'ra'
+" }}}

@@ -81,9 +81,6 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 " hardmode mapping ----------------------{{{
 nnoremap <leader><space> <Esc>:call ToggleHardMode()<CR>
 " }}}
-" mru mapping ----------------------{{{
-nnoremap <leader>r :MRU<CR>
-" }}}
 " Ctags ----------------------{{{
 noremap <leader>% :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 noremap <leader>" :sp <CR>:exec("tag ".expand("<cword>"))<CR>
@@ -117,9 +114,11 @@ function! s:compile_and_run()
     endif
 endfunction
 " }}}
-" Ranger ----------------------{{{
-map <leader>f : RangerNewTab<CR>
+" mru ----------------------{{{
+nnoremap <leader>r :tabe %<CR> :MRU<CR>
 " }}}
-" Open new tab ----------------------{{{
-map <leader>e : tabe %<CR>
+" Ranger ----------------------{{{
+if !exists('g:ranger_map_keys') || g:ranger_map_keys
+    nnoremap <leader>f :tabe %<CR> :Ranger<CR>
+endif
 " }}}
