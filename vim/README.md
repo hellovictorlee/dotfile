@@ -6,6 +6,14 @@
 .vimrc -> ~
 ```
 
+Installation for Neovim
+```
+mkdir -p ~/.config/nvim
+```
+```
+mv init.vim ~/.config/nvim
+```
+
 ## Preferred Plugin
 Based on my personal usage, and experience, I make a simple rating.<br>
 NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn't give a high rating<br>
