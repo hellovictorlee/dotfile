@@ -56,3 +56,8 @@ let g:ycm_python_binary_path = 'python'
 " 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the 
 let g:ctrlp_working_path_mode = 'ra'
 " }}}
+" Asyncrun ----------------------{{{
+" vim-airline displaying the status of AsyncRun
+let g:asyncrun_status = ''
+let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])
+" }}}
