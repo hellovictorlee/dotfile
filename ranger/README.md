@@ -1,6 +1,9 @@
 ## Installation
 ```
-rifle.conf -> ~/.config/ranger
+cp rifle.conf ~/.config/ranger
+```
+```
+cp rc.conf ~/.config/ranger
 ```
 
 ## Usage
