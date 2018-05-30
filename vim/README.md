@@ -1,17 +1,29 @@
 ## Installation
 ```
-.vim -> ~
+cp -r .vim ~
 ```
 ```
-.vimrc -> ~
+cp .vimrc ~
 ```
 
-Installation for Neovim
+### Installation for Neovim
 ```
 mkdir -p ~/.config/nvim
 ```
 ```
 mv init.vim ~/.config/nvim
+```
+
+## Keyboard Setting
+### Switch the "Caps Lock" and "Esc"<br>
+On macOS:<br>
+```
+System Preferrences > Keyboard > Modifier Keys
+```
+
+On Ubuntu:<br>
+```
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 ```
 
 ## Preferred Plugin
