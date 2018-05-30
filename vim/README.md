@@ -77,7 +77,7 @@ pip install jedi
 <hr>
 
 <span style="color: #fab516;">★ ★ ★ </span>[vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)<br>
-Before using vim-markdown-composer, we have to install [cargo](https://github.com/terryma/vim-multiple-cursor://github.com/rust-lang/cargo).<br>
+Before using vim-markdown-composer, we have to install [cargo](https://github.com/rust-lang/cargo).<br>
 Go to vim-markdown-composer
 ```
 cd ~/.vim/bundle/vim-markdown-composer
