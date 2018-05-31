@@ -34,6 +34,7 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   zsh-syntax-highlighting
+  colored-man-pages
 )
 ```
 
