@@ -1,9 +1,19 @@
-## Installation for My Theme
+## Installation
+curl:
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+wget:
+```
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
+## Customization for My Theme
 ```
 mytheme.zsh-theme -> ~/.oh-my-zsh/themes
 ```
 
-## Installation for Plugins
+## Customization for Plugins
 ### Step 1. Download plugins
 ```
 cd ~/.oh-my-zsh/custom/plugins

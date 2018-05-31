@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+sudo apt update
+
+INSTALL_PKGS="git automake build-essential pkg-config libevent-dev libncurses5-dev"
+for i in $INSTALL_PKGS; do
+    sudo apt-get install -y $i
+done
+
+rm -rf /tmp/tmux
+
+git clone https://github.com/tmux/tmux.git /tmp/tmux
+
+cd /tmp/tmux
+
+sh autogen.sh
+
+./configure && make
+
+sudo make install
+
+cd -
+
+rm -rf /tmp/tmux

@@ -7,11 +7,11 @@ unmap [fullscreen] F
 unmap [fullscreen] s
 
 map F toggle_fullscreen
-map + zoom in
-map - zoom out
+map <C-=> zoom in
+map <C--> zoom out
 map [fullscreen] F toggle_fullscreen
-map [fullscreen] + zoom in
-map [fullscreen] - zoom out
+map [fullscreen] <C-=> zoom in
+map [fullscreen] <C--> zoom out
 
 set statusbar-bg "#ECF20D"
 set statusbar-fg "#000000"

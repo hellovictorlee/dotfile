@@ -1,9 +1,19 @@
-## Setting
+## Installation
+### macOS:
 ```
-.gitconfig -> ~
+brew install git
+```
+### Ubuntu:
+```
+sudo apt-get -y git
+```
+
+## Customization
+```
+cp .gitconfig ~
 ```
 ```
-.gitignore_global -> ~
+cp .gitignore_global ~
 ```
 
 In gitconfig, I need to fill the following variable: name, email, excludesfile<br>

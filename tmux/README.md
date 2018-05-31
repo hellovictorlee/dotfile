@@ -1,6 +1,16 @@
 ## Installation
+### macOS:
 ```
-.tmux.conf -> ~
+brew install tmux
+```
+### Ubuntu:
+```
+source install_tmux
+```
+
+## Customization
+```
+cp .tmux.conf ~
 ```
 
 ## Preferred Plugin

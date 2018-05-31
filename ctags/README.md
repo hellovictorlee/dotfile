@@ -1,7 +1,11 @@
 ## Installation
-In macOS, utilizing Homebrew to install ctags.
+### macOS:
 ```
 brew install ctags
+```
+### Ubuntu:
+```
+sudo apt-get install ctags
 ```
 
 Set ctags downloaded from Homebrew as default ctags. Take zsh shell as an example.
@@ -9,9 +13,9 @@ Set ctags downloaded from Homebrew as default ctags. Take zsh shell as an exampl
 echo 'alias ctags="`brew --prefix`/bin/ctags"' >> .zshrc
 ```
 
-## Setting
+## Customization
 ```
-.ctags -> ~
+cp .ctags ~
 ```
 
 ## Usage
