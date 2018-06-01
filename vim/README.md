@@ -23,7 +23,7 @@ System Preferrences > Keyboard > Modifier Keys
 
 ### Ubuntu:
 ```
-dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+setxkbmap -option caps:swapescape
 ```
 
 ## Preferred Plugin
