@@ -70,6 +70,9 @@ pip install jedi
 <span style="color: #fab516;">★ ★ ★ </span>[vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-coiled-snake](https://github.com/kalekundert/vim-coiled-snake.git)<br>
+<hr>
+
 <span style="color: #fab516;">★ ★ ★ </span>[vim-commentary](https://github.com/tpope/vim-commentary)<br>
 <hr>
 
