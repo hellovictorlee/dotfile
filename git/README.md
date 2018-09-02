@@ -7,6 +7,10 @@ brew install git
 ```
 sudo apt-get -y git
 ```
+### Arch Linux:
+```
+sudo pacman -S git
+```
 
 ## Customization
 ```
