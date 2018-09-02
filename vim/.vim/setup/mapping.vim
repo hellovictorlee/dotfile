@@ -29,12 +29,12 @@ cnoremap <Right> <Nop>
 cnoremap <Up>    <Nop>
 " }}}
 " Disable delete ----------------------{{{
-" nnoremap <BS>  <Nop>
-" nnoremap <Del> <Nop>
-" inoremap <BS>  <Nop>
-" inoremap <Del> <Nop>
-" vnoremap <BS>  <Nop>
-" vnoremap <Del> <Nop>
+nnoremap <BS>  <Nop>
+nnoremap <Del> <Nop>
+inoremap <BS>  <Nop>
+inoremap <Del> <Nop>
+vnoremap <BS>  <Nop>
+vnoremap <Del> <Nop>
 " }}}
 " Bash like keystrokes ----------------------{{{
 cnoremap <C-A> <Home>
@@ -111,11 +111,11 @@ function! s:compile_and_run()
 endfunction
 " }}}
 " mru ----------------------{{{
-nnoremap <leader>r :tabe %<CR> :MRU<CR>
+nnoremap <leader>f :tabe %<CR> :MRU<CR>
 " }}}
 " Ranger ----------------------{{{
 if !exists('g:ranger_map_keys') || g:ranger_map_keys
-    nnoremap <leader>f :tabe %<CR> :Ranger<CR>
+    nnoremap <leader>r :tabe %<CR> :Ranger<CR>
 endif
 " }}}
 " ctags with CtrlP ----------------------{{{
