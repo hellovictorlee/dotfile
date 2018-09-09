@@ -61,3 +61,12 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:asyncrun_status = ''
 let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])
 " }}}
+" vitality ----------------------{{{
+" functionality: iterm2 tmux vim cursor focus
+" vim cursor highlight interact between pane on tmux
+" vim highlight disappear when unfocus
+let g:vitality_tmux_can_focus = 1
+
+au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * setlocal cursorline
+au WinLeave,FocusLost,CmdwinLeave * setlocal nocursorline
+" }}}

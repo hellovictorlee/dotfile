@@ -126,5 +126,7 @@ Cargo requires the following tools and packages to build:
 <span style="color: #fab516 ">★ ★ ☆ </span>[vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)<br>
 <hr>
 
+<span style="color: #fab516 ">★ ☆ ☆ </span>[vitality](https://github.com/sjl/vitality.vim)<br>
+
 <span style="color: #fab516 ">★ ☆ ☆ </span>[winresizer](https://github.com/simeji/winresizer)<br>
 <hr>
