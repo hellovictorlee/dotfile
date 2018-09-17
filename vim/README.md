@@ -30,13 +30,6 @@ setxkbmap -option caps:swapescape
 Based on my personal usage, and experience, I make a simple rating.<br>
 NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn't give a high rating<br>
 
-<span style="color: #fab516">★ ★ ★ </span>[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
-NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
-```
-pip install jedi
-```
-<hr>
-
 <span style="color: #fab516;">★ ☆ ☆ </span>[asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)<br>
 <hr>
 
@@ -79,7 +72,7 @@ pip install jedi
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-css-color](https://github.com/ap/vim-css-color)<br>
 <hr>
 
-<span style="color: #fab516;">★ ☆ ☆ </span>[vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
+<span style="color: #fab516;">★ ★ ★ </span>[vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
 <hr>
 
 <span style="color: #fab516;">★ ★ ☆ </span>[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
@@ -129,4 +122,11 @@ Cargo requires the following tools and packages to build:
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vitality](https://github.com/sjl/vitality.vim)<br>
 
 <span style="color: #fab516 ">★ ☆ ☆ </span>[winresizer](https://github.com/simeji/winresizer)<br>
+<hr>
+
+<span style="color: #fab516">★ ★ ★ </span>[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
+NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
+```
+pip install jedi
+```
 <hr>
