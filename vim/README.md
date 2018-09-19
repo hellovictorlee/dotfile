@@ -57,6 +57,9 @@ NOTE: Some of plugin is amazing but owing to my workflow and recently installed,
 <span style="color: #fab516;">★ ★ ★ </span>[syntastic](https://github.com/vim-syntastic/syntastic)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[tagbar](https://github.com/majutsushi/tagbar)<br>
+<hr>
+
 <span style="color: #fab516;">★ ★ ★ </span>[vim-airline](https://github.com/vim-airline/vim-airline)<br>
 <hr>
 

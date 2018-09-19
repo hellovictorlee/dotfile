@@ -52,6 +52,11 @@ map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
 " }}}
+" Save ----------------------{{{
+nnoremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
+" }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
 
@@ -120,4 +125,7 @@ endif
 " }}}
 " ctags with CtrlP ----------------------{{{
 noremap <leader>. :CtrlPTag<CR>
+" }}}
+" ctags with Tagbar ----------------------{{{
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
 " }}}
