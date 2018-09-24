@@ -47,15 +47,26 @@ cnoremap <C-D> <Del>
 cnoremap <C-H> <BS>
 " }}}
 " Move between windows ----------------------{{{
+tnoremap <C-W>h <C-\><C-N><C-W>h
+tnoremap <C-W>j <C-\><C-N><C-W>j
+tnoremap <C-W>k <C-\><C-N><C-W>k
+tnoremap <C-W>l <C-\><C-N><C-W>l
+inoremap <C-W>h <C-\><C-N><C-W>h
+inoremap <C-W>j <C-\><C-N><C-W>j
+inoremap <C-W>k <C-\><C-N><C-W>k
+inoremap <C-W>l <C-\><C-N><C-W>l
+map <C-H> <C-W>h
 map <C-J> <C-W>j
 map <C-K> <C-W>k
-map <C-H> <C-W>h
 map <C-L> <C-W>l
 " }}}
 " Save ----------------------{{{
 nnoremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
+" }}}
+" Del ----------------------{{{
+inoremap <C-D> <ESC>ls
 " }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
