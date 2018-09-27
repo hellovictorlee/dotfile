@@ -8,6 +8,7 @@ highlight Normal ctermbg = None
 " }}}
 " syntastic ----------------------{{{
 " https://github.com/vim-syntastic/syntastic
+" recommended settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -15,13 +16,16 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
 let g:syntastic_python_checkers = ['python']
 " }}}
 " vim-airline ----------------------{{{
 " https://github.com/vim-airline/vim-airline#smarter-tab-line
+" vim-airline-themes
 let g:airline_theme = 'dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 " powerline
 " https://github.com/powerline/powerline
 set rtp+=$HOME/powerline/powerline/bindings/vim
@@ -69,4 +73,8 @@ let g:vitality_tmux_can_focus = 1
 
 au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * setlocal cursorline
 au WinLeave,FocusLost,CmdwinLeave * setlocal nocursorline
+" }}}
+" fzf ----------------------{{{
+" If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
 " }}}

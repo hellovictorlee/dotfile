@@ -68,27 +68,28 @@ inoremap <C-S> <C-O>:update<CR>
 " Del ----------------------{{{
 inoremap <C-D> <ESC>ls
 " }}}
+" Terminal mode shortcut ----------------------{{{
+tnoremap <Esc> <C-\><C-n>
+command! -nargs=* T split | terminal <args>
+command! -nargs=* VT vsplit | terminal <args>
+command! -nargs=* TT tabnew | terminal <args>    
+" }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
 
+" Edit vim file ----------------------{{{
+" Edit .vimrc
+nnoremap <leader>1 :tabedit $MYVIMRC<CR>
+" Edit setting.vim
+nnoremap <leader>2 :tabedit $MYVIMSETTING<CR>
+" Edit mapping.vim
+nnoremap <leader>3 :tabedit $MYVIMMAPPING<CR>
+" Edit bundling.vim
+nnoremap <leader>4 :tabedit $MYVIMBUNDLING<CR>
+" }}}
 " Strip trailing whitespace ----------------------{{{
 " strip all trailing whitespace in the current file
 nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
-" }}}
-" Edit vim file ----------------------{{{
-" Edit .vimrc
-nnoremap <leader>1 :vsplit $MYVIMRC<CR>
-" Edit setting.vim
-nnoremap <leader>2 :vsplit $MYVIMSETTING<CR>
-" Edit mapping.vim
-nnoremap <leader>3 :vsplit $MYVIMMAPPING<CR>
-" Edit bundling.vim
-nnoremap <leader>4 :vsplit $MYVIMBUNDLING<CR>
-" }}}
-" Quick way opening file ----------------------{{{
-" Opens a new tab with the current buffer's path
-" Super useful when editing files in the same directory
-nnoremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 " }}}
 " Command cd ----------------------{{{
 " Switch CWD to the directory of the open buffer
@@ -139,4 +140,10 @@ noremap <leader>. :CtrlPTag<CR>
 " }}}
 " ctags with Tagbar ----------------------{{{
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
+" }}}
+" Tabularize ----------------------{{{
+nnoremap <leader>t= :Tabularize /=<CR>
+vnoremap <leader>t= :Tabularize /=<CR>
+nnoremap <leader>t: :Tabularize /:\zs<CR>
+vnoremap <leader>t: :Tabularize /:\zs<CR>
 " }}}
