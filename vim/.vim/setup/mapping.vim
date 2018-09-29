@@ -65,14 +65,18 @@ nnoremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 " }}}
-" Del ----------------------{{{
+" Action in insert mode ----------------------{{{
+" Del
 inoremap <C-D> <ESC>ls
+" Move start, end of line
+inoremap <C-A> <ESC>I
+inoremap <C-E> <ESC>A
 " }}}
 " Terminal mode shortcut ----------------------{{{
 tnoremap <Esc> <C-\><C-n>
 command! -nargs=* T split | terminal <args>
 command! -nargs=* VT vsplit | terminal <args>
-command! -nargs=* TT tabnew | terminal <args>    
+command! -nargs=* TT tabnew | terminal <args>
 " }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
@@ -135,10 +139,10 @@ if !exists('g:ranger_map_keys') || g:ranger_map_keys
     nnoremap <leader>r :tabe %<CR> :Ranger<CR>
 endif
 " }}}
-" ctags with CtrlP ----------------------{{{
+" ctags ----------------------{{{
+" ctags with CtrlP
 noremap <leader>. :CtrlPTag<CR>
-" }}}
-" ctags with Tagbar ----------------------{{{
+" ctags with Tagbar
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 " }}}
 " Tabularize ----------------------{{{

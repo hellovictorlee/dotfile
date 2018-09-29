@@ -45,7 +45,8 @@ let MRU_Window_Height = 15
 " }}}
 " table model ----------------------{{{
 " Markdown-compatible tables
-let g:table_mode_corner='|'
+let g:table_mode_corner='+'
+" let g:table_mode_header_fillchar='='
 " }}}
 " YouCompleteMe ----------------------{{{
 " YCM will use the first python executable it finds in the PATH to run jedi

@@ -1,4 +1,7 @@
+--python-kinds=-iv
 --recurse=yes
+--exclude=build
+--exclude=dist
 --exclude=.git
 --exclude=vendor/*
 --exclude=node_modules/*

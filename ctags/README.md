@@ -22,5 +22,5 @@ cp .ctags ~
 ## Usage
 Run the command under the project's path.
 ```
-ctags .
+ctags -R .
 ```
