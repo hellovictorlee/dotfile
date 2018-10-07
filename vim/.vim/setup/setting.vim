@@ -2,7 +2,6 @@
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
-
 " Display all matching files when we tab complete
 set wildmenu
 " }}}
@@ -49,7 +48,8 @@ set incsearch
 " test other people's .vimrc 'vim -u test_vimrc'
 " To avoid my .vimrc effect other people's
 set nocompatible
-
+" redraw only when we need to.
+set lazyredraw
 " A better way than 'syntax on'
 if !exists("g:syntax_on")
     syntax enable
