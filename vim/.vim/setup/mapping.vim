@@ -1,16 +1,16 @@
-" Regex ----------------------{{{
+" Regex {{{
 " redefine regex to other formatting
 nnoremap / /\v
 vnoremap / /\v
 " }}}
-" Autocomplete parenthese ----------------------{{{
+" Autocomplete parenthese {{{
 inoremap ' ''<Esc>
 inoremap " ""<Esc>
 inoremap ( ()<Esc>
 inoremap [ []<Esc>
 inoremap { {}<Esc>
 " }}}
-" Disable key ----------------------{{{
+" Disable key {{{
 " Disable arrow
 nnoremap <Down>  <Nop>
 nnoremap <Left>  <Nop>
@@ -40,7 +40,7 @@ cnoremap <Del> <Nop>
 " Disable enter
 inoremap <Enter> <Nop>
 " }}}
-" Bash like keystrokes ----------------------{{{
+" Bash like keystrokes {{{
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-p> <Up>
@@ -50,7 +50,7 @@ cnoremap <C-b> <Left>
 cnoremap <C-d> <Del>
 cnoremap <C-h> <BS>
 " }}}
-" Move between windows ----------------------{{{
+" Move between windows {{{
 tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
 tnoremap <C-w>k <C-\><C-n><C-w>k
@@ -64,16 +64,16 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " }}}
-" Move vertically by visual line ----------------------{{{
+" Move vertically by visual line {{{
 nnoremap j gj
 nnoremap k gk
 " }}}
-" Save ----------------------{{{
+" Save {{{
 nnoremap <C-s> :update<CR>
 vnoremap <C-s> <C-c>:update<CR>
 inoremap <C-s> <C-o>:update<CR>
 " }}}
-" Action in insert mode ----------------------{{{
+" Action in insert mode {{{
 " Del
 inoremap <C-d> <ESC>ls
 " Move start, end of line
@@ -93,8 +93,21 @@ if has("mac") || has("macunix")
     cnoremap <D-b> <M-b>
 endif
 " }}}
-" Terminal mode shortcut ----------------------{{{
-tnoremap <Esc> <C-\><C-n>
+" Move a line {{{
+" Move a line of text using ALT+[jk] or Command+[jk] on mac
+nnoremap <M-j> mz:m+<cr>`z
+nnoremap <M-k> mz:m-2<cr>`z
+vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+if has("mac") || has("macunix")
+    nnoremap <D-j> <M-j>
+    nnoremap <D-k> <M-k>
+    vnoremap <D-j> <M-j>
+    vnoremap <D-k> <M-k>
+endif
+" }}}
+" Terminal mode shortcut {{{ tnoremap <Esc> <C-\><C-n>
 command! -nargs=* T split | terminal <args>
 command! -nargs=* VT vsplit | terminal <args>
 command! -nargs=* TT tabnew | terminal <args>
@@ -102,7 +115,7 @@ command! -nargs=* TT tabnew | terminal <args>
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
 
-" Edit vim file ----------------------{{{
+" Edit vim file {{{
 " Edit .vimrc
 nnoremap <leader>1 :tabedit $MYVIMRC<CR>
 " Edit setting.vim
@@ -112,23 +125,23 @@ nnoremap <leader>3 :tabedit $MYVIMMAPPING<CR>
 " Edit bundling.vim
 nnoremap <leader>4 :tabedit $MYVIMBUNDLING<CR>
 " }}}
-" Strip trailing whitespace ----------------------{{{
+" Strip trailing whitespace {{{
 " strip all trailing whitespace in the current file
 nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
 " }}}
-" Command cd ----------------------{{{
+" Command cd {{{
 " Switch CWD to the directory of the open buffer
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 " }}}
-" hardmode mapping ----------------------{{{
+" hardmode mapping {{{
 nnoremap <leader><space> <Esc>:call ToggleHardMode()<CR>
 " }}}
-" NERDTree ----------------------{{{
+" NERDTree {{{
 map <leader>n :NERDTreeToggle<CR>
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }}}
-" Compile ----------------------{{{
+" Compile {{{
 nnoremap <leader>c :call <SID>compile_and_run()<CR>
 
 augroup SPACEVIM_ASYNCRUN
@@ -152,40 +165,29 @@ function! s:compile_and_run()
     endif
 endfunction
 " }}}
-" mru ----------------------{{{
-nnoremap <leader>f :tabe %<CR> :MRU<CR>
+" CtrlPMRU {{{
+nnoremap <M-p> :CtrlPMRU<CR>
+if has("mac") || has("macunix")
+    nnoremap <D-p> <M-p>
+endif
 " }}}
-" Ranger ----------------------{{{
+" Ranger {{{
 if !exists('g:ranger_map_keys') || g:ranger_map_keys
     nnoremap <leader>r :tabe %<CR> :Ranger<CR>
 endif
 " }}}
-" ctags ----------------------{{{
+" ctags {{{
 " ctags with CtrlP
 noremap <leader>. :CtrlPTag<CR>
 " ctags with Tagbar
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
+nnoremap <silent> <leader>b :TagbarToggle<CR>
 " }}}
-" Tabularize ----------------------{{{
+" Tabularize {{{
 nnoremap <leader>t= :Tabularize /=<CR>
 vnoremap <leader>t= :Tabularize /=<CR>
 nnoremap <leader>t: :Tabularize /:\zs<CR>
 vnoremap <leader>t: :Tabularize /:\zs<CR>
 " }}}
-" Toggle paste mode ----------------------{{{
+" Toggle paste mode {{{
 map <leader>pp :setlocal paste!<CR>
-" }}}
-" Move a line ----------------------{{{
-" Move a line of text using ALT+[jk] or Command+[jk] on mac
-nnoremap <M-j> mz:m+<cr>`z
-nnoremap <M-k> mz:m-2<cr>`z
-vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-if has("mac") || has("macunix")
-    nnoremap <D-j> <M-j>
-    nnoremap <D-k> <M-k>
-    vnoremap <D-j> <M-j>
-    vnoremap <D-k> <M-k>
-endif
 " }}}
