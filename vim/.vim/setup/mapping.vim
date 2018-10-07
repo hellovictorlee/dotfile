@@ -193,10 +193,18 @@ noremap <leader>. :CtrlPTag<CR>
 nnoremap <silent> <leader>b :TagbarToggle<CR>
 " }}}
 " Tabularize {{{
+" \zs is left align
+" for example, nnoremap <leader>:= :Tabularize /:\zs<CR>
+" hi : 1       -->  hi:    1
+" world : 2    -->  world: 2
 nnoremap <leader>t= :Tabularize /=<CR>
 vnoremap <leader>t= :Tabularize /=<CR>
-nnoremap <leader>t: :Tabularize /:\zs<CR>
-vnoremap <leader>t: :Tabularize /:\zs<CR>
+nnoremap <leader>t: :Tabularize /:<CR>
+vnoremap <leader>t: :Tabularize /:<CR>
+nnoremap <leader>t# :Tabularize /#<CR>
+vnoremap <leader>t# :Tabularize /#<CR>
+nnoremap <leader>t/ :Tabularize /\/\/<CR>
+vnoremap <leader>t/ :Tabularize /\/\/<CR>
 " }}}
 " Toggle paste mode {{{
 map <leader>pp :setlocal paste!<CR>
