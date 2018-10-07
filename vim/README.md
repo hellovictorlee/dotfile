@@ -82,6 +82,19 @@ NOTE: Some of plugin is amazing but owing to my workflow and recently installed,
 <hr>
 
 <span style="color: #fab516;">★ ★ ★ </span>[vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
+Useful command:
+```
+:Gdiff
+```
+Brings up an interactive vertical split with git-blame output. Press enter on a line to reblame the file as it stood in that commit, or`o` to open that commit in a split.
+```
+:Gblame
+```
+Brings up an interactive vertical split with git-blame output. Press enter on a line to reblame the file as it stood in that commit, or`o` to open that commit in a split.
+```
+:Gbrowse
+```
+[rhubarb.vim](https://github.com/tpope/vim-rhubarb) extends fugitive.vim to open GitHub URLs.
 <hr>
 
 <span style="color: #fab516;">★ ★ ☆ </span>[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
@@ -117,6 +130,9 @@ Cargo requires the following tools and packages to build:
 <hr>
 
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vim-repeat](https://github.com/tpope/vim-repeat)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ★ ★ </span>[vim-rhubarb](https://github.com/tpope/vim-rhubarb)<br>
 <hr>
 
 <span style="color: #fab516 ">★ ★ ★ </span>[vim-surround](https://github.com/tpope/vim-surround)<br>
