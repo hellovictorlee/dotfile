@@ -69,10 +69,16 @@ set cursorline
 " Relative line numbers {{{
 set relativenumber
 " }}}
-" Textwidth setting {{{
-" This will highlight all characters past 79 columns
-""augroup vimrc_autocmds
-""  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-""  autocmd BufEnter * match OverLength /\%80v.*/
-""augroup END
+" Textwidth {{{
+" Python 79 char in a line
+function! s:SetColorColumn()
+    setlocal colorcolumn=80
+endfunction
+
+augroup colorcolumn
+    autocmd!
+    " Run only with Python file
+    autocmd BufEnter *.py highlight ColorColumn ctermbg=white guibg=white
+    autocmd BufEnter *.py call s:SetColorColumn()
+augroup end
 " }}}
