@@ -95,10 +95,10 @@ endif
 " }}}
 " Move a line {{{
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
-nnoremap <M-j> mz:m+<cr>`z
-nnoremap <M-k> mz:m-2<cr>`z
-vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+nnoremap <M-j> mz:m+<CR>`z
+nnoremap <M-k> mz:m-2<CR>`z
+vnoremap <M-j> :m'>+<CR>`<my`>mzgv`yo`z
+vnoremap <M-k> :m'<-2<CR>`>my`<mzgv`yo`z
 
 if has("mac") || has("macunix")
     nnoremap <D-j> <M-j>
@@ -107,10 +107,20 @@ if has("mac") || has("macunix")
     vnoremap <D-k> <M-k>
 endif
 " }}}
-" Terminal mode shortcut {{{ tnoremap <Esc> <C-\><C-n>
+" Terminal mode shortcut {{{ 
+tnoremap <Esc> <C-\><C-n>
 command! -nargs=* T split | terminal <args>
 command! -nargs=* VT vsplit | terminal <args>
 command! -nargs=* TT tabnew | terminal <args>
+" }}}
+" ALE Error quick checking {{{ 
+" Mapping should map recursively so not noremap, but map
+nmap <silent> <M-k> <Plug>(ale_previous_wrap)
+nmap <silent> <M-j> <Plug>(ale_next_wrap)
+if has("mac") || has("macunix")
+    nmap <D-k> <M-k>
+    nmap <D-j> <M-j>
+endif
 " }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇

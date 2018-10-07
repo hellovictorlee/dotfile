@@ -31,6 +31,17 @@ Based on my personal usage, and experience, I make a simple rating.<br>
 NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn't give a high rating<br>
 
 <span style="color: #fab516;">★ ★ ★ </span>[ag.vim](https://github.com/rking/ag.vim)<br>
+```
+:Ag keyword
+```
+Search for keyword appearing in all file under current or project directory.
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[ale](https://github.com/w0rp/ale#usage)<br>
+```
+pip3 install flake8
+```
+Install one of Python linter.
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)<br>
@@ -55,9 +66,6 @@ NOTE: Some of plugin is amazing but owing to my workflow and recently installed,
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[supertab](https://github.com/ervandew/supertab)<br>
-<hr>
-
-<span style="color: #fab516;">★ ★ ★ </span>[syntastic](https://github.com/vim-syntastic/syntastic)<br>
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[tabular](https://github.com/godlygeek/tabular)<br>

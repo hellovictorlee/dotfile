@@ -6,18 +6,22 @@ let g:gruvbox_contrast_dark = 'hard'
 "force override gruvbox backgrhund color
 highlight Normal ctermbg = None
 " }}}
-" syntastic {{{
-" https://github.com/vim-syntastic/syntastic
-" recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_python_checkers = ['python']
+" ale {{{
+" Declare which linters using on certain programming language
+let g:ale_linters = {'python': ['flake8']}
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+" Keep the sign gutter open at all times
+let g:ale_sign_column_always = 1
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
+" Error Message, More Detail :help g:ale_echo_msg_format
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_warning_str = 'Warning'
+let g:ale_echo_msg_format = '[%linter%] [%code%] %s [%severity%]'
+" Sign is changable
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
 " }}}
 " vim-airline {{{
 " https://github.com/vim-airline/vim-airline#smarter-tab-line
@@ -26,8 +30,7 @@ let g:airline_theme = 'dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-" powerline
-" https://github.com/powerline/powerline
+" powerline: https://github.com/powerline/powerline
 set rtp+=$HOME/powerline/powerline/bindings/vim
 set laststatus=2 " Always show statusline
 set guifont=Go\ Mono\ for\ Powerline
