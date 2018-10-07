@@ -30,7 +30,7 @@ setxkbmap -option caps:swapescape
 Based on my personal usage, and experience, I make a simple rating.<br>
 NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn't give a high rating<br>
 
-<span style="color: #fab516;">★ ★ ★ </span>[ack.vim](https://github.com/mileszs/ack.vim)<br>
+<span style="color: #fab516;">★ ★ ★ </span>[ag.vim](https://github.com/rking/ag.vim)<br>
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)<br>
