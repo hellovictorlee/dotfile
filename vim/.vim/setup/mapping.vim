@@ -93,6 +93,12 @@ if has("mac") || has("macunix")
     cnoremap <D-b> <M-b>
 endif
 " }}}
+" Terminal mode shortcut {{{ 
+tnoremap <Esc> <C-\><C-n>
+command! -nargs=* T split | terminal <args>
+command! -nargs=* VT vsplit | terminal <args>
+command! -nargs=* TT tabnew | terminal <args>
+" }}}
 " Move a line {{{
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 nnoremap <M-j> mz:m+<CR>`z
@@ -107,19 +113,20 @@ if has("mac") || has("macunix")
     vnoremap <D-k> <M-k>
 endif
 " }}}
-" Terminal mode shortcut {{{ 
-tnoremap <Esc> <C-\><C-n>
-command! -nargs=* T split | terminal <args>
-command! -nargs=* VT vsplit | terminal <args>
-command! -nargs=* TT tabnew | terminal <args>
-" }}}
 " ALE Error quick checking {{{ 
 " Mapping should map recursively so not noremap, but map
-nmap <silent> <M-k> <Plug>(ale_previous_wrap)
-nmap <silent> <M-j> <Plug>(ale_next_wrap)
+nmap <silent> <M-[> <Plug>(ale_previous_wrap)
+nmap <silent> <M-]> <Plug>(ale_next_wrap)
 if has("mac") || has("macunix")
-    nmap <D-k> <M-k>
-    nmap <D-j> <M-j>
+    nmap <D-k> <M-[>
+    nmap <D-j> <M-]>
+endif
+" }}}
+" CtrlP {{{
+" ctags with CtrlMRU
+nnoremap <M-p> :CtrlPMRU<CR>
+if has("mac") || has("macunix")
+    nnoremap <D-p> <M-p>
 endif
 " }}}
 
@@ -151,7 +158,7 @@ map <leader>n :NERDTreeToggle<CR>
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }}}
-" Compile {{{
+" AsyncRun {{{
 nnoremap <leader>c :call <SID>compile_and_run()<CR>
 
 augroup SPACEVIM_ASYNCRUN
@@ -171,15 +178,9 @@ function! s:compile_and_run()
     elseif &filetype == 'sh'
        exec "AsyncRun! time bash %"
     elseif &filetype == 'python'
-       exec "AsyncRun! time python %"
+       exec "AsyncRun! time python3 %"
     endif
 endfunction
-" }}}
-" CtrlPMRU {{{
-nnoremap <M-p> :CtrlPMRU<CR>
-if has("mac") || has("macunix")
-    nnoremap <D-p> <M-p>
-endif
 " }}}
 " Ranger {{{
 if !exists('g:ranger_map_keys') || g:ranger_map_keys
@@ -187,8 +188,8 @@ if !exists('g:ranger_map_keys') || g:ranger_map_keys
 endif
 " }}}
 " ctags {{{
-" ctags with CtrlP
-noremap <leader>. :CtrlPTag<CR>
+" ctags with CtrlPTag
+nnoremap <silent> <leader>. :CtrlPTag<CR>
 " ctags with Tagbar
 nnoremap <silent> <leader>b :TagbarToggle<CR>
 " }}}

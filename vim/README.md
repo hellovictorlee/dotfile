@@ -56,9 +56,6 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ☆ ☆ </span>[hardmode](https://github.com/wikitopian/hardmode)<br>
 <hr>
 
-<span style="color: #fab516;">★ ★ ☆ </span>[mru](https://github.com/yegappan/mru)<br>
-<hr>
-
 <span style="color: #fab516;">★ ☆ ☆ </span>[nerdtree](https://github.com/scrooloose/nerdtree)<br>
 <hr>
 

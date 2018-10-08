@@ -6,34 +6,21 @@ let g:gruvbox_contrast_dark = 'hard'
 "force override gruvbox backgrhund color
 highlight Normal ctermbg = None
 " }}}
-" ale {{{
-" Declare which linters using on certain programming language
-let g:ale_linters = {'python': ['flake8']}
-" Only run linters named in ale_linters settings.
-let g:ale_linters_explicit = 1
-" Keep the sign gutter open at all times
-let g:ale_sign_column_always = 1
-" Set this. Airline will handle the rest.
-let g:airline#extensions#ale#enabled = 1
-" Error Message, More Detail :help g:ale_echo_msg_format
-let g:ale_echo_msg_error_str = 'Error'
-let g:ale_echo_msg_warning_str = 'Warning'
-let g:ale_echo_msg_format = '[%linter%] [%code%] %s [%severity%]'
-" Sign is changable
-let g:ale_sign_error = '>>'
-let g:ale_sign_warning = '--'
-" }}}
 " vim-airline {{{
 " https://github.com/vim-airline/vim-airline#smarter-tab-line
 " vim-airline-themes
 let g:airline_theme = 'dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-" powerline: https://github.com/powerline/powerline
-set rtp+=$HOME/powerline/powerline/bindings/vim
-set laststatus=2 " Always show statusline
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 set guifont=Go\ Mono\ for\ Powerline
+
+" vim-airline displaying the status of AsyncRun
+let g:asyncrun_status = ''
+let g:airline_section_warning = airline#section#create_right(['%{g:asyncrun_status}'])
+
+" ale airline
+let g:airline#extensions#ale#enabled = 1
 " }}}
 " hardmode {{{
 " https://github.com/wikitopian/hardmode
@@ -42,9 +29,6 @@ set guifont=Go\ Mono\ for\ Powerline
 " hardtime {{{
 " make hardtime run in every buffer
 " let g:hardtime_default_on = 1
-" }}}
-" mru {{{
-let MRU_Window_Height = 15
 " }}}
 " table model {{{
 " Markdown-compatible tables
@@ -64,10 +48,20 @@ let g:ycm_python_binary_path = 'python'
 " 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the 
 let g:ctrlp_working_path_mode = 'ra'
 " }}}
-" Asyncrun {{{
-" vim-airline displaying the status of AsyncRun
-let g:asyncrun_status = ''
-let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])
+" ale {{{
+" Declare which linters using on certain programming language
+let g:ale_linters = {'python': ['flake8']}
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+" Keep the sign gutter open at all times
+let g:ale_sign_column_always = 1
+" Error Message, More Detail :help g:ale_echo_msg_format
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_warning_str = 'Warning'
+let g:ale_echo_msg_format = '[%linter%] [%code%] %s [%severity%]'
+" Sign is changable
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
 " }}}
 " vitality {{{
 " functionality: iterm2 tmux vim cursor focus
