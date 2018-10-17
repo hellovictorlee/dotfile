@@ -51,6 +51,9 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ★ ★ </span>[ctrlp.vim](https://github.com/kien/ctrlp.vim)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)<br>
+<hr>
+
 <span style="color: #fab516;">★ ☆ ☆ </span>[gruvbox](https://github.com/morhetz/gruvbox)<br>
 <hr>
 
@@ -110,6 +113,9 @@ Brings up an interactive vertical split with git-blame output. Press enter on a 
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-hardtime](https://github.com/takac/vim-hardtime)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)<br>
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-indexed-search](https://github.com/henrik/vim-indexed-search)<br>
