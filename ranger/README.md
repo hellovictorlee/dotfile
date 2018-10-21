@@ -17,7 +17,7 @@ mkdir -p ~/.config/ranger
 
 ```
 git clone https://github.com/ranger/ranger.git ~/Desktop/ranger
-cp ~/Desktop/ranger/doc/config/colorschemes ~/.config/ranger
+cp -r ~/Desktop/ranger/doc/config/colorschemes ~/.config/ranger
 cp ~/Desktop/ranger/doc/config/commands.py ~/.config/ranger
 cp ~/Desktop/ranger/doc/config/scope.sh ~/.config/ranger
 rm -rf ~/Desktop/ranger
