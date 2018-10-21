@@ -12,6 +12,9 @@ reference: [source](https://www.digitalocean.com/community/tutorials/installing-
 
 ## Customization
 ```
+mkdir -p ~/.config/ranger
+```
+```
 cp rifle.conf ~/.config/ranger
 ```
 ```
