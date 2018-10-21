@@ -24,15 +24,16 @@ set tm=500
 set hid
 " }}}
 " Indentation {{{
-set ai "Auto indent
-""set si "Smart indent
-set wrap "Wrap lines
-" insert space characters whenever the tab key is pressedf
-set expandtab
-" insert 4 spaces for a tab
-set tabstop=4
-" change the number of space characters inserted for indentation
-set shiftwidth=4
+" !!!!!!! no need anymore because of editorconfig.vim !!!!!!!
+"set ai "Auto indent
+"""set si "Smart indent
+"set wrap "Wrap lines
+"" insert space characters whenever the tab key is pressedf
+"set expandtab
+"" insert 4 spaces for a tab
+"set tabstop=4
+"" change the number of space characters inserted for indentation
+"set shiftwidth=4
 " }}}
 " Search rule settings {{{
 " lower case search is with ignore case

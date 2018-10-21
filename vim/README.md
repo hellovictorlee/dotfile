@@ -22,9 +22,7 @@ System Preferrences > Keyboard > Modifier Keys
 ```
 
 ### Ubuntu:
-```
-setxkbmap -option caps:swapescape
-```
+[xmodmap](http://manpages.ubuntu.com/manpages/bionic/man1/xmodmap.1.html)
 
 ## Preferred Plugin
 Based on my personal usage, and experience, I make a simple rating.<br>
@@ -47,13 +45,22 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ☆ ☆ </span>[asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)<br>
 <hr>
 
+<span style="color: #fab516;">★ ★ ★ </span>[codi.vim](https://github.com/metakirby5/codi.vim)<br>
+<hr>
+
 <span style="color: #fab516;">★ ★ ★ </span>[ctrlp.vim](https://github.com/kien/ctrlp.vim)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)<br>
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[gruvbox](https://github.com/morhetz/gruvbox)<br>
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[hardmode](https://github.com/wikitopian/hardmode)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[MatchTagAlways](https://github.com/Valloric/MatchTagAlways.git)<br>
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[nerdtree](https://github.com/scrooloose/nerdtree)<br>
@@ -108,6 +115,9 @@ Brings up an interactive vertical split with git-blame output. Press enter on a 
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-hardtime](https://github.com/takac/vim-hardtime)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)<br>
+<hr>
+
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-indexed-search](https://github.com/henrik/vim-indexed-search)<br>
 <hr>
 
@@ -147,6 +157,9 @@ Cargo requires the following tools and packages to build:
 <hr>
 
 <span style="color: #fab516 ">★ ★ ☆ </span>[vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ★ ☆ </span>[vimwiki](https://github.com/vimwiki/vimwiki.git)<br>
 <hr>
 
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vitality](https://github.com/sjl/vitality.vim)<br>

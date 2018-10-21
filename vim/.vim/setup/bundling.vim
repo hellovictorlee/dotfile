@@ -79,3 +79,20 @@ set rtp+=/usr/local/opt/fzf
 " ag.vim {{{
 let g:ag_working_path_mode="r"
 " }}}
+" editorconfig-vim {{{
+" ensure that this plugin works well with Tim Pope's fugitive
+" avoid loading EditorConfig for any remote files over ssh
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+" resolve conflicts of trailing whitespace trimming and buffer autosaving
+let g:EditorConfig_disable_rules = ['trim_trailing_whitespace']
+" }}}
+" vim-indent-guides {{{
+" auto start
+let g:indent_guides_enable_on_vim_startup = 1
+
+" ignore first indent guides
+" let g:indent_guides_start_level=2
+
+" indent guides width size
+let g:indent_guides_guide_size=1
+" }}}
