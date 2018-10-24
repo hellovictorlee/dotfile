@@ -83,3 +83,9 @@ augroup colorcolumn
     autocmd BufEnter *.py call s:SetColorColumn()
 augroup end
 " }}}
+" new window position {{{
+" make the new window appear below the current window.
+set splitbelow
+" make the new window appear on the right of current window.
+set splitright
+" }}}
