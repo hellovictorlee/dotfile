@@ -47,7 +47,7 @@ System Preferrences > Keyboard > Modifier Keys
 
 ## Preferred Plugin
 Based on my personal usage, and experience, I make a simple rating.<br>
-NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn''ve a high rating<br>
+NOTE: Some of plugin is amazing but owing to my personal workflow, I didn't give a high rating.<br>
 
 <span style="color: #fab516;">★ ★ ★ </span>[ag.vim](https://github.com/rking/ag.vim)<br>
 ```
