@@ -1,3 +1,18 @@
+## Installation
+### macOS:
+vim installation with Python3
+```
+brew install python3
+brew install vim --with-python3
+```
+
+neovim installation with Python3
+```
+brew install python3
+brew install neovim
+pip3 install neovim --upgrade
+```
+
 ## Customization
 ```
 cp -r .vim ~
@@ -14,6 +29,12 @@ mkdir -p ~/.config/nvim
 mv init.vim ~/.config/nvim
 ```
 
+### environment variables setting
+take neovim and zsh as an example:
+```
+echo 'export EDITOR=/usr/local/bin/nvim' >> ~/.zshrc
+```
+
 ## Keyboard Setting
 ### Switch the "Caps Lock" and "Esc"<br>
 ### macOS:
@@ -26,7 +47,7 @@ System Preferrences > Keyboard > Modifier Keys
 
 ## Preferred Plugin
 Based on my personal usage, and experience, I make a simple rating.<br>
-NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn't give a high rating<br>
+NOTE: Some of plugin is amazing but owing to my workflow and recently installed, I didn''ve a high rating<br>
 
 <span style="color: #fab516;">★ ★ ★ </span>[ag.vim](https://github.com/rking/ag.vim)<br>
 ```

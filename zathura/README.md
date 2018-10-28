@@ -1,6 +1,7 @@
 ## Installation
 ### macOS:
 ```
+brew tap zegervdv/zathura
 brew install --HEAD meson
 brew install zathura
 brew install zathura-pdf-poppler
