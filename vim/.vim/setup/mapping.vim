@@ -95,8 +95,8 @@ endif
 " }}}
 " Terminal mode shortcut {{{ 
 tnoremap <Esc> <C-\><C-n>
-command! -nargs=* T split | terminal <args>
-command! -nargs=* VT vsplit | terminal <args>
+command! -nargs=* TH split | terminal <args>
+command! -nargs=* TV vsplit | terminal <args>
 command! -nargs=* TT tabnew | terminal <args>
 " }}}
 " Move a line {{{
