@@ -185,9 +185,6 @@ Cargo requires the following tools and packages to build:
 
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vitality](https://github.com/sjl/vitality.vim)<br>
 
-<span style="color: #fab516 ">★ ☆ ☆ </span>[winresizer](https://github.com/simeji/winresizer)<br>
-<hr>
-
 <span style="color: #fab516">★ ★ ★ </span>[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
 NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
 ```
