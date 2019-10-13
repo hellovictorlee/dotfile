@@ -19,6 +19,9 @@ cp .gitconfig ~
 ```
 cp .gitignore_global ~
 ```
+```
+cp -r .gitTemplate ~
+```
 
 In gitconfig, I need to fill the following variable: name, email, excludesfile<br>
 excludesfile = ~/.gitignore_global<br>

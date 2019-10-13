@@ -27,3 +27,6 @@
 	sq = "!f() { \
 	git rebase -i $( git merge-base HEAD $1 ); \
 	}; f"
+[init]
+	templatedir = ~/.gitTemplate
+
