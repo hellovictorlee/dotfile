@@ -41,6 +41,19 @@ let g:table_mode_corner='+'
 " The first python that YCM will find will be the one in the virtual environment
 " So, jedi will be able to provide completions for every package you have in the virtual environment
 let g:ycm_python_binary_path = 'python'
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar': 1,
+      \ 'notes': 1,
+      \ 'markdown': 1,
+      \ 'netrw': 1,
+      \ 'unite': 1,
+      \ 'text': 1,
+      \ 'vimwiki': 1,
+      \ 'pandoc': 1,
+      \ 'infolog': 1,
+      \ 'mail': 1,
+      \ 'javascript': 1
+      \}
 " }}}
 " CtrlP {{{
 " 'c' - the directory of the current file.
@@ -50,7 +63,10 @@ let g:ctrlp_working_path_mode = 'ra'
 " }}}
 " ale {{{
 " Declare which linters using on certain programming language
-let g:ale_linters = {'python': ['flake8']}
+let g:ale_linters = {
+\  'python': ['flake8'],
+\  'javascript': ['eslint']
+\}
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
 " Keep the sign gutter open at all times
@@ -62,6 +78,11 @@ let g:ale_echo_msg_format = '[%linter%] [%code%] %s [%severity%]'
 " Sign is changable
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
+" auto fix after saving
+let g:ale_fixers = {
+\  'javascript': ['prettier', 'eslint'],
+\}
+let g:ale_fix_on_save = 1
 " }}}
 " vitality {{{
 " functionality: iterm2 tmux vim cursor focus
@@ -75,9 +96,6 @@ au WinLeave,FocusLost,CmdwinLeave * setlocal nocursorline
 " fzf {{{
 " If installed using Homebrew
 set rtp+=/usr/local/opt/fzf
-" }}}
-" ag.vim {{{
-let g:ag_working_path_mode="r"
 " }}}
 " editorconfig-vim {{{
 " ensure that this plugin works well with Tim Pope's fugitive

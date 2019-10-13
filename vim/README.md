@@ -49,9 +49,9 @@ System Preferrences > Keyboard > Modifier Keys
 Based on my personal usage, and experience, I make a simple rating.<br>
 NOTE: Some of plugin is amazing but owing to my personal workflow, I didn't give a high rating.<br>
 
-<span style="color: #fab516;">★ ★ ★ </span>[ag.vim](https://github.com/rking/ag.vim)<br>
+<span style="color: #fab516;">★ ★ ★ </span>[ack.vim](https://github.com/mileszs/ack.vim#can-i-use-ag-the-silver-searcher-with-this)<br>
 ```
-:Ag keyword
+:Ack! keyword
 ```
 Search for keyword appearing in all file under current or project directory.
 <hr>

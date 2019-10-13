@@ -1,5 +1,5 @@
 #!/bin/sh
-git clone https://github.com/rking/ag.vim.git ~/.vim/bundle/ag.vim
+git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 git clone https://github.com/w0rp/ale.git ~/.vim/bundle/ale
 git clone https://github.com/skywind3000/asyncrun.vim.git ~/.vim/bundle/asyncrun.vim
 git clone https://github.com/metakirby5/codi.vim.git ~/.vim/bundle/codi.vim

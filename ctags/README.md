@@ -15,6 +15,8 @@ sudo apt-get install ctags
 ```
 
 ## Customization
+
+[reference source:](https://github.com/romainl/ctags-patterns-for-javascript)
 ```
 cp .ctags ~
 ```

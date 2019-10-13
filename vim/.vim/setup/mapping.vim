@@ -29,16 +29,16 @@ cnoremap <Left>  <Nop>
 cnoremap <Right> <Nop>
 cnoremap <Up>    <Nop>
 " Disable delete
-nnoremap <BS>  <Nop>
-nnoremap <Del> <Nop>
-inoremap <BS>  <Nop>
-inoremap <Del> <Nop>
-vnoremap <BS>  <Nop>
-vnoremap <Del> <Nop>
-cnoremap <BS>  <Nop>
-cnoremap <Del> <Nop>
-" Disable enter
-inoremap <Enter> <Nop>
+" nnoremap <BS>  <Nop>
+" nnoremap <Del> <Nop>
+" inoremap <BS>  <Nop>
+" inoremap <Del> <Nop>
+" vnoremap <BS>  <Nop>
+" vnoremap <Del> <Nop>
+" cnoremap <BS>  <Nop>
+" cnoremap <Del> <Nop>
+" " Disable enter
+" inoremap <Enter> <Nop>
 " }}}
 " Bash like keystrokes {{{
 cnoremap <C-a> <Home>
@@ -129,6 +129,16 @@ if has("mac") || has("macunix")
     nnoremap <D-p> <M-p>
 endif
 " }}}
+" Ack {{{
+" ag.vim deprecated so use ack.vim
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+
+" use ag (The Silver Searcher)
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+" }}}
 
 " Leader mapping ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
 
@@ -155,6 +165,7 @@ nnoremap <leader><space> <Esc>:call ToggleHardMode()<CR>
 " }}}
 " NERDTree {{{
 map <leader>n :NERDTreeToggle<CR>
+map <leader>N :NERDTreeFind<CR>
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }}}
@@ -189,7 +200,7 @@ endif
 " }}}
 " ctags {{{
 " ctags with CtrlPTag
-nnoremap <silent> <leader>. :CtrlPTag<CR>
+" nnoremap <silent> <leader>. :CtrlPTag<CR>
 " ctags with Tagbar
 nnoremap <silent> <leader>b :TagbarToggle<CR>
 " }}}
