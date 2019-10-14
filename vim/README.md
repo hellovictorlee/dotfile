@@ -168,6 +168,9 @@ Cargo requires the following tools and packages to build:
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vim-prettier](https://github.com/prettier/vim-prettier)<br>
 <hr>
 
+<span style="color: #fab516 ">★ ☆ ☆ </span>[vim-javascript](https://github.com/pangloss/vim-javascript)<br>
+<hr>
+
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vim-repeat](https://github.com/tpope/vim-repeat)<br>
 <hr>
 

@@ -25,6 +25,7 @@ git clone https://github.com/nathanaelkane/vim-indent-guides.git ~/.vim/bundle/v
 git clone https://github.com/henrik/vim-indexed-search.git ~/.vim/bundle/vim-indexed-search
 git clone https://github.com/euclio/vim-markdown-composer.git ~/.vim/bundle/vim-markdown-composer
 git clone https://github.com/terryma/vim-multiple-cursors.git ~/.vim/bundle/vim-multiple-cursors
+git clone https://github.com/pangloss/vim-javascript ~/.vim/bundle/vim-javascript
 git clone https://github.com/tpope/vim-repeat.git ~/.vim/bundle/vim-repeat
 git clone https://github.com/tpope/vim-rhubarb.git ~/.vim/bundle/vim-rhubarb
 git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
