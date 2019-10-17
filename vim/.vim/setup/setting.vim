@@ -5,6 +5,9 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 " }}}
+" Set mouse {{{
+set mouse=a
+" }}}
 " Set utf8 {{{
 set encoding=utf8
 " }}}

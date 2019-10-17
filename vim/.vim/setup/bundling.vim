@@ -82,7 +82,8 @@ let g:ale_sign_warning = '--'
 let g:ale_fixers = {
 \  'javascript': ['prettier', 'eslint'],
 \}
-let g:ale_fix_on_save = 1
+" auto fix after saving
+" let g:ale_fix_on_save = 1
 " }}}
 " vitality {{{
 " functionality: iterm2 tmux vim cursor focus

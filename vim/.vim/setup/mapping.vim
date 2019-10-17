@@ -121,6 +121,7 @@ if has("mac") || has("macunix")
     nmap <D-k> <M-[>
     nmap <D-j> <M-]>
 endif
+nnoremap <C-\> :ALEFix<CR>
 " }}}
 " CtrlP {{{
 " ctags with CtrlMRU
@@ -200,7 +201,7 @@ endif
 " }}}
 " ctags {{{
 " ctags with CtrlPTag
-" nnoremap <silent> <leader>. :CtrlPTag<CR>
+nnoremap <silent> <leader>. :CtrlPTag<CR>
 " ctags with Tagbar
 nnoremap <silent> <leader>b :TagbarToggle<CR>
 " }}}
