@@ -197,3 +197,29 @@ NOTE: In order to use YME for Python, we need to install [jedi](https://github.c
 pip install jedi
 ```
 <hr>
+
+
+## ctags
+|shortcut|functionality|
+|-|-|
+|CTRL-]|Jump to definition| 
+|CTRL-t|Jump back from definition|
+|CTRL-W }|Preview definition|
+|g]|See all definitions|
+|gf|Jump to file|
+
+
+## ack.vim
+|shortcut|functionality|
+|-|-|
+|?|    a quick summary of these keys, repeat to close|
+|o|    to open (same as Enter)|
+|O|    to open and close the quickfix window|
+|go|   to preview file, open but maintain focus on ack.vim results|
+|t|    to open in new tab|
+|T|    to open in new tab without moving to it|
+|h|    to open in horizontal split|
+|H|    to open in horizontal split, keeping focus on the results|
+|v|    to open in vertical split|
+|gv|   to open in vertical split, keeping focus on the results|
+|q|    to close the quickfix window|
