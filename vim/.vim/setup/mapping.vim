@@ -129,6 +129,12 @@ nnoremap <M-p> :CtrlPMRU<CR>
 if has("mac") || has("macunix")
     nnoremap <D-p> <M-p>
 endif
+" the cache in the configured location
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+" use ag (the_silver_searcher) instead of vim's native globpath() apis to search for files
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 " }}}
 " Ack {{{
 " ag.vim deprecated so use ack.vim

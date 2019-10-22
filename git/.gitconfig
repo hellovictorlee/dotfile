@@ -1,6 +1,6 @@
 [user]
-	name =
-	email =
+	name = Victor
+	email = victor.lee@hornblower.com
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -25,8 +25,7 @@
 	dfs = diff --staged
 	logg = log --graph --oneline --pretty=format:\"%C(yellow)%h%Creset %C(bold)<%Creset%C(ul cyan)%an%Creset%C(bold)>%Creset %C(red)%ar%Creset %C(green)%s%Creset\"
 	sq = "!f() { \
-	git rebase -i $( git merge-base HEAD $1 ); \
+	 git rebase -i $( git merge-base HEAD $1 ); \
 	}; f"
 [init]
-	templatedir = ~/.gitTemplate
-
+	; templatedir = ~/.gitTemplate

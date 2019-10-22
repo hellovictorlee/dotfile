@@ -115,3 +115,12 @@ let g:indent_guides_enable_on_vim_startup = 1
 " indent guides width size
 let g:indent_guides_guide_size=1
 " }}}
+" gutentags {{{
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+let g:gutentags_ctags_tagfile = '.tags'
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+if !isdirectory(s:vim_tags)
+	silent! call mkdir(s:vim_tags, 'p')
+endif
+" }}}

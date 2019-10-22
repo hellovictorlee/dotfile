@@ -133,6 +133,9 @@ Brings up an interactive vertical split with git-blame output. Press enter on a 
 <span style="color: #fab516;">★ ★ ☆ </span>[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
 <hr>
 
+<span style="color: #fab516;">★ ★ ★ </span>[vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)<br>
+<hr>
+
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-hardtime](https://github.com/takac/vim-hardtime)<br>
 <hr>
 
