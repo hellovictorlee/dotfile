@@ -21,6 +21,21 @@ let g:airline_section_warning = airline#section#create_right(['%{g:asyncrun_stat
 
 " ale airline
 let g:airline#extensions#ale#enabled = 1
+set statusline+=%{gutentags#statusline()}
+
+" gutentags airline
+if !get(g:, 'loaded_gutentags', 0)
+  finish
+endif
+
+function! airline#extensions#gutentags#status()
+  let msg = gutentags#statusline()
+  return empty(msg) ? '' :  'Gen. ' . msg
+endfunction
+
+function! airline#extensions#gutentags#init(ext)
+  call airline#parts#define_function('gutentags', 'airline#extensions#gutentags#status')
+endfunction
 " }}}
 " hardmode {{{
 " https://github.com/wikitopian/hardmode
@@ -123,4 +138,37 @@ let g:gutentags_cache_dir = s:vim_tags
 if !isdirectory(s:vim_tags)
 	silent! call mkdir(s:vim_tags, 'p')
 endif
+" }}}
+" vim-javascript {{{
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END
+" }}}
+" rainbow_parentheses {{{
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 " }}}

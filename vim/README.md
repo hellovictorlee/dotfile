@@ -87,6 +87,9 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ☆ ☆ </span>[nerdtree](https://github.com/scrooloose/nerdtree)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim)<br>
+<hr>
+
 <span style="color: #fab516;">★ ★ ★ </span>[ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
 <hr>
 
@@ -97,6 +100,9 @@ Install one of Python linter.
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[tagbar](https://github.com/majutsushi/tagbar)<br>
+<hr>
+
+<span style="color: #fab516;">★ ☆ ☆ </span>[tern_for_vim](https://github.com/ternjs/tern_for_vim)<br>
 <hr>
 
 <span style="color: #fab516;">★ ★ ★ </span>[vim-airline](https://github.com/vim-airline/vim-airline)<br>

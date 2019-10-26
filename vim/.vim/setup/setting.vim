@@ -28,15 +28,13 @@ set hid
 " }}}
 " Indentation {{{
 " !!!!!!! no need anymore because of editorconfig.vim !!!!!!!
-"set ai "Auto indent
-"""set si "Smart indent
-"set wrap "Wrap lines
-"" insert space characters whenever the tab key is pressedf
-"set expandtab
-"" insert 4 spaces for a tab
-"set tabstop=4
-"" change the number of space characters inserted for indentation
-"set shiftwidth=4
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=2
+" when indenting with '>', use 4 spaces width
+set shiftwidth=2
+" On pressing tab, insert 4 spaces
+set expandtab
 " }}}
 " Search rule settings {{{
 " lower case search is with ignore case
@@ -91,4 +89,11 @@ augroup end
 set splitbelow
 " make the new window appear on the right of current window.
 set splitright
+" }}}
+" Ctrl-n {{{
+" remove the i flag from the 'cpt' option - remove it from the global value
+setglobal complete-=i
+" }}}
+" Javascript {{{
+augroup filetype javascript syntax=javascript
 " }}}
