@@ -1,0 +1,32 @@
+#! /bin/sh
+
+alias javacompile="javac -d bin src/*.java 2>&1"
+alias ctags="`brew --prefix`/bin/ctags"
+alias rcd="ranger-cd"
+
+alias cpu="top -F -R -o cpu"
+
+alias screensaver="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background"
+
+alias ptt="ssh bbsu@ptt.cc"
+
+alias rm="rm -i"
+alias ll="ls -l"
+
+alias wifion="networksetup -setairportpower en0 on"
+alias wifioff="networksetup -setairportpower en0 off"
+alias wifilist="airport -s"
+alias blueon="blueutil -p on"
+alias blueoff="blueutil -p off"
+
+alias vim="nvim"
+# open emacs on terminal
+# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+
+# alias hstart=<"/usr/local/Cellar/hadoop/3.1.1/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/3.1.1/sbin/start-yarn.sh">
+# alias hstop=<"/usr/local/Cellar/hadoop/3.1.1/sbin/stop-yarn.sh;/usr/local/Cellar/hadoop/3.1.1/sbin/stop-dfs.sh">
+alias hstart="/usr/local/Cellar/hadoop/3.1.1/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/3.1.1/sbin/start-yarn.sh"
+alias hstop="/usr/local/Cellar/hadoop/3.1.1/sbin/stop-yarn.sh;/usr/local/Cellar/hadoop/3.1.1/sbin/stop-dfs.sh"
+
+alias irb="/usr/bin/irb"
+# alias gem="/usr/bin/gem"

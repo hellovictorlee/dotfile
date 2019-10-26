@@ -37,4 +37,4 @@ git clone https://github.com/simeji/winresizer.git ~/.vim/bundle/winresizer
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 git clone https://github.com/kien/rainbow_parentheses.vim.git ~/.vim/bundle/rainbow_parentheses.vim
 git clone https://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/vim-gutentags
-git clone https://github.com/ternjs/tern_for_vim.git ~/.vim/bundle/tern_for_vim
+git clone https://github.com/mhinz/vim-startify.git ~/.vim/bundle/vim-startify

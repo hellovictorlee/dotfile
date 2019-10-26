@@ -102,9 +102,6 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ☆ ☆ </span>[tagbar](https://github.com/majutsushi/tagbar)<br>
 <hr>
 
-<span style="color: #fab516;">★ ☆ ☆ </span>[tern_for_vim](https://github.com/ternjs/tern_for_vim)<br>
-<hr>
-
 <span style="color: #fab516;">★ ★ ★ </span>[vim-airline](https://github.com/vim-airline/vim-airline)<br>
 <hr>
 
@@ -134,6 +131,9 @@ Brings up an interactive vertical split with git-blame output. Press enter on a 
 :Gbrowse
 ```
 [rhubarb.vim](https://github.com/tpope/vim-rhubarb) extends fugitive.vim to open GitHub URLs.
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[vim-startify](https://github.com/mhinz/vim-startify)<br>
 <hr>
 
 <span style="color: #fab516;">★ ★ ☆ </span>[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
@@ -201,6 +201,12 @@ Cargo requires the following tools and packages to build:
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vitality](https://github.com/sjl/vitality.vim)<br>
 
 <span style="color: #fab516">★ ★ ★ </span>[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
+
+autocomplete for JS
+```
+./install.py --tern-completer
+```
+
 NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
 ```
 pip install jedi

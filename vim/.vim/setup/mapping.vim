@@ -154,10 +154,10 @@ endif
 nnoremap <leader>1 :tabedit $MYVIMRC<CR>
 " Edit setting.vim
 nnoremap <leader>2 :tabedit $MYVIMSETTING<CR>
-" Edit mapping.vim
-nnoremap <leader>3 :tabedit $MYVIMMAPPING<CR>
 " Edit bundling.vim
-nnoremap <leader>4 :tabedit $MYVIMBUNDLING<CR>
+nnoremap <leader>3 :tabedit $MYVIMBUNDLING<CR>
+" Edit mapping.vim
+nnoremap <leader>4 :tabedit $MYVIMMAPPING<CR>
 " }}}
 " Strip trailing whitespace {{{
 " strip all trailing whitespace in the current file
