@@ -4,6 +4,7 @@ nnoremap / /\v
 vnoremap / /\v
 " }}}
 " Autocomplete parenthese {{{
+inoremap ` ``<Esc>
 inoremap ' ''<Esc>
 inoremap " ""<Esc>
 inoremap ( ()<Esc>
@@ -93,7 +94,7 @@ if has("mac") || has("macunix")
     cnoremap <D-b> <M-b>
 endif
 " }}}
-" Terminal mode shortcut {{{ 
+" Terminal mode shortcut {{{
 tnoremap <Esc> <C-\><C-n>
 command! -nargs=* TH split | terminal <args>
 command! -nargs=* TV vsplit | terminal <args>
@@ -113,7 +114,7 @@ if has("mac") || has("macunix")
     vnoremap <D-k> <M-k>
 endif
 " }}}
-" ALE Error quick checking {{{ 
+" ALE Error quick checking {{{
 " Mapping should map recursively so not noremap, but map
 nmap <silent> <M-[> <Plug>(ale_previous_wrap)
 nmap <silent> <M-]> <Plug>(ale_next_wrap)

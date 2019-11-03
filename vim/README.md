@@ -202,14 +202,48 @@ Cargo requires the following tools and packages to build:
 
 <span style="color: #fab516">★ ★ ★ </span>[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)<br>
 
+#### IMPORTANT FOR tern-project
+*The home directory is now used as the working directory (instead of Vim working directory). Therefore ```.tern-project``` can't only be put at home directory even the home directory is your ancester folder for your project*
+
+EXAMPLE:
+
+If project directory is
+```
+/user/xxxx/Desktop/path/to/project/root/
+```
+
+```
+/user/xxxx/Desktop/.tern-project  =>  WORK
+```
+
+```
+/user/xxxx/.tern-project  =>  NOT WORK
+```
+
 autocomplete for JS
 ```
+cd ~/.vim/bundle/YouCompleteMe/
 ./install.py --tern-completer
 ```
 
 NOTE: In order to use YME for Python, we need to install [jedi](https://github.com/davidhalter/jedi), an awesome autocompletion/static analysis library for Python.
+
 ```
 pip install jedi
+```
+
+Debug for YouCompletMe
+```
+:YcmDebugInfo
+```
+
+```
+:YcmToggleLogs
+```
+
+Restart ymc server
+```
+:YcmRestartServer
 ```
 <hr>
 

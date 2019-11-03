@@ -21,21 +21,9 @@ let g:airline_section_warning = airline#section#create_right(['%{g:asyncrun_stat
 
 " ale airline
 let g:airline#extensions#ale#enabled = 1
-set statusline+=%{gutentags#statusline()}
 
 " gutentags airline
-if !get(g:, 'loaded_gutentags', 0)
-  finish
-endif
-
-function! airline#extensions#gutentags#status()
-  let msg = gutentags#statusline()
-  return empty(msg) ? '' :  'Gen. ' . msg
-endfunction
-
-function! airline#extensions#gutentags#init(ext)
-  call airline#parts#define_function('gutentags', 'airline#extensions#gutentags#status')
-endfunction
+let g:airline#extensions#gutentags#enabled = 1
 " }}}
 " hardmode {{{
 " https://github.com/wikitopian/hardmode
@@ -66,8 +54,7 @@ let g:ycm_filetype_blacklist = {
       \ 'vimwiki': 1,
       \ 'pandoc': 1,
       \ 'infolog': 1,
-      \ 'mail': 1,
-      \ 'javascript': 1
+      \ 'mail': 1
       \}
 " }}}
 " CtrlP {{{
