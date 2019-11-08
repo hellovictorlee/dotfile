@@ -56,6 +56,9 @@ let g:ycm_filetype_blacklist = {
       \ 'infolog': 1,
       \ 'mail': 1
       \}
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'gitcommit': 1
+      \}
 " }}}
 " CtrlP {{{
 " 'c' - the directory of the current file.

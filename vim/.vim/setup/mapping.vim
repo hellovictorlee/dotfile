@@ -229,3 +229,8 @@ vnoremap <leader>t/ :Tabularize /\/\/<CR>
 " Toggle paste mode {{{
 map <leader>pp :setlocal paste!<CR>
 " }}}
+" Toggle paste mode {{{
+map <leader>tt :TestNearest<CR>
+map <leader>tf :TestFile<CR>
+map <leader>ts :TestSuite<CR>
+" }}}
