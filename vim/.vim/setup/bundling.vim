@@ -1,11 +1,3 @@
-" gruvbox {{{
-" https://github.com/morhetz/gruvbox
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
-
-"force override gruvbox backgrhund color
-highlight Normal ctermbg = None
-" }}}
 " vim-airline {{{
 " https://github.com/vim-airline/vim-airline#smarter-tab-line
 " vim-airline-themes
@@ -161,4 +153,14 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+" }}}
+" colorscheme {{{
+" https://github.com/morhetz/gruvbox
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
+"force override gruvbox backgrhund color
+highlight Normal ctermbg = None
+
+" monokai for javascript
+" autocmd WinEnter,FileType javascript colorscheme molokai
 " }}}
