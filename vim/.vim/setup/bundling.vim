@@ -15,7 +15,7 @@ let g:airline_section_warning = airline#section#create_right(['%{g:asyncrun_stat
 let g:airline#extensions#ale#enabled = 1
 
 " gutentags airline
-let g:airline#extensions#gutentags#enabled = 1
+" let g:airline#extensions#gutentags#enabled = 1
 " }}}
 " hardmode {{{
 " https://github.com/wikitopian/hardmode
@@ -163,4 +163,7 @@ highlight Normal ctermbg = None
 
 " monokai for javascript
 " autocmd WinEnter,FileType javascript colorscheme molokai
+" }}}
+" easymotion {{{
+map <Leader> <Plug>(easymotion-prefix)
 " }}}

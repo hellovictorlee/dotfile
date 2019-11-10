@@ -1,3 +1,66 @@
+" create new Keybinding for Vim {{{
+" https://vim.fandom.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
+" check keycode: cat
+" Ctrl + Shift
+map <Esc>^A <C-S-A>
+map <Esc>^B <C-S-B>
+map <Esc>^C <C-S-C>
+map <Esc>^D <C-S-D>
+map <Esc>^E <C-S-E>
+map <Esc>^F <C-S-F>
+map <Esc>^G <C-S-G>
+map <Esc>^H <C-S-H>
+map <Esc>^I <C-S-I>
+map <Esc>^J <C-S-J>
+map <Esc>^K <C-S-K>
+map <Esc>^L <C-S-L>
+map <Esc>^M <C-S-M>
+map <Esc>^N <C-S-N>
+map <Esc>^O <C-S-O>
+map <Esc>^P <C-S-P>
+map <Esc>^Q <C-S-Q>
+map <Esc>^R <C-S-R>
+map <Esc>^S <C-S-S>
+map <Esc>^T <C-S-T>
+map <Esc>^U <C-S-U>
+map <Esc>^V <C-S-V>
+map <Esc>^W <C-S-W>
+map <Esc>^X <C-S-X>
+map <Esc>^Y <C-S-Y>
+map <Esc>^Z <C-S-Z>
+map <Esc>^Z <C-S-Z>
+
+" Meta + Shift
+map <Esc>^[A <M-S-A>
+map <Esc>^[B <M-S-B>
+map <Esc>^[C <C-S-C>
+map <Esc>^[D <M-S-D>
+map <Esc>^[E <M-S-E>
+map <Esc>^[F <M-S-F>
+map <Esc>^[G <M-S-G>
+map <Esc>^[H <M-S-H>
+map <Esc>^[I <M-S-I>
+map <Esc>^[J <M-S-J>
+map <Esc>^[K <M-S-K>
+map <Esc>^[L <M-S-L>
+map <Esc>^[M <M-S-M>
+map <Esc>^[N <M-S-N>
+map <Esc>^[O <M-S-O>
+map <Esc>^[P <M-S-P>
+map <Esc>^[Q <M-S-Q>
+map <Esc>^[R <M-S-R>
+map <Esc>^[S <M-S-S>
+map <Esc>^[T <M-S-T>
+map <Esc>^[U <M-S-U>
+map <Esc>^[V <M-S-V>
+map <Esc>^[W <M-S-W>
+map <Esc>^[X <M-S-X>
+map <Esc>^[Y <M-S-Y>
+map <Esc>^[Z <M-S-Z>
+" }}}
+
+" Keybinding ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
+
 " Regex {{{
 " redefine regex to other formatting
 nnoremap / /\v
@@ -198,6 +261,8 @@ function! s:compile_and_run()
        exec "AsyncRun! time bash %"
     elseif &filetype == 'python'
        exec "AsyncRun! time python3 %"
+    elseif &filetype == 'javascript'
+       exec "AsyncRun! time node %"
     endif
 endfunction
 " }}}
@@ -229,7 +294,7 @@ vnoremap <leader>t/ :Tabularize /\/\/<CR>
 " Toggle paste mode {{{
 map <leader>pp :setlocal paste!<CR>
 " }}}
-" Toggle paste mode {{{
+" testing {{{
 map <leader>tt :TestNearest<CR>
 map <leader>tf :TestFile<CR>
 map <leader>ts :TestSuite<CR>
