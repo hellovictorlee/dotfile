@@ -93,6 +93,15 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ★ ★ </span>[ranger.vim](https://github.com/francoiscabrol/ranger.vim)<br>
 <hr>
 
+```
+git clone https://github.com/ShuaiHsunLee/ranger.vim.git
+```
+[francoiscabrol](https://github.com/francoiscabrol/ranger.vim) setup default
+```
+<leader>f
+```
+mapping, that will be used by vim-easymotion
+
 <span style="color: #fab516;">★ ☆ ☆ </span>[supertab](https://github.com/ervandew/supertab)<br>
 <hr>
 
@@ -133,9 +142,6 @@ Brings up an interactive vertical split with git-blame output. Press enter on a 
 [rhubarb.vim](https://github.com/tpope/vim-rhubarb) extends fugitive.vim to open GitHub URLs.
 <hr>
 
-<span style="color: #fab516;">★ ★ ★ </span>[vim-startify](https://github.com/mhinz/vim-startify)<br>
-<hr>
-
 <span style="color: #fab516;">★ ★ ☆ </span>[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
 <hr>
 
@@ -149,6 +155,9 @@ Brings up an interactive vertical split with git-blame output. Press enter on a 
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[vim-indexed-search](https://github.com/henrik/vim-indexed-search)<br>
+<hr>
+
+<span style="color: #fab516 ">★ ☆ ☆ </span>[vim-javascript](https://github.com/pangloss/vim-javascript)<br>
 <hr>
 
 <span style="color: #fab516;">★ ★ ★ </span>[vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)<br>
@@ -174,16 +183,13 @@ Cargo requires the following tools and packages to build:
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)<br>
 <hr>
 
-<span style="color: #fab516 ">★ ☆ ☆ </span>[vim-prettier](https://github.com/prettier/vim-prettier)<br>
-<hr>
-
-<span style="color: #fab516 ">★ ☆ ☆ </span>[vim-javascript](https://github.com/pangloss/vim-javascript)<br>
-<hr>
-
 <span style="color: #fab516 ">★ ☆ ☆ </span>[vim-repeat](https://github.com/tpope/vim-repeat)<br>
 <hr>
 
 <span style="color: #fab516 ">★ ★ ★ </span>[vim-rhubarb](https://github.com/tpope/vim-rhubarb)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[vim-startify](https://github.com/mhinz/vim-startify)<br>
 <hr>
 
 <span style="color: #fab516 ">★ ★ ★ </span>[vim-surround](https://github.com/tpope/vim-surround)<br>

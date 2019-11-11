@@ -9,7 +9,7 @@ git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 git clone https://github.com/wikitopian/hardmode.git ~/.vim/bundle/hardmode
 git clone https://github.com/Valloric/MatchTagAlways.git ~/.vim/bundle/MatchTagAlways
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-git clone https://github.com/francoiscabrol/ranger.vim.git ~/.vim/bundle/ranger.vim
+git clone https://github.com/ShuaiHsunLee/ranger.vim.git ~/.vim/bundle/ranger.vim
 git clone https://github.com/ervandew/supertab.git ~/.vim/bundle/supertab
 git clone https://github.com/godlygeek/tabular.git ~/.vim/bundle/tabular
 git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
