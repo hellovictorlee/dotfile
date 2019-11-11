@@ -104,16 +104,6 @@ cnoremap <Up>    <Nop>
 " " Disable enter
 " inoremap <Enter> <Nop>
 " }}}
-" Bash like keystrokes {{{
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-cnoremap <C-p> <Up>
-cnoremap <C-n> <Down>
-cnoremap <C-f> <Right>
-cnoremap <C-b> <Left>
-cnoremap <C-d> <Del>
-cnoremap <C-h> <BS>
-" }}}
 " Move between windows {{{
 tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
@@ -137,18 +127,28 @@ nnoremap <C-s> :update<CR>
 vnoremap <C-s> <C-c>:update<CR>
 inoremap <C-s> <C-o>:update<CR>
 " }}}
+" Bash like keystrokes {{{
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+cnoremap <C-d> <Del>
+cnoremap <C-h> <BS>
+" }}}
 " Action in insert mode {{{
 " Del
-inoremap <C-d> <ESC>ls
+inoremap <C-d> <Del>
 " Move start, end of line
 inoremap <C-a> <ESC>I
 inoremap <C-e> <ESC>A
 " Move forward and backward
-inoremap <C-f> <ESC>la
-inoremap <C-b> <ESC>i
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
 
-inoremap <M-f> <ESC>lwi
-inoremap <M-b> <ESC>lbi
+inoremap <M-f> <C-Right>
+inoremap <M-b> <C-Left>
 
 if has("mac") || has("macunix")
     inoremap <D-f> <M-f>
@@ -222,6 +222,8 @@ nnoremap <leader>2 :tabedit $MYVIMSETTING<CR>
 nnoremap <leader>3 :tabedit $MYVIMBUNDLING<CR>
 " Edit mapping.vim
 nnoremap <leader>4 :tabedit $MYVIMMAPPING<CR>
+" Edit test.js file 
+nnoremap <leader>5 :tabedit $MYNODESCRIPT<CR>
 " }}}
 " Strip trailing whitespace {{{
 " strip all trailing whitespace in the current file
