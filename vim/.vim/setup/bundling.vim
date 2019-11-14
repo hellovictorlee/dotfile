@@ -55,7 +55,7 @@ let g:ycm_filetype_specific_completion_to_disable = {
 " CtrlP {{{
 " 'c' - the directory of the current file.
 " 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs
-" 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the 
+" 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the
 let g:ctrlp_working_path_mode = 'ra'
 " }}}
 " ale {{{
@@ -129,6 +129,16 @@ augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax
 augroup END
+" }}}
+" javascript fold {{{
+" syntax highlighting items specify folds
+set foldmethod=syntax
+" defines 1 col at window left, to indicate folding
+set foldcolumn=1
+" activate folding by JS syntax
+let javaScript_fold=1
+" start file with all folds opened
+set foldlevelstart=99
 " }}}
 " rainbow_parentheses {{{
 let g:rbpt_colorpairs = [

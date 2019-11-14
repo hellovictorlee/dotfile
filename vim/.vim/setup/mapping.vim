@@ -28,7 +28,6 @@ map <Esc>^W <C-S-W>
 map <Esc>^X <C-S-X>
 map <Esc>^Y <C-S-Y>
 map <Esc>^Z <C-S-Z>
-map <Esc>^Z <C-S-Z>
 
 " Meta + Shift
 map <Esc>^[A <M-S-A>
