@@ -25,3 +25,8 @@ fonts cheatsheet
 ```
 https://fontawesome.com/cheatsheet/free/solid
 ```
+
+rofi websearch
+```
+https://github.com/pdonadeo/rofi-web-search
+```
