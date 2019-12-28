@@ -97,3 +97,6 @@ setglobal complete-=i
 " Javascript {{{
 augroup filetype javascript syntax=javascript
 " }}}
+" rofi syntax hightlight {{{
+au BufNewFile,BufRead /*.rasi setf css
+" }}}

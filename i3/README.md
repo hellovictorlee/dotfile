@@ -1,23 +1,18 @@
+# i3
 ## Installation
-### other app:
+
+### wallpaper
 install fed for wallpaper
 ```
 sudo apt-get install feh
 ```
 
-install fonts
-
+### fonts
 go to the link to download
 ```
 https://github.com/FortAwesome/Font-Awesome/releases
-```
-```
 unzip Font-Awesome-5.12.0.zip
-```
-```
 mkdir ~/.fonts
-```
-```
 cp ./Font-Awesome-5.12.0/webfonts/*.ttf ~/.fonts
 ```
 
@@ -26,7 +21,17 @@ fonts cheatsheet
 https://fontawesome.com/cheatsheet/free/solid
 ```
 
-rofi websearch
+### i3-gap
+[i3-gap GitHub](https://github.com/Airblader/i3)
+
+For Ubuntu
 ```
-https://github.com/pdonadeo/rofi-web-search
+sudo add-apt-repository ppa:simon-monette/i3-gaps
+sudo apt-get update
+sudo apt-get install i3-gaps
+```
+
+### i3lock
+```
+sudo apt-get install i3lock
 ```
