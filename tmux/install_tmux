@@ -2,7 +2,7 @@
 
 sudo apt update
 
-INSTALL_PKGS="git automake build-essential pkg-config libevent-dev libncurses5-dev"
+INSTALL_PKGS="git automake build-essential pkg-config libevent-dev libncurses5-dev bison"
 for i in $INSTALL_PKGS; do
     sudo apt-get install -y $i
 done

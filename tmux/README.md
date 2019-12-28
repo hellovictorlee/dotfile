@@ -5,7 +5,7 @@ brew install tmux
 ```
 ### Ubuntu:
 ```
-source install_tmux
+./install_tmux
 ```
 
 ## Customization

@@ -1,13 +1,13 @@
 [user]
 	name = Victor
-	email = victor.lee@hornblower.com
+	email = hellovictorlee@gmail.com
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 [core]
-	editor = vim
+	editor =
 	excludesfile =
 [color]
 	branch = auto
