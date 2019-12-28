@@ -161,8 +161,9 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+q kill
 bindsym Print exec screenshot
-bindsym $mod+d exec rofi -show run
-bindsym --release $mod+x exec --no-startup-id rofi -lines 10 -padding 0 -show search -modi search:~/bin/rofi-web-search.py -i -p "Search: "
+bindsym $mod+d exec rofi -show drun -theme DarkBlue
+bindsym --release $mod+x exec --no-startup-id rofi -lines 10 -padding 0 -show search -theme DarkBlue -modi search:~/.config/rofi/rofi-web-search.py -i -p "Search: "
+bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme DarkBlue -modi find:~/.config/rofi/finder.sh -i -p "Find: "
 
 # startup
 exec_always --no-startup-id feh --bg-scale /home/victory2152/Pictures/wallpaper.jpg
