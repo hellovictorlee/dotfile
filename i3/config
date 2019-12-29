@@ -123,7 +123,7 @@ set $urgent-bg-color     #E53935
 
 # bar
 bar {
-  	status_command i3blocks # -c /home/victory2152/.config/.i3blocks/i3blocks.conf
+  	status_command i3blocks -c /home/hellovictorlee/.config/i3blocks/i3blocks.conf
     colors {
       background $bg-color
           separator #757575

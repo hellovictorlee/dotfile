@@ -45,6 +45,11 @@ System Preferrences > Keyboard > Modifier Keys
 ### Ubuntu:
 [xmodmap](http://manpages.ubuntu.com/manpages/bionic/man1/xmodmap.1.html)
 
+#### powerline fonts install
+```
+sudo apt-get install fonts-powerline
+```
+
 ## Preferred Plugin
 Based on my personal usage, and experience, I make a simple rating.<br>
 NOTE: Some of plugin is amazing but owing to my personal workflow, I didn't give a high rating.<br>

@@ -28,12 +28,37 @@ https://fontawesome.com/cheatsheet/free/solid
 
 For Ubuntu
 ```
-sudo add-apt-repository ppa:simon-monette/i3-gaps
-sudo apt-get update
-sudo apt-get install i3-gaps
+./i3-gaps.sh
 ```
 
 ### i3lock
 ```
 sudo apt-get install i3lock
+```
+
+### i3blocks
+```
+sudo apt-get install i3blocks
+```
+
+collections of i3blocks scripts
+```
+git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
+```
+
+### i3status
+[i3status](https://github.com/i3/i3status)
+```
+apt-get install libconfuse-dev libyajl-dev libasound2-dev libiw-dev asciidoc libpulse-dev libnl-genl-3-dev
+```
+
+## setup touchpad and mouse natural scrolling
+
+copy
+```
+40-libinput.conf
+```
+content to
+```
+/usr/share/X11/xorg.conf.d/40-libinput.conf
 ```

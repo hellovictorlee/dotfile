@@ -16,6 +16,19 @@ cp .tmux.conf ~
 ## Preferred Plugin
 
 <span style="color: #fab516;">★ ★ ★ </span>[tpm](https://github.com/tmux-plugins/tpm)<br>
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+### Installing plugins
+
+Install my personal tmux-powerline
+```
+git clone https://github.com/ShuaiHsunLee/tmux-powerline.git ~/tmux-powerline
+```
+
+1. Add new plugin to `~/.tmux.conf` with `set -g @plugin '...'`
+2. Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
+
 <hr>
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[tmux-sensible](https://github.com/tmux-plugins/tpm)<br>
