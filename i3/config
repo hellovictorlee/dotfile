@@ -150,17 +150,12 @@ workspace $workspace9 output DVI-I-2
 workspace $workspace10 output DVI-I-2
 
 # key-bindings
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle # mute sound
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-bindsym $mod+Shift+f exec firefox
+# change volume or toggle mute
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+q kill
-bindsym Print exec screenshot
 bindsym $mod+d exec rofi -show drun -theme DarkBlue
 bindsym --release $mod+x exec --no-startup-id rofi -lines 10 -padding 0 -show search -theme DarkBlue -modi search:~/.config/rofi/rofi-web-search.py -i -p "Search: "
 bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme DarkBlue -modi find:~/.config/rofi/finder.sh -i -p "Find: "

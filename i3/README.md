@@ -46,6 +46,11 @@ collections of i3blocks scripts
 git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
 ```
 
+bar detail setting
+```
+cp i3blocks.conf ~/.config/i3blocks
+```
+
 ### i3status
 [i3status](https://github.com/i3/i3status)
 ```
