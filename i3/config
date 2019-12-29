@@ -151,9 +151,10 @@ workspace $workspace10 output DVI-I-2
 
 # key-bindings
 # change volume or toggle mute
-bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
+
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun -theme DarkBlue
@@ -161,7 +162,7 @@ bindsym --release $mod+x exec --no-startup-id rofi -lines 10 -padding 0 -show se
 bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme DarkBlue -modi find:~/.config/rofi/finder.sh -i -p "Find: "
 
 # startup
-exec_always --no-startup-id feh --bg-scale /home/victory2152/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale /home/hellovictorlee/Pictures/wallpaper.jpg
 
 # Keys
 exec_always xmodmap -e "clear lock" #disable caps lock switch
