@@ -11,6 +11,8 @@ sudo apt-get install feh
 go to the link to download
 ```
 https://github.com/FortAwesome/Font-Awesome/releases
+```
+```
 unzip Font-Awesome-5.12.0.zip
 mkdir ~/.fonts
 cp ./Font-Awesome-5.12.0/webfonts/*.ttf ~/.fonts
