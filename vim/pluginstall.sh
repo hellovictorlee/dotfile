@@ -38,3 +38,4 @@ git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouComplet
 git clone https://github.com/kien/rainbow_parentheses.vim.git ~/.vim/bundle/rainbow_parentheses.vim
 git clone https://github.com/mhinz/vim-startify.git ~/.vim/bundle/vim-startify
 git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/vim-easymotion
+git clone https://github.com/PotatoesMaster/i3-vim-syntax.git ~/.vim/bundle/i3-vim-syntax

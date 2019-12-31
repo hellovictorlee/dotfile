@@ -125,7 +125,7 @@ set $urgent-bg-color     #E53935
 
 # bar
 bar {
-  	status_command i3blocks -c /home/hellovictorlee/.config/i3blocks/i3blocks.conf
+  	status_command i3blocks -c /home/victorlee/.config/i3blocks/i3blocks.conf
     colors {
       background $bg-color
           separator #757575
@@ -134,7 +134,7 @@ bar {
       inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
       urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     }
-    # position top
+    position top
 }
 
 
