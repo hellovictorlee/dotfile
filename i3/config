@@ -164,7 +164,7 @@ bindsym --release $mod+x exec --no-startup-id rofi -lines 10 -padding 0 -show se
 bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme DarkBlue -modi find:~/.config/rofi/finder.sh -i -p "Find: "
 
 # startup
-exec_always --no-startup-id feh --bg-scale /home/hellovictorlee/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale /home/victorlee/Pictures/wallpaper.jpg
 
 # Keys
 exec_always xmodmap -e "clear lock" #disable caps lock switch
