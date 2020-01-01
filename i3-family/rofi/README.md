@@ -20,9 +20,9 @@ mkdir -p ~/.config/rofi
 rofi -dump-config > ~/.config/rofi/config.rasi
 ```
 
-[theme collections](https://github.com/davatorium/rofi-themes)
+download [rofi-theme](https://github.com/ShuaiHsunLee/rofi-themes.git) Fork from [theme collections](https://github.com/davatorium/rofi-themes)
 ```
-git clone https://github.com/davatorium/rofi-themes.git
+git clone https://github.com/ShuaiHsunLee/rofi-themes.git
 cd rofi-themes
 ./install.sh
 ```
