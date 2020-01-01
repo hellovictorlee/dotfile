@@ -33,3 +33,10 @@ IMPORTANT: You must be a member of the input group to have permission to read th
 ```
 sudo gpasswd -a $USER input
 ```
+
+## TimeShift
+```
+sudo add-apt-repository ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install timeshift -y 
+```
