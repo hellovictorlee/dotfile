@@ -40,3 +40,11 @@ sudo add-apt-repository ppa:teejee2008/ppa
 sudo apt-get update
 sudo apt-get install timeshift -y 
 ```
+
+## Brightness
+
+get the monitor's device name
+```
+xrandr | grep " connected" | cut -f1 -d " "
+xrandr --output LVDS-1 --brightness 0.75
+```
