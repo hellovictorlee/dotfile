@@ -14,3 +14,9 @@ npm install -g serverless
 ```
 
 [setting aws credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
+
+## Webstorm
+
+```
+sudo snap install webstorm --classic
+```

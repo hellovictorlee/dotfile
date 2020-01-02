@@ -57,6 +57,18 @@ cp i3blocks.conf ~/.config/i3blocks
 apt-get install libconfuse-dev libyajl-dev libasound2-dev libiw-dev asciidoc libpulse-dev libnl-genl-3-dev
 ```
 
+### compton
+
+```
+sudo apt update
+sudo apt install compton
+```
+compton setup
+```
+cp compton.conf ~/.config/i3/
+```
+
+
 ## setup touchpad and mouse natural scrolling
 
 copy
