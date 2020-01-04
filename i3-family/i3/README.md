@@ -7,7 +7,7 @@ install fed for wallpaper
 sudo apt-get install feh
 ```
 
-### fonts
+### Font-Awesome
 go to the link to download
 ```
 https://github.com/FortAwesome/Font-Awesome/releases
@@ -21,6 +21,12 @@ cp ./Font-Awesome-5.12.0/webfonts/*.ttf ~/.fonts
 fonts cheatsheet
 ```
 https://fontawesome.com/cheatsheet/free/solid
+```
+
+### FiraCode
+
+```
+sudo apt install fonts-firacode
 ```
 
 ### i3-gap
