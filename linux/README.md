@@ -48,3 +48,10 @@ get the monitor's device name
 xrandr | grep " connected" | cut -f1 -d " "
 xrandr --output LVDS-1 --brightness 0.75
 ```
+
+## htop
+
+```
+sudo apt update && sudo apt upgrade
+sudo apt install htop
+```
