@@ -36,8 +36,8 @@ screenchange-reload = true
 
 [bar/top]
 modules-left = bspwm i3
-modules-center = mpd
-modules-right = alsa pulseaudio temperature wlan battery date 
+modules-center =
+modules-right = alsa pulseaudio temperature wlan battery date
 
 width = 100%
 height = 25
@@ -86,7 +86,7 @@ cursor-scroll = ns-resize
 
 [bar/bottom]
 modules-left =
-modules-center = filesystem memory cpu 
+modules-center = filesystem memory cpu
 modules-right =
 
 bottom = true
@@ -129,36 +129,6 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-[module/menu]
-type = custom/menu
-
-; "menu-LEVEL-N" has the same properties as "label-NAME" with
-; the additional "exec" property
-;
-; Available exec commands:
-;   menu-open-LEVEL
-;   menu-close
-; Other commands will be executed using "/usr/bin/env sh -c $COMMAND"
-;
-
-menu-0-0 = Browsers
-menu-0-0-exec = menu-open-1
-menu-0-2 = Multimedia
-menu-0-2-exec = menu-open-3
-
-menu-1-0 = Firefox
-menu-1-0-exec = firefox &
-menu-1-1 = Chromium
-menu-1-1-exec = chromium &
-
-menu-2-0 = Gimp
-menu-2-0-exec = gimp &
-menu-2-1 = Scrot
-menu-2-1-exec = scrot &
-
-menu-3-0 = Gvim
-menu-3-0-exec = gvim &
 
 [module/i3]
 type = internal/i3

@@ -55,3 +55,47 @@ xrandr --output LVDS-1 --brightness 0.75
 sudo apt update && sudo apt upgrade
 sudo apt install htop
 ```
+
+## Neofetch
+```
+sudo apt-get install neofetch
+```
+
+## sftp server
+
+```
+sudo apt install openssh-server
+sudo apt install ssh
+```
+
+create group for sftp user
+```
+sudo groupadd sftpg
+```
+
+create user for the group & set passwd
+```
+sudo useradd -g sftpg sftpuser
+sudo passwd sftpuser
+```
+
+create a directory as root directory for sftpuser
+```
+sudo mkdir -p /data/sftpuser/upload
+sudo chown -R root.sftpg  /data/sftpuser
+sudo chown -R sftpuser.sftpg /data/sftpuser/upload
+```
+
+add lines of code into /etc/ssh/sshd_config
+```
+Match Group sftpg
+    ChrootDirectory /data/%u
+    ForceCommand internal-sftp
+```
+
+restart the service
+```
+sudo systemctl restart sshd
+```
+
+[reference](https://linuxhandbook.com/sftp-server-setup)
