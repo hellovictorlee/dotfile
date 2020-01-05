@@ -29,6 +29,15 @@ https://fontawesome.com/cheatsheet/free/solid
 sudo apt install fonts-firacode
 ```
 
+### nerd-fonts
+
+[nerd-fonts](https://github.com/ryanoasis/nerd-fonts.git)
+```
+git clone https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+```
+
 ### i3-gap
 [i3-gap GitHub](https://github.com/Airblader/i3)
 
@@ -61,6 +70,11 @@ cp i3blocks.conf ~/.config/i3blocks
 [i3status](https://github.com/i3/i3status)
 ```
 apt-get install libconfuse-dev libyajl-dev libasound2-dev libiw-dev asciidoc libpulse-dev libnl-genl-3-dev
+```
+
+### i3lock-fancy
+```
+sudo apt install i3lock-fancy
 ```
 
 ### compton
