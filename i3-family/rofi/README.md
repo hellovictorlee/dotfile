@@ -27,9 +27,14 @@ cd rofi-themes
 ./install.sh
 ```
 
-### rofi-find
+### surfraw
+```
+sudo apt-get install -y surfraw
+```
 
-[rofi find GitHub](https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder)
+### rofi-script
+[rofi-script](https://github.com/davatorium/rofi-scripts)
+
 ```
 cp finder.sh ~/.config/rofi
 ```
@@ -37,4 +42,21 @@ cp finder.sh ~/.config/rofi
 put command in ~/.config/i3/config
 ```
 bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme DarkBlue -modi find:~/.config/rofi/finder.sh -i -p "Find: "
+```
+
+#### workspace switch
+```
+cp i3_switch_workspace.sh ~/.config/rofi
+```
+
+#### rofi-surfraw
+```
+cp rofi-surfraw.sh ~/.config/rofi
+mkdir -p ~/.config/rofi-surfraw
+cp searchengines ~/.config/rofi-surfraw
+```
+
+setup surfraw browser
+```
+cp .surfraw.conf ~
 ```

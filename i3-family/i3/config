@@ -94,15 +94,15 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-    bindsym h resize shrink width 10 px or 10 ppt
-    bindsym j resize grow height 10 px or 10 ppt
-    bindsym k resize shrink height 10 px or 10 ppt
-    bindsym l resize grow width 10 px or 10 ppt
+    bindsym h resize shrink width 5 px or 5 ppt
+    bindsym j resize grow height 5 px or 5 ppt
+    bindsym k resize shrink height 5 px or 5 ppt
+    bindsym l resize grow width 5 px or 5 ppt
 
-    bindsym Lefj resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Lefj resize shrink width 5 px or 5 ppt
+    bindsym Down resize grow height 5 px or 5 ppt
+    bindsym Up resize shrink height 5 px or 5 ppt
+    bindsym Right resize grow width 5 px or 5 ppt
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -162,8 +162,10 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun -theme onedark
-bindsym --release $mod+x exec --no-startup-id rofi -lines 10 -padding 0 -show search -theme onedark -modi search:~/.config/rofi/rofi-web-search.py -i -p "Search: "
-bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme onedark -modi find:~/.config/rofi/finder.sh -i -p "Find: "
+bindsym --release $mod+c exec --no-startup-id rofi -lines 10 -padding 0 -show search -theme onedark -modi search:~/.config/rofi/rofi-web-search.py
+bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme onedark -modi find:~/.config/rofi/finder.sh
+bindsym --release $mod+x exec --no-startup-id ~/.config/rofi/rofi-surfraw.sh
+bindsym --release $mod+Tab exec --no-startup-id ~/.config/rofi/i3_switch_workspace.sh
 
 # startup
 exec_always --no-startup-id feh --bg-scale /home/victorlee/Pictures/wallpaper.jpg

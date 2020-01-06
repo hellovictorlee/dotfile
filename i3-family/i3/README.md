@@ -88,7 +88,6 @@ compton setup
 cp compton.conf ~/.config/i3/
 ```
 
-
 ## setup touchpad and mouse natural scrolling
 
 copy

@@ -99,3 +99,57 @@ sudo systemctl restart sshd
 ```
 
 [reference](https://linuxhandbook.com/sftp-server-setup)
+
+## borgbackup
+```
+sudo apt install borgbackup
+```
+
+### Usage
+
+#### local
+```
+sudo mkdir /backup
+sudo chown victorlee:victorlee /backup
+```
+
+initialize backup
+```
+borg init --encryption=repokey /backup
+```
+
+create backup
+```
+borg create /backup::backupname ~/Documents
+```
+
+list all backups
+```
+borg list /backup
+```
+
+list all file in the backup
+```
+borg list /backup::backupname
+```
+
+extract all files including path
+```
+borg extract /backup::backupname
+```
+
+#### remote
+
+For remote server
+```
+sudo mkdir /backup
+sudo chown victorlee:victorlee /backup
+sudo apt install openssh-server
+```
+
+For client
+```
+borg init --encryption=repokey USER@IP:/backup
+borg create USER@IP:/backup::backupname ~/Documents
+borg list USER@IP:/backup
+```
