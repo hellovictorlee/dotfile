@@ -2,6 +2,11 @@
 
 ## Installation
 
+### rofi(old)
+```
+sudo apt install rofi
+```
+
 ### Web Search
 [web search](https://github.com/pdonadeo/rofi-web-search)
 ```
