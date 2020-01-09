@@ -153,3 +153,11 @@ borg init --encryption=repokey USER@IP:/backup
 borg create USER@IP:/backup::backupname ~/Documents
 borg list USER@IP:/backup
 ```
+
+### f.lux
+
+```
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo apt-get update
+sudo apt-get install fluxgui
+```
