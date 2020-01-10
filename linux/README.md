@@ -1,5 +1,12 @@
 # setting
 
+## wifi
+
+run command
+```
+nmtui
+```
+
 ## Bluetooth
 ```
 sudo apt install bluez
@@ -138,7 +145,7 @@ extract all files including path
 borg extract /backup::backupname
 ```
 
-#### remote
+### remote
 
 For remote server
 ```
@@ -154,10 +161,18 @@ borg create USER@IP:/backup::backupname ~/Documents
 borg list USER@IP:/backup
 ```
 
-### f.lux
+## f.lux
 
 ```
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt-get update
 sudo apt-get install fluxgui
+```
+
+## Libreoffice
+
+```
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt-get update
+sudo apt-get install libreoffice
 ```
