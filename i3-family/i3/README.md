@@ -69,7 +69,7 @@ cp i3blocks.conf ~/.config/i3blocks
 ### i3status
 [i3status](https://github.com/i3/i3status)
 ```
-apt-get install libconfuse-dev libyajl-dev libasound2-dev libiw-dev asciidoc libpulse-dev libnl-genl-3-dev
+sudo apt-get install libconfuse-dev libyajl-dev libasound2-dev libiw-dev asciidoc libpulse-dev libnl-genl-3-dev
 ```
 
 ### i3lock-fancy
