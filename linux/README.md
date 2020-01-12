@@ -191,3 +191,16 @@ execute
 ```
 conky
 ```
+
+## thunderbird
+```
+sudo apt install thunderbird
+```
+
+## gnome-tweaks
+```
+sudo apt install gnome-tweaks
+```
+```
+gnome-tweaks
+```
