@@ -176,3 +176,18 @@ sudo add-apt-repository ppa:libreoffice/ppa
 sudo apt-get update
 sudo apt-get install libreoffice
 ```
+
+## LightDM
+```
+sudo apt-get install lightdm
+```
+
+## conky
+```
+sudo apt-get install conky
+```
+
+execute
+```
+conky
+```

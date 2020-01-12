@@ -20,3 +20,10 @@ npm install -g serverless
 ```
 sudo snap install webstorm --classic
 ```
+
+## Node.js
+```
+sudo apt-get install libssl1.0-dev nodejs-dev
+sudo apt-get install Node.js
+sudo apt-get install npm
+```

@@ -98,3 +98,20 @@ content to
 ```
 /usr/share/X11/xorg.conf.d/40-libinput.conf
 ```
+
+## Dzen
+Dzen is a general purpose messaging, notification and menuing program for X11. 
+
+```
+git clone https://github.com/robm/dzen.git
+cd dzen
+sudo make clean install
+```
+
+## integrated with python script
+
+i3 extention implement by python
+```
+sudo apt install python-pip
+pip install i3-py
+```
