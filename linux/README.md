@@ -213,3 +213,16 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 ## Google Calendar
 https://nuvola.tiliado.eu/app/google_calendar/ubuntu/bionic/
+
+## GIMP
+
+```
+sudo add-apt-repository ppa:otto-kesselgulasch/gimp
+sudo apt-get update
+sudo apt-get install gimp
+```
+
+execute GIMP
+```
+gimp &
+```

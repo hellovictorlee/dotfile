@@ -27,3 +27,10 @@ sudo apt-get install libssl1.0-dev nodejs-dev
 sudo apt-get install Node.js
 sudo apt-get install npm
 ```
+
+## Python
+
+```
+sudo apt-get install python3.7
+sudo apt install python3-pip
+```
