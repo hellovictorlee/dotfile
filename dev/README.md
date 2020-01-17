@@ -1,3 +1,8 @@
+## AAWS CLI
+```
+sudo apt-get install awscli
+```
+
 ## yarn
 
 ```
