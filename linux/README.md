@@ -226,3 +226,9 @@ execute GIMP
 ```
 gimp &
 ```
+
+## slack
+```
+sudo snap install slack --classic
+```
+
