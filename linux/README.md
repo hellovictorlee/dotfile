@@ -3,8 +3,10 @@
 ## urxvt
 ```
 sudo apt-get install rxvt-unicode
-sudo apt-get install xsel
-git clone https://github.com/muennich/urxvt-perls
+```
+
+```
+cp ~/.Xresources ~
 ```
 
 reload
@@ -12,9 +14,6 @@ reload
 xrdb ~/.Xresources 
 ```
 
-```
-cp ~/.Xresources ~
-```
 [fonts-powerline](https://github.com/powerline/fonts.git)
 
 ## wifi
