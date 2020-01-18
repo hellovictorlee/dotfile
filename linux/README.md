@@ -1,5 +1,21 @@
 # setting
 
+## urxvt
+```
+sudo apt-get install rxvt-unicode
+sudo apt-get install xsel
+git clone https://github.com/muennich/urxvt-perls
+```
+
+reload
+```
+xrdb ~/.Xresources 
+```
+
+```
+cp ~/.Xresources ~
+```
+
 ## wifi
 
 run command

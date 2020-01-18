@@ -1,0 +1,60 @@
+! urxvt
+URxvt*buffered: true
+URxvt*cursorBlink: true
+URxvt*underlineColor: yellow
+URxvt*depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: false
+URxvt*loginShell: true
+Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+URxvt*saveLines: 5000
+URxvt*termName: rxvt-unicode
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.background: [75]#000000
+
+URxvt*font: xft:Monospace:size=10:antialias=true
+!URxvt*font: xft:inconsolata:size=10:antialias=true
+!URxvt.font: xft:Anonymous Pro for Powerline:pixelsize=10
+!URxvt.font: xft:Monofur for Powerline:pixelsize=10
+!URxvt.font: xft:Bitstream Vera Sans Mono for Powerline:pixelsize=10
+!URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=10
+!URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=10
+!URxvt.font: xft:Inconsolata for Powerline:pixelsize=10
+!URxvt.font: xft:Terminus (TTF) for Powerline:pixelsize=10
+!URxvt.font: xft:Inconsolata\-dz for Powerline:pixelsize=10
+!URxvt.font: xft:Inconsolata\-g for Powerline:pixelsize=10
+!URxvt.font: xft:Liberation Mono for Powerline:pixelsize=10
+!URxvt.font: xft:Meslo LG L DZ for Powerline:pixelsize=10
+!URxvt.font: xft:Meslo LG L for Powerline:pixelsize=10
+!URxvt.font: xft:Meslo LG M DZ for Powerline:pixelsize=10
+!URxvt.font: xft:Meslo LG M for Powerline:pixelsize=10
+!URxvt.font: xft:Meslo LG S DZ for Powerline:pixelsize=10
+!URxvt.font: xft:Meslo LG S for Powerline:pixelsize=10
+!URxvt.font: xft:Source Code Pro for Powerline:pixelsize=10
+!URxvt.font: xft:Terminess Powerline:pixelsize=10:style=bold
+!URxvt.font: xft:Ubuntu Mono derivative Powerline:pixelsize=10
+!URxvt.font: xft:Literation Mono Powerline:pixelsize=10
+
+*background:            #002b36
+*foreground:            #ffffff
+*cursorColor:           #93a1a1
+*pointerColorBackground:#586e75
+*pointerColorForeground:#93a1a1
+*color0: 	              #000000
+*color1: 	              #ff6565
+*color2: 	              #93d44f
+*color3: 	              #eab93d
+*color4: 	              #204a87
+*color5: 	              #ce5c00
+*color6: 	              #89b6e2
+*color7: 	              #cccccc
+*color8: 	              #555753
+*color9: 	              #dc322f
+*color10: 	            #c8e7a8
+*color11: 	            #ffc123
+*color12: 	            #3465a4
+*color13: 	            #f57900
+*color14: 	            #46a4ff
+*color15: 	            #ffffff

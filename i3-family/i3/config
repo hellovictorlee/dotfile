@@ -159,7 +159,8 @@ bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -R
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
 
-bindsym $mod+Return exec gnome-terminal
+# bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun -theme onedark
 bindsym --release $mod+c exec --no-startup-id rofi -lines 10 -padding 0 -show search -theme onedark -modi search:~/.config/rofi/rofi-web-search.py
