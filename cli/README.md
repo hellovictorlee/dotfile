@@ -14,3 +14,8 @@ execute
 ```
 cmatrix
 ```
+
+## pass
+```
+sudo apt-get install pass
+```
