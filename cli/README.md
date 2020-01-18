@@ -19,3 +19,20 @@ cmatrix
 ```
 sudo apt-get install pass
 ```
+
+## rfkill
+
+Same as enable airplane mode
+```
+rfkill block all
+```
+
+Same as disable airplane mode
+```
+rfkill unblock all
+```
+
+List status
+```
+rfkill list
+```
