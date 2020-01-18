@@ -15,6 +15,7 @@ xrdb ~/.Xresources
 ```
 cp ~/.Xresources ~
 ```
+[fonts-powerline](https://github.com/powerline/fonts.git)
 
 ## wifi
 
