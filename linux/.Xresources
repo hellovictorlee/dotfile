@@ -1,18 +1,20 @@
 ! urxvt
 URxvt*buffered: true
 URxvt*cursorBlink: true
-URxvt*underlineColor: yellow
+URxvt*underlineColor: grey
 URxvt*depth: 32
 URxvt*borderless: 1
 URxvt*scrollBar: false
 URxvt*loginShell: true
-Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+Urxvt*secondaryScroll:  true
 URxvt*saveLines: 5000
 URxvt*termName: rxvt-unicode
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,url-select
 URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 URxvt.background: [75]#000000
+urxvt*matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+
 
 ! ctrl+shift+c/p like GNOME terminal
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
@@ -30,7 +32,7 @@ URxvt*font: xft:Monospace:size=10:antialias=true
 *pointerColorForeground:#93a1a1
 *color0: 	              #000000
 *color1: 	              #ff6565
-*color2: 	              #93d44f
+*color2: 	              #196f3d
 *color3: 	              #eab93d
 *color4: 	              #204a87
 *color5: 	              #ce5c00
@@ -38,9 +40,9 @@ URxvt*font: xft:Monospace:size=10:antialias=true
 *color7: 	              #cccccc
 *color8: 	              #555753
 *color9: 	              #dc322f
-*color10: 	            #c8e7a8
+*color10: 	            #27ae60
 *color11: 	            #ffc123
 *color12: 	            #3465a4
 *color13: 	            #f57900
-*color14: 	            #46a4ff
+*color14: 	            #00FFFF
 *color15: 	            #ffffff

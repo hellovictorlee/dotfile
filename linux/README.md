@@ -248,3 +248,14 @@ gimp &
 sudo snap install slack --classic
 ```
 
+## X Window System fonts
+
+list x font info
+```
+xset q
+```
+
+add x font path
+```
+xset fp+ ~/.fonts
+```
