@@ -36,8 +36,8 @@ screenchange-reload = true
 
 [bar/top]
 modules-left = bspwm i3
-modules-center =
-modules-right = alsa pulseaudio temperature wlan battery date
+modules-center = xwindow
+modules-right = pulseaudio wlan battery date
 
 width = 100%
 height = 25
@@ -86,7 +86,7 @@ cursor-scroll = ns-resize
 
 [bar/bottom]
 modules-left =
-modules-center = filesystem memory cpu wireless-network
+modules-center = filesystem memory cpu temperature wireless-network 
 modules-right =
 
 bottom = true
@@ -349,3 +349,8 @@ animation-packetloss-1-foreground = ${bar/top.foreground}
 animation-packetloss-framerate = 500
 
 ; vim:ft=dosini
+
+[module/xwindow]
+type = internal/xwindow
+label = [ %title% ]
+label-foreground = #f48aa3

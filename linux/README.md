@@ -264,3 +264,68 @@ add x font path
 ```
 xset fp+ ~/.fonts
 ```
+
+## mouse
+
+xinput --list --short
+```
+⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
+⎜   ↳ ELAN1200:00 04F3:309C Touchpad          	id=12	[slave  pointer  (2)]
+⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
+    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
+    ↳ Power Button                            	id=6	[slave  keyboard (3)]
+    ↳ Asus Wireless Radio Control             	id=7	[slave  keyboard (3)]
+    ↳ Video Bus                               	id=8	[slave  keyboard (3)]
+    ↳ Power Button                            	id=9	[slave  keyboard (3)]
+    ↳ Sleep Button                            	id=10	[slave  keyboard (3)]
+    ↳ USB2.0 VGA UVC WebCam: USB2.0 V         	id=11	[slave  keyboard (3)]
+    ↳ Asus WMI hotkeys                        	id=13	[slave  keyboard (3)]
+    ↳ AT Translated Set 2 keyboard            	id=14	[slave  keyboard (3)]
+    ↳ E0:EB:40:22:87:9F                       	id=15	[slave  keyboard (3)]
+```
+And get my touchpad id is 12
+
+xinput --list-props 12
+```
+Device 'ELAN1200:00 04F3:309C Touchpad':
+	Device Enabled (155):	1
+	Coordinate Transformation Matrix (157):	1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
+	libinput Tapping Enabled (290):	1
+	libinput Tapping Enabled Default (291):	0
+	libinput Tapping Drag Enabled (292):	1
+	libinput Tapping Drag Enabled Default (293):	1
+	libinput Tapping Drag Lock Enabled (294):	0
+	libinput Tapping Drag Lock Enabled Default (295):	0
+	libinput Tapping Button Mapping Enabled (296):	1, 0
+	libinput Tapping Button Mapping Default (297):	1, 0
+	libinput Natural Scrolling Enabled (298):	1
+	libinput Natural Scrolling Enabled Default (299):	0
+	libinput Disable While Typing Enabled (300):	1
+	libinput Disable While Typing Enabled Default (301):	1
+	libinput Scroll Methods Available (302):	1, 1, 0
+	libinput Scroll Method Enabled (303):	1, 0, 0
+	libinput Scroll Method Enabled Default (304):	1, 0, 0
+	libinput Click Methods Available (305):	1, 1
+	libinput Click Method Enabled (306):	1, 0
+	libinput Click Method Enabled Default (307):	1, 0
+	libinput Middle Emulation Enabled (308):	0
+	libinput Middle Emulation Enabled Default (309):	0
+	libinput Accel Speed (310):	1.000000
+	libinput Accel Speed Default (311):	0.000000
+	libinput Left Handed Enabled (312):	0
+	libinput Left Handed Enabled Default (313):	0
+	libinput Send Events Modes Available (275):	1, 1
+	libinput Send Events Mode Enabled (276):	0, 0
+	libinput Send Events Mode Enabled Default (277):	0, 0
+	Device Node (278):	"/dev/input/event9"
+	Device Product ID (279):	1267, 12444
+	libinput Drag Lock Buttons (314):	<no items>
+	libinput Horizontal Scroll Enabled (315):	1
+```
+And then get libinput Accel Spped (*310*)
+
+set touchpad(12) property(310) to 1
+```
+xinput set-prop 12 310 1
+```
