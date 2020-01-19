@@ -23,15 +23,18 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Meta-c: builtin-string:
 URxvt.keysym.Control-Meta-v: builtin-string:
 
-URxvt*font: xft:Go Mono for Powerline:size=10:antialias=true
+URxvt*font: xft:Droid Sans Mono for Powerline:size=10:antialias=true
+!URxvt*font: xft:Droid Sans Mono Dotted for Powerline:size=10:antialias=true
+!URxvt*font: xft:DejaVu Sans Mono for Powerline:size=10:antialias=true
+!URxvt*font: xft:Go Mono for Powerline:size=10:antialias=true
 
 *background:            #002b36
-*foreground:            #ffffff
+*foreground:            white
 *cursorColor:           #93a1a1
 *pointerColorBackground:#586e75
 *pointerColorForeground:#93a1a1
 *color0: 	              #000000
-*color1: 	              #ff6565
+*color1: 	              red
 *color2: 	              #196f3d
 *color3: 	              #eab93d
 *color4: 	              #204a87
@@ -40,9 +43,9 @@ URxvt*font: xft:Go Mono for Powerline:size=10:antialias=true
 *color7: 	              #cccccc
 *color8: 	              #555753
 *color9: 	              #dc322f
-*color10: 	            #27ae60
+*color10: 	            green
 *color11: 	            #ffc123
 *color12: 	            #3465a4
 *color13: 	            #f57900
-*color14: 	            #00FFFF
-*color15: 	            #ffffff
+*color14: 	            cyan
+*color15: 	            white
