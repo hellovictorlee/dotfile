@@ -1,5 +1,1 @@
 xmodmap ~/.Xmodmap
-xrandr --output eDP-1 --brightness 0.7
-
-# set mouse speed
-xinput set-prop 12 310 1

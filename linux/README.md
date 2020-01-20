@@ -329,3 +329,12 @@ set touchpad(12) property(310) to 1
 ```
 xinput set-prop 12 310 1
 ```
+
+put the line to .zshrc
+```
+echo "xinput set-prop 13 310 1" >> ~/.zshrc
+```
+
+#### set brightness
+xrandr --output eDP-1 --brightness 0.7
+

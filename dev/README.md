@@ -1,3 +1,5 @@
+# Develope
+
 ## AAWS CLI
 ```
 sudo apt-get install awscli
@@ -39,4 +41,16 @@ sudo npm install -g n
 ```
 sudo apt-get install python3.7
 sudo apt install python3-pip
+```
+
+install ipython
+```
+sudo apt-get install -y ipython3
+```
+
+## GitKraken
+```
+sudo apt update
+sudo apt install snapd
+sudo snap install gitkraken
 ```
