@@ -64,6 +64,7 @@ Search for keyword appearing in all file under current or project directory.
 <span style="color: #fab516;">★ ★ ★ </span>[ale](https://github.com/w0rp/ale#usage)<br>
 ```
 pip3 install flake8
+pip3 install yapf
 ```
 Install one of Python linter.
 <hr>
