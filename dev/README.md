@@ -41,6 +41,12 @@ sudo npm install -g n
 ```
 sudo apt-get install python3.7
 sudo apt install python3-pip
+sudo apt install python3-venv
+```
+
+run virtual environment called sample
+```
+python3 -m venv sample
 ```
 
 install ipython
