@@ -148,7 +148,7 @@ borg init --encryption=repokey /backup
 
 create backup
 ```
-borg create /backup::backupname ~/Documents
+borg create /backup::backupname ~/Documents --exclude-from ~/.borgexcludes
 ```
 
 list all backups
