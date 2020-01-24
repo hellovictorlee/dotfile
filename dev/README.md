@@ -54,6 +54,16 @@ install ipython
 sudo apt-get install -y ipython3
 ```
 
+install Jupyter
+```
+sudo pip3 install jupyter
+```
+
+run Jupyter
+```
+jupyter notebook
+```
+
 ## GitKraken
 ```
 sudo apt update
