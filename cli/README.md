@@ -36,3 +36,8 @@ List status
 ```
 rfkill list
 ```
+
+## tree
+```
+sudo pacman -S tree
+```

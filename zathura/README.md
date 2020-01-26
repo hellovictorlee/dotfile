@@ -20,5 +20,6 @@ sudo apt-get install zathura
 
 ## Customization
 ```
+mkdir -p ~/.config/zathura
 cp zathurarc ~/.config/zathura
 ```

@@ -1,0 +1,8 @@
+{
+    "SEARCH_ENGINE": "google",
+    "BROWSER": "firefox",
+    "TERMINAL": [
+        "urxvt",
+        "--"
+    ]
+}
