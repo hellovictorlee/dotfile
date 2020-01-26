@@ -10,6 +10,7 @@ sudo apt install rofi
 ### Web Search
 [web search](https://github.com/pdonadeo/rofi-web-search)
 ```
+mkdir -p ~/.config/rofi
 cp rofi-web-search.py ~/.config/rofi
 ```
 

@@ -1,5 +1,8 @@
 # i3
 ## Installation
+```
+cp config ~/.config/i3/
+```
 
 ### wallpaper
 install fed for wallpaper
