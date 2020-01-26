@@ -6,7 +6,7 @@ sudo apt-get install rxvt-unicode
 ```
 
 ```
-cp ~/.Xresources ~
+cp .Xresources ~
 ```
 
 reload
