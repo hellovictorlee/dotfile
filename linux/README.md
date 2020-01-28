@@ -94,6 +94,16 @@ sudo apt install htop
 sudo apt-get install neofetch
 ```
 
+## nautilus
+```
+sudo pacman -S nautilus
+```
+
+## xfce4-settings-manager
+```
+sudo pacman -S xfce4-settings
+```
+
 ## sftp server
 
 ```

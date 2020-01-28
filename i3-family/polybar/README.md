@@ -13,9 +13,7 @@ cd polybar && ./build.sh
 ## configuration
 
 ```
-mkdir -p ~/.config/polybar
-cp config ~/.config/polybar
-cp launch.sh ~/.config/polybar
+cp -r polybar ~/.config
 ```
 
 [i3-polybar-config](https://github.com/nicomazz/i3-polybar-config.git)
