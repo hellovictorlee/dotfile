@@ -21,6 +21,11 @@ cd fonts
 ./install.sh
 ```
 
+add correct TERM avoid incorrect color scheme on vim, tmux, ranger and etc
+```
+echo "export TERM=\"rxvt-unicode-256color\"" >> ~/.zshrc
+```
+
 ## wifi
 
 run command
