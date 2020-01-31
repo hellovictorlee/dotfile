@@ -1,20 +1,21 @@
 ! urxvt
-URxvt*buffered: true
-URxvt*cursorBlink: true
-URxvt*underlineColor: grey
-URxvt*depth: 32
-URxvt*borderless: 1
-URxvt*scrollBar: false
-URxvt*loginShell: true
-Urxvt*secondaryScroll:  true
-URxvt*saveLines: 5000
-URxvt*termName: rxvt-unicode
+URxvt.buffered: true
+URxvt.cursorBlink: true
+URxvt.underlineColor: grey
+URxvt.depth: 32
+URxvt.borderless: 1
+URxvt.scrollBar: false
+URxvt.loginShell: true
+Urxvt.secondaryScroll:  true
+URxvt.saveLines: 5000
+URxvt.termName: rxvt-unicode
 URxvt.perl-ext-common: default,matcher,url-select
 URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 URxvt.background: [75]#000000
-urxvt*matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
-
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.letterSpace: -1
+URxvt.clipboard.autocopy: true
 
 ! ctrl+shift+c/p like GNOME terminal
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
@@ -22,8 +23,15 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 ! disable the previous keybindings
 URxvt.keysym.Control-Meta-c: builtin-string:
 URxvt.keysym.Control-Meta-v: builtin-string:
+! disabling iso14755
+URxvt.iso14755: true
+URxvt.iso14755_52: false
 
-URxvt*font: xft:Droid Sans Mono for Powerline:size=10:antialias=true
+! changing font size on the fly
+URxvt.keysym.Control-Down: resize-font:smaller
+URxvt.keysym.Control-Up: resize-font:bigger
+
+URxvt.font: xft:Droid Sans Mono for Powerline:size=10:antialias=true
 !URxvt*font: xft:Droid Sans Mono Dotted for Powerline:size=10:antialias=true
 !URxvt*font: xft:DejaVu Sans Mono for Powerline:size=10:antialias=true
 !URxvt*font: xft:Go Mono for Powerline:size=10:antialias=true

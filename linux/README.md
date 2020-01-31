@@ -26,6 +26,17 @@ add correct TERM avoid incorrect color scheme on vim, tmux, ranger and etc
 echo "export TERM=\"rxvt-unicode-256color\"" >> ~/.zshrc
 ```
 
+Disable Ctrl+S freeze
+```
+echo "stty -ixon" >> ~/.zshrc
+```
+
+Changing font size on the fly
+```
+yay -S urxvt-resize-font-git
+```
+
+
 ## wifi
 
 run command
