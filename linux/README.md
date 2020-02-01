@@ -5,6 +5,16 @@
 sudo apt-get install rxvt-unicode
 ```
 
+urxvt for ranger showing image
+```
+yay -S rxvt-unicode-pixbuf
+```
+
+or 
+```
+yay -S rxvt-unicode
+```
+
 ```
 cp .Xresources ~
 ```
@@ -364,3 +374,7 @@ echo "xinput set-prop 13 310 1" >> ~/.zshrc
 #### set brightness
 xrandr --output eDP-1 --brightness 0.7
 
+
+## fonts
+
+https://www.reddit.com/r/archlinux/comments/5r5ep8/make_your_arch_fonts_beautiful_easily/

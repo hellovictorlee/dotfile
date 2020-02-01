@@ -34,3 +34,8 @@ Show hidden file
 ```
 Ctrl + h
 ```
+
+##
+```
+yay -S w3m
+```
