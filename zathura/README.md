@@ -18,6 +18,13 @@ reference: [homebrew-zathura](https://github.com/zegervdv/homebrew-zathura)
 sudo apt-get install zathura
 ```
 
+### Archlinux:
+```
+yay -S zathura
+yay -S girara
+yay - S zathura-pdf-poppler
+```
+
 ## Customization
 ```
 mkdir -p ~/.config/zathura

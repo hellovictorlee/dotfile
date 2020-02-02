@@ -16,10 +16,12 @@ map [fullscreen] <C--> zoom out
 set statusbar-bg "#ECF20D"
 set statusbar-fg "#000000"
 set inputbar-fg "#52C23D"
-set font "monospace normal 16"
+# set font "monospace normal 10"
+set font "Droid Sans Mono for Powerline 10"
 
 set show-v-scrollbar "true"
-set smooth-scroll "true"
+# set smooth-scroll "true"
+set scroll-step 50
 
 # copy to clipboard
 set selection-clipboard clipboard
