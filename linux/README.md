@@ -10,7 +10,7 @@ urxvt for ranger showing image
 yay -S rxvt-unicode-pixbuf
 ```
 
-or 
+or
 ```
 yay -S rxvt-unicode
 ```
@@ -21,7 +21,7 @@ cp .Xresources ~
 
 reload
 ```
-xrdb ~/.Xresources 
+xrdb ~/.Xresources
 ```
 
 [fonts-powerline](https://github.com/powerline/fonts.git)
@@ -92,7 +92,7 @@ sudo gpasswd -a $USER input
 ```
 sudo add-apt-repository ppa:teejee2008/ppa
 sudo apt-get update
-sudo apt-get install timeshift -y 
+sudo apt-get install timeshift -y
 ```
 
 ## Brightness
@@ -378,3 +378,10 @@ xrandr --output eDP-1 --brightness 0.7
 ## fonts
 
 https://www.reddit.com/r/archlinux/comments/5r5ep8/make_your_arch_fonts_beautiful_easily/
+
+## aether(login)
+
+```
+yay -S lightdm-webkit-theme-aether
+yay -S lightdm-webkit2-greeter
+```
