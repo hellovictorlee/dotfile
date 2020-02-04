@@ -1,7 +1,9 @@
 # i3
 ## Installation
+
+setup i3, compton, brightness
 ```
-cp config ~/.config/i3/
+cp -r i3 ~/.config
 ```
 
 ### wallpaper
@@ -85,10 +87,6 @@ sudo apt install i3lock-fancy
 ```
 sudo apt update
 sudo apt install compton
-```
-compton setup
-```
-cp compton.conf ~/.config/i3/
 ```
 
 ## setup touchpad and mouse natural scrolling
