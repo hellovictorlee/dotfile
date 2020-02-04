@@ -385,3 +385,15 @@ https://www.reddit.com/r/archlinux/comments/5r5ep8/make_your_arch_fonts_beautifu
 yay -S lightdm-webkit-theme-aether
 yay -S lightdm-webkit2-greeter
 ```
+
+## alsa-utils
+is used to mute and unmute the speakers
+
+```
+sudo pacman -S alsa-utils
+```
+
+i3 execute the command
+```
+amixer
+```

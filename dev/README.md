@@ -78,3 +78,8 @@ sudo apt update
 sudo apt install snapd
 sudo snap install gitkraken
 ```
+
+## emacs
+```
+yay -S emacs
+```
