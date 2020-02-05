@@ -116,3 +116,9 @@ i3 extention implement by python
 sudo apt install python-pip
 pip install i3-py
 ```
+
+## openbox
+is used to logout
+```
+yay -S openbox
+```
