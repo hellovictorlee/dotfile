@@ -46,6 +46,11 @@ Changing font size on the fly
 yay -S urxvt-resize-font-git
 ```
 
+list font
+```
+fc-list -v
+```
+
 
 ## wifi
 
