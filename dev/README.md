@@ -83,3 +83,11 @@ sudo snap install gitkraken
 ```
 yay -S emacs
 ```
+
+## spacemacs
+```
+cd ~
+mv .emacs.d .emacs.d.bak
+mv .emacs .emacs.bak
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
