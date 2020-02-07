@@ -31,6 +31,9 @@ cd fonts
 ./install.sh
 ```
 
+[adobe-fonts/source-code-pro](https://github.com/adobe-fonts/source-code-pro)
+move font to ~/.local/share/fonts
+
 add correct TERM avoid incorrect color scheme on vim, tmux, ranger and etc
 ```
 echo "export TERM=\"rxvt-unicode-256color\"" >> ~/.zshrc
