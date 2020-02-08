@@ -63,9 +63,21 @@ nmtui
 ```
 
 ## Bluetooth
+Ubuntu
 ```
 sudo apt install bluez
 sudo apt install blueman
+```
+
+archlinux
+```
+yay -S bluez
+yay -S blueman
+```
+
+enable bluetooth service
+```
+sudo systemctl enable bluetooth.service
 ```
 
 ## Gestures for touchpad
