@@ -49,10 +49,34 @@ Changing font size on the fly
 yay -S urxvt-resize-font-git
 ```
 
+Check system default fonts
+```
+fc-match sans-serif
+fc-match serif
+fc-match monospace
+```
+
 list font
 ```
 fc-list -v
 ```
+
+install Sans-serif
+```
+sudo pacman -S ttf-opensans
+```
+
+Enable colour emoji support on Arch Linux
+```
+sudo pacman -S noto-fonts-emoji
+```
+
+```
+mkdir -p ~/.config/fontconfig
+cp fonts.conf ~/.config/fontconfig
+```
+
+[Intel](https://github.com/rsms/internal)
 
 
 ## wifi
