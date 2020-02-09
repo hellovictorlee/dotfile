@@ -22,7 +22,7 @@ bindsym $mod+l focus right
 
 # lock
 # bindsym $mod+Shift+x exec i3lock --color 475263
-bindsym $mod+Shift+x exec i3lock-fancy -gpf Comic-Sans-MS -- scrot -z
+bindsym $mod+Shift+x exec i3lock-fancy
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -94,7 +94,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec ~/.config/polybar/scripts/budgie-sysmenu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
