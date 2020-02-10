@@ -16,6 +16,11 @@ sudo apt-get update
 sudo apt install emacs26
 ```
 
+## Archlinux
+```
+yaya -S emacs
+```
+
 ### Configuration
 Standing on the shoulders of [giants](https://github.com/purcell/emacs.d)
 ```

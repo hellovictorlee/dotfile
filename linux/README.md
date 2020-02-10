@@ -441,3 +441,10 @@ i3 execute the command
 ```
 amixer
 ```
+
+## arandr
+
+arandr is GUI screen setting
+```
+yay -S arandr
+```
