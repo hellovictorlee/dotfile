@@ -1,24 +1,24 @@
+;; load emacs 24's package system. Add MELPA repository.
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
+   '("melpa" . "http://melpa.milkbox.net/packages/")
+   t))
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-;; inhibit GUI tool bar
+;; inhibit GUI menu, scroll, tool bar
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
 (tool-bar-mode -1)
 
 ;; addons
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
-(evil-mode 1)
-
-(add-to-list 'custom-theme-load-path "~/.emacs.d/cyberpunk-theme.el")
-(load-theme 'cyberpunk t)
-
-(add-to-list 'load-path "~/.emacs.d/telephone-line")
-(require 'telephone-line)
-(telephone-line-mode 1)
-
-(add-to-list 'load-path "~/.emacs.d/smex")
-(require 'smex)
-(smex-initialize)
+(evil-mode 0)
