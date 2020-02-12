@@ -34,3 +34,6 @@ cp .emacs ~
 
 ## Resource
 [Learning Guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
+
+## plugin
+[ranger.el](https://github.com/ralesi/ranger.el#installation)
