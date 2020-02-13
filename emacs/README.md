@@ -37,3 +37,7 @@ cp .emacs ~
 
 ## plugin
 [ranger.el](https://github.com/ralesi/ranger.el#installation)
+[evil-mode](https://github.com/emacs-evil/evil)
+
+## Basic tutorial
+M-x mode-name
