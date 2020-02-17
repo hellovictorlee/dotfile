@@ -41,3 +41,9 @@ rfkill list
 ```
 sudo pacman -S tree
 ```
+
+## [wego](https://github.com/schachmat/wego)
+
+```
+go get -u github.com/schachmat/wego
+```

@@ -66,3 +66,8 @@ setup surfraw browser
 ```
 cp .surfraw.conf ~
 ```
+
+#### rofi-calc
+```
+yay -S rofi-calc
+```
