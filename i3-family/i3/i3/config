@@ -176,6 +176,8 @@ bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show ca
 bindsym --release $mod+s exec --no-startup-id ~/.config/rofi/rofi-surfraw-bookmark.sh
 bindsym --release $mod+x exec --no-startup-id ~/.config/rofi/rofi-surfraw.sh
 bindsym --release $mod+Tab exec --no-startup-id ~/.config/rofi/i3_switch_workspace.sh
+bindsym --release $mod+b exec --no-startup-id ~/.config/rofi/rofi-bluetooth
+bindsym --release $mod+n exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
 
 # startup
 exec_always --no-startup-id feh --bg-scale /home/victorlee/Pictures/wallpaper.jpg

@@ -71,3 +71,8 @@ cp .surfraw.conf ~
 ```
 yay -S rofi-calc
 ```
+
+#### rofi-bluetooth
+```
+yay -S bluez-utils
+```
