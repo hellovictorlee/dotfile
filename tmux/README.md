@@ -42,3 +42,26 @@ git clone https://github.com/ShuaiHsunLee/tmux-powerline.git ~/tmux-powerline
 
 <span style="color: #fab516;">★ ☆ ☆ </span>[tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)<br>
 <hr>
+
+
+### tmuxinator
+```
+gem install tmuxinator
+```
+
+If installing tmuxinator via Ruby's gem, you'll need to run the following commands to put the completion files where they'll be loaded by your shell
+
+bash
+```
+wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.bash -O /etc/bash_completion.d/tmuxinator.bash
+```
+
+zsh
+```
+wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O /usr/local/share/zsh/site-functions/_tmuxinator
+```
+
+fish
+```
+wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.fish ~/.config/fish/completions/
+```

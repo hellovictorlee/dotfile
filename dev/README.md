@@ -91,3 +91,15 @@ mv .emacs.d .emacs.d.bak
 mv .emacs .emacs.bak
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
+
+## ruby
+```
+sudo pacman -S ruby
+```
+
+add to .zshrc
+```
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+```
