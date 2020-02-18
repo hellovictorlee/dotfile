@@ -8,6 +8,11 @@ brew install tmux
 ./install_tmux
 ```
 
+### Archlinux
+```
+yay -S tmux
+```
+
 ## Customization
 ```
 cp .tmux.conf ~
@@ -64,4 +69,9 @@ wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/t
 fish
 ```
 wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.fish ~/.config/fish/completions/
+```
+
+Create a project
+```
+tmuxinator new --local [project]
 ```
