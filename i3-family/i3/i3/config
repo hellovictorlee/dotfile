@@ -22,7 +22,7 @@ bindsym $mod+l focus right
 
 # lock
 # bindsym $mod+Shift+x exec i3lock --color 475263
-bindsym $mod+Shift+x exec i3lock-fancy
+# bindsym $mod+Shift+x exec i3lock-fancy
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -170,14 +170,15 @@ bindsym XF86MonBrightnessDown exec ~/.config/i3/light.sh -5
 bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun -theme onedark
+bindsym $mod+Shift+d exec ~/.config/polybar/scripts/budgie-menu
 bindsym --release $mod+c exec --no-startup-id rofi -lines 10 -padding 0 -show search -theme onedark -modi search:~/.config/rofi/rofi-web-search.py
 # bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme onedark -modi find:~/.config/rofi/finder.sh
 bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show calc -theme onedark -modi calc -no-show-match -no-sort
 bindsym --release $mod+s exec --no-startup-id ~/.config/rofi/rofi-surfraw-bookmark.sh
 bindsym --release $mod+x exec --no-startup-id ~/.config/rofi/rofi-surfraw.sh
 bindsym --release $mod+Tab exec --no-startup-id ~/.config/rofi/i3_switch_workspace.sh
-bindsym --release $mod+b exec --no-startup-id ~/.config/rofi/rofi-bluetooth
-bindsym --release $mod+n exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
+bindsym --release $mod+Shift+b exec --no-startup-id ~/.config/rofi/rofi-bluetooth
+bindsym --release $mod+Shift+n exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
 
 # startup
 exec_always --no-startup-id feh --bg-scale /home/victorlee/Pictures/wallpaper.jpg
