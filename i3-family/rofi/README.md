@@ -76,3 +76,10 @@ yay -S rofi-calc
 ```
 yay -S bluez-utils
 ```
+
+#### marcador
+
+minimal bookmark manager with rofi front end.
+```
+pip install marcador
+```
