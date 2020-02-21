@@ -448,3 +448,10 @@ arandr is GUI screen setting
 ```
 yay -S arandr
 ```
+
+## sc-im
+
+SC-IM - Spreadsheet Calculator Improvised -- An ncurses spreadsheet program for terminal
+```
+yay -S sc-im
+```
