@@ -455,3 +455,16 @@ SC-IM - Spreadsheet Calculator Improvised -- An ncurses spreadsheet program for 
 ```
 yay -S sc-im
 ```
+
+## firefox
+
+```
+yay -S firefox
+```
+
+### shorcut
+
+open local file on firefox
+```
+Ctrl + o
+```
