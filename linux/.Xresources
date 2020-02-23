@@ -1,4 +1,6 @@
 ! urxvt
+! URxvt.termName: rxvt-unicode
+URxvt.termName: rxvt-unicode-256color
 URxvt.buffered: true
 URxvt.cursorBlink: true
 URxvt.underlineColor: grey
@@ -8,14 +10,14 @@ URxvt.scrollBar: false
 URxvt.loginShell: true
 Urxvt.secondaryScroll:  true
 URxvt.saveLines: 5000
-URxvt.termName: rxvt-unicode
 URxvt.perl-ext-common: default,matcher,url-select
 URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 URxvt.background: [75]#000000
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
-URxvt.letterSpace: -1
+!URxvt.letterSpace: -1
 URxvt.clipboard.autocopy: true
+*URxvt.perl-ext-common:	osc-xterm-clipboard
 
 ! ctrl+shift+c/p like GNOME terminal
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
@@ -31,7 +33,8 @@ URxvt.iso14755_52: false
 URxvt.keysym.Control-Down: resize-font:smaller
 URxvt.keysym.Control-Up: resize-font:bigger
 
-URxvt.font: xft:Droid Sans Mono for Powerline:size=10:antialias=true
+URxvt.font: xft:Droid Sans Mono for Powerline:size=10:antialias=true, \
+            xft:DejaVu Sans Mono
 !URxvt*font: xft:Droid Sans Mono Dotted for Powerline:size=10:antialias=true
 !URxvt*font: xft:DejaVu Sans Mono for Powerline:size=10:antialias=true
 !URxvt*font: xft:Go Mono for Powerline:size=10:antialias=true
