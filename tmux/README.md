@@ -48,6 +48,9 @@ git clone https://github.com/ShuaiHsunLee/tmux-powerline.git ~/tmux-powerline
 <span style="color: #fab516;">★ ☆ ☆ </span>[tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[tmux-yank](https://github.com/tmux-plugins/tmux-yank)<br>
+<hr>
+
 
 ### tmuxinator
 ```

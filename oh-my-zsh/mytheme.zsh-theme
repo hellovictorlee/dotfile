@@ -47,12 +47,11 @@ function ssh_connection() {
 }
 
 
-#------------------------------------------ left powerline
+#------------------------------------------ right powerline
 POWERLINE_RIGHT_B=%D{%H:%M\'%S}
-RPROMPT='%{$fg[green]%}⮃⮃⮃ $POWERLINE_RIGHT_B'
+RPROMPT='%{$fg[green]%}$POWERLINE_RIGHT_B'
+
 #------------------------------------------ left powerline
-
-
 local ret_status="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})%?%{$reset_color%}"
 PROMPT=$'$(ssh_connection)%{$fg_bold[cyan]%}%n%{$reset_color%}$(my_git_prompt) %{$fg_bold[yellow]%}%~%{$reset_color%}\n[${ret_status}] $ '
 
