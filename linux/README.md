@@ -278,6 +278,10 @@ sudo apt-get update
 sudo apt-get install libreoffice
 ```
 
+```
+yay -S libreoffice
+```
+
 ## LightDM
 ```
 sudo apt-get install lightdm
