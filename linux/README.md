@@ -472,3 +472,9 @@ open local file on firefox
 ```
 Ctrl + o
 ```
+
+## st (simple terminal)
+
+```
+yay -S st
+```
