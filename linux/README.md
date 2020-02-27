@@ -490,3 +490,4 @@ build it
 makepkg -sri
 ```
 
+[wiki archlinux](https://wiki.archlinux.org/index.php/St)
