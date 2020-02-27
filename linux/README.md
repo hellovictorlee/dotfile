@@ -478,3 +478,15 @@ Ctrl + o
 ```
 yay -S st
 ```
+
+### customized st
+```
+git clone https://aur.archlinux.org/st.git
+```
+edit config.h
+
+build it
+```
+makepkg -sri
+```
+
