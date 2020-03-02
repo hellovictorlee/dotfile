@@ -47,3 +47,10 @@ sudo pacman -S tree
 ```
 go get -u github.com/schachmat/wego
 ```
+
+## mpv
+
+a free, open source, and cross-platform media player
+```
+yay -S mpv
+```
