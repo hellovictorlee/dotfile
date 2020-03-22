@@ -491,3 +491,8 @@ makepkg -sri
 ```
 
 [wiki archlinux](https://wiki.archlinux.org/index.php/St)
+
+## albert
+```
+sudo pacman -S albert
+```
