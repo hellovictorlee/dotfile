@@ -501,3 +501,11 @@ sudo pacman -S albert
 ```
 sudo pacman -S texlive-most texlive-lang
 ```
+
+put in .zshrc
+```
+if [ -d ~/.vim/bundle/vim-live-latex-preview/bin ]; then
+	PATH=$PATH:$HOME/.vim/bundle/vim-live-latex-preview/bin
+	export PATH
+fi
+```
