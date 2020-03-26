@@ -496,3 +496,8 @@ makepkg -sri
 ```
 sudo pacman -S albert
 ```
+
+## Latex
+```
+sudo pacman -S texlive-most texlive-lang
+```
