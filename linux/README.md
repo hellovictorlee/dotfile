@@ -509,3 +509,9 @@ if [ -d ~/.vim/bundle/vim-live-latex-preview/bin ]; then
 	export PATH
 fi
 ```
+
+pdf previewer evince
+
+```
+sudo pacman -S evince
+```
