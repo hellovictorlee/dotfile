@@ -86,7 +86,7 @@ cursor-scroll = ns-resize
 
 [bar/bottom]
 modules-left = i3
-modules-center = filesystem wireless-network
+modules-center = filesystem xwindow wireless-network
 modules-right = memory cpu temperature
 
 bottom = true
