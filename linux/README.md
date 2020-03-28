@@ -507,3 +507,13 @@ pdf previewer evince
 ```
 sudo pacman -S evince
 ```
+
+## Skype
+```
+sudo pacman -Syy
+sudo git clone https://aur.archlinux.org/skypeforlinux-stable-bin.git
+sudo chown -R victorlee:users skypeforlinux-stable-bin
+cd skypeforlinux-stable-bin
+makepkg -si
+
+```
