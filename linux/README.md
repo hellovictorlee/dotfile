@@ -526,10 +526,10 @@ sudo pacman -Syu ntp
 
 Enable it at boot so every time you boot the system the clock will be synchronized
 ```
-systemctl enable ntpd.service
+sudo systemctl enable ntpd.service
 ```
 
 Start it immediately
 ```
-systemctl start ntpd.service
+sudo systemctl start ntpd.service
 ```
