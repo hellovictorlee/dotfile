@@ -66,12 +66,12 @@ nnoremap / /\v
 vnoremap / /\v
 " }}}
 " Autocomplete parenthese {{{
-inoremap ` ``<Esc>
-inoremap ' ''<Esc>
-inoremap " ""<Esc>
-inoremap ( ()<Esc>
-inoremap [ []<Esc>
-inoremap { {}<Esc>
+inoremap ` ``<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
 " }}}
 " Disable key {{{
 " Disable arrow

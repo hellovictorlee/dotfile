@@ -539,3 +539,9 @@ sudo systemctl start ntpd.service
 ```
 yay -S electronic-wechat
 ```
+
+## evernote
+
+```
+sudo snap install evernote-web-client
+```

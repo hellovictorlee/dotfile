@@ -51,8 +51,8 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_filetype_specific_completion_to_disable = {
       \ 'gitcommit': 1
       \}
+let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 " }}}
-let g:ycm_key_list_stop_completion = ['<C-y>']
 " CtrlP {{{
 " 'c' - the directory of the current file.
 " 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs

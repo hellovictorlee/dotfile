@@ -106,6 +106,7 @@ export MYVIMRC=$(echo ~)/.vimrc
 export MYVIMSETTING=$(echo ~)/.vim/setup/setting.vim
 export MYVIMBUNDLING=$(echo ~)/.vim/setup/bundling.vim
 export MYVIMMAPPING=$(echo ~)/.vim/setup/mapping.vim
+export MYNODESCRIPT=$(echo ~)/github/javascript-improve-workflow/src/test.js
 
 
 # execute tmux automatically
@@ -155,3 +156,12 @@ function ranger-cd {
 bindkey -s '^O' 'ranger-cd\n'
 export EDITOR=/usr/local/bin/nvim
 
+neofetch
+
+
+####################################### URXVT #########################################
+export TERM="rxvt-unicode-256color"
+
+# disable Ctrl+s freeze for urxvt
+stty -ixon
+####################################### URXVT #########################################
