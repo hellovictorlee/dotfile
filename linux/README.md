@@ -533,3 +533,9 @@ Start it immediately
 ```
 sudo systemctl start ntpd.service
 ```
+
+## wechat
+
+```
+yay -S electronic-wechat
+```
