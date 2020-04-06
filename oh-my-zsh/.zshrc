@@ -165,3 +165,15 @@ export TERM="rxvt-unicode-256color"
 # disable Ctrl+s freeze for urxvt
 stty -ixon
 ####################################### URXVT #########################################
+
+
+# xinput --list --short
+# xinput --list-props 12
+TouchpadId="$(xinput --list --short | grep Touchpad | sed 's/^.*id=\([0-9]*\).*$/\1/p' | head -1)"
+TouchpadEnabled=$(xinput --list-props $TouchpadId | grep 'Tapping Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
+TouchpadNaturalScrolling=$(xinput --list-props $TouchpadId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
+TouchpadSpeed=$(xinput --list-props $TouchpadId | grep 'Accel Speed ([0-9]*)' | sed 's/^.*Speed (\([0-9]*\)).*$/\1/p' | head -1)
+xinput set-prop $TouchpadId $TouchpadEnabled 1
+xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
+xinput set-prop $TouchpadId $TouchpadSpeed 0.55
+

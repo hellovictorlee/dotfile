@@ -16,7 +16,10 @@ if [ $LIGHT -lt 0 ]; then
 fi
 
 brightness_level="$(( $LIGHT / 100)).$(( $LIGHT % 100 ))"
-screenname=$(xrandr | grep " connected" | cut -f1 -d" ")
-xrandr --output $screenname --brightness $brightness_level;
+screennames=$(xrandr | grep " connected" | cut -f1 -d" ")
+for screen in ${screennames}
+do
+  xrandr --output $screen --brightness $brightness_level;
+done
 echo -e "[info]: Screen Brightness level set to" $LIGHT"%"
 echo $LIGHT > ~/.config/i3/.brightness

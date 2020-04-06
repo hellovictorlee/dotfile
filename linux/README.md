@@ -545,3 +545,10 @@ yay -S electronic-wechat
 ```
 sudo snap install evernote-web-client
 ```
+
+## arandr
+
+Display arragement GUI
+```
+sudo pacman -S arandr
+```

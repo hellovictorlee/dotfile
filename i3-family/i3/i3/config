@@ -175,7 +175,7 @@ bindsym --release $mod+c exec --no-startup-id rofi -lines 10 -padding 0 -show se
 # bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show find -theme onedark -modi find:~/.config/rofi/finder.sh
 bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show calc -theme onedark -modi calc -no-show-match -no-sort
 # bindsym --release $mod+s exec --no-startup-id ~/.config/rofi/rofi-surfraw-bookmark.sh
-bindsym --release $mod+s exec --no-startup-id ~/.config/rofi/rofi-bangs.sh
+bindsym --release $mod+b exec --no-startup-id ~/.config/rofi/rofi-bangs.sh
 bindsym --release $mod+x exec --no-startup-id ~/.config/rofi/rofi-surfraw.sh
 bindsym --release $mod+Tab exec --no-startup-id ~/.config/rofi/i3_switch_workspace.sh
 bindsym --release $mod+Shift+b exec --no-startup-id ~/.config/rofi/rofi-bluetooth
