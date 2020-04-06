@@ -110,3 +110,15 @@ A formatter for Python files
 ```
 sudo pip install yapf
 ```
+
+## fzf
+
+```
+sudo pacman -S fzf
+```
+
+## fd
+
+```
+sudo pacman -S fd
+```
