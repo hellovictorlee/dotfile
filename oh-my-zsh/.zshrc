@@ -64,6 +64,7 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   zsh-syntax-highlighting
+  fzf
 )
 
 autoload -U compinit && compinit
@@ -176,4 +177,12 @@ TouchpadSpeed=$(xinput --list-props $TouchpadId | grep 'Accel Speed ([0-9]*)' | 
 xinput set-prop $TouchpadId $TouchpadEnabled 1
 xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
 xinput set-prop $TouchpadId $TouchpadSpeed 0.55
+
+
+# fzf
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f'
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
