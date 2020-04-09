@@ -154,7 +154,9 @@ function ranger-cd {
     fi
     rm -f -- "$tempfile"
 }
-bindkey -s '^O' 'ranger-cd\n'
+bindkey -s '^O' 'ranger-cd^M'
+bindkey -s '^V' 'nvim $(fzf)^M'
+
 export EDITOR=/usr/local/bin/nvim
 
 neofetch
