@@ -188,19 +188,35 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
+unalias gco 2> /dev/null
 function gco() {
   git checkout $(git branch | fzf)
 }
+unalias gcot 2> /dev/null
 function gcot() {
   git checkout --track $(git branch -r | fzf)
 }
 
 # https://github.com/junegunn/fzf/wiki/examples#git
 # fcd - cd to selected directory
+unalias fcd 2> /dev/null
 function fcd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
+}
+# fman - quickly display a man page using fzf
+unalias fman 2> /dev/null
+function fman() {
+    man -k . | fzf --prompt='Man> ' | awk '{print $1}' | xargs -r man
+}
+# cdb - cd to shell bookmarks
+unalias cdb 2> /dev/null
+function cdb() {
+   local dest_dir=$(echo_bookmarks | fzf )
+   if [[ $dest_dir != '' ]]; then
+      cd "$dest_dir"
+   fi
 }
 ######################################## fzf ########################################
