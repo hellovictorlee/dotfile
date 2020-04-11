@@ -4,4 +4,3 @@ alias ptt="ssh bbsu@ptt.cc"
 alias rm="rm -i"
 alias ll="ls -l"
 alias vim="nvim"
-alias gco=git checkout $(git branch | fzf)

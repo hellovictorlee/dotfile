@@ -181,10 +181,26 @@ xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
 xinput set-prop $TouchpadId $TouchpadSpeed 0.55
 
 
-# fzf
+######################################## fzf ########################################
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f'
 # To apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
+function gco() {
+  git checkout $(git branch | fzf)
+}
+function gcot() {
+  git checkout --track $(git branch -r | fzf)
+}
+
+# https://github.com/junegunn/fzf/wiki/examples#git
+# fcd - cd to selected directory
+function fcd() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+}
+######################################## fzf ########################################
