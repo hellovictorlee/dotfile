@@ -218,5 +218,7 @@ function cdb() {
    if [[ $dest_dir != '' ]]; then
       cd "$dest_dir"
    fi
+   ranger-cd
 }
+bindkey -s '^ ' 'cdb^M'
 ######################################## fzf ########################################
