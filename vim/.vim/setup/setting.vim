@@ -105,3 +105,13 @@ let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 " }}}
+" refresh external changed outside of Vim {{{
+"  trigger when running external command (like !ls or !sh etc) 
+set autoread
+" trigger when cursor stops moving
+au CursorHold,CursorHoldI * checktime
+" trigger on buffer change or terminal focus
+" to have FocusGained work in plain vim, inside a terminal emulator (Xterm, tmux, etc)
+" need to install the plugin: vim-tmux-focus-events
+au FocusGained,BufEnter * :checktime
+" }}}

@@ -223,6 +223,10 @@ nnoremap <leader>3 :tabedit $MYVIMBUNDLING<CR>
 nnoremap <leader>4 :tabedit $MYVIMMAPPING<CR>
 " Edit test.js file 
 nnoremap <leader>5 :tabedit $MYNODESCRIPT<CR>
+" Edit test.py file 
+nnoremap <leader>6 :tabedit $MYPYTHONSCRIPT<CR>
+" Edit test.js file 
+nnoremap <leader>7 :tabedit $MYTMP<CR>
 " }}}
 " Strip trailing whitespace {{{
 " strip all trailing whitespace in the current file

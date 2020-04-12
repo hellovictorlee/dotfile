@@ -42,3 +42,4 @@ git clone https://github.com/PotatoesMaster/i3-vim-syntax.git ~/.vim/bundle/i3-v
 git clone git://github.com/chase/vim-ansible-yaml.git ~/.vim/bundle/vim-ansible-yaml
 git clone https://github.com/xuhdev/vim-latex-live-preview.git ~/.vim/bundle/vim-live-latex-preview
 git clone https://github.com/junegunn/fzf.vim.git ~/.vim/bundle/fzf.vim
+git clone https://github.com/tmux-plugins/vim-tmux-focus-events.git ~/.vim/bundle/vim-tmux-focus-events
