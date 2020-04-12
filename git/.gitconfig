@@ -8,7 +8,7 @@
 	process = git-lfs filter-process
 [core]
 	editor =
-	excludesfile =
+	excludesfile = /home/victorlee/.gitignore_global
 [color]
 	branch = auto
 	diff = auto
@@ -21,6 +21,7 @@
 	ci = commit
 	br = branch
 	df = diff
+  mc = diff --name-only --diff-filter=U
 	st = status
 	dfs = diff --staged
 	logg = log --graph --oneline --pretty=format:\"%C(yellow)%h%Creset %C(bold)<%Creset%C(ul cyan)%an%Creset%C(bold)>%Creset %C(red)%ar%Creset %C(green)%s%Creset\"

@@ -59,7 +59,7 @@ ZSH_THEME="mytheme"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  # git
   colored-man-pages
   zsh-autosuggestions
   zsh-completions
@@ -103,11 +103,16 @@ bindkey '^ ' autosuggest-accept
 bindkey '^k' history-beginning-search-backward
 bindkey '^j' history-beginning-search-forward
 
-export MYVIMRC=$(echo ~)/.vimrc
-export MYVIMSETTING=$(echo ~)/.vim/setup/setting.vim
-export MYVIMBUNDLING=$(echo ~)/.vim/setup/bundling.vim
-export MYVIMMAPPING=$(echo ~)/.vim/setup/mapping.vim
-export MYNODESCRIPT=$(echo ~)/github/javascript-improve-workflow/src/test.js
+export MYVIMRC=$HOME/.vimrc
+export MYVIMSETTING=$HOME/.vim/setup/setting.vim
+export MYVIMBUNDLING=$HOME/.vim/setup/bundling.vim
+export MYVIMMAPPING=$HOME/.vim/setup/mapping.vim
+export MYNODESCRIPT=$HOME/github/javascript-improve-workflow/src/test.js
+export MYPYTHONSCRIPT=$HOME/github/javascript-improve-workflow/src/test.py
+export MYPYTHONSCRIPT=$HOME/github/algo/test.py
+export MYZSHRC=$HOME/.zshrc
+export MYPSHELLBOOKMARKS=$HOME/.bookmarks
+export MYWEBBOOKMARKS=$HOME/.config/rofi-surfraw/searchengines
 
 
 # execute tmux automatically

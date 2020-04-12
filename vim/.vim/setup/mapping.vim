@@ -225,8 +225,12 @@ nnoremap <leader>4 :tabedit $MYVIMMAPPING<CR>
 nnoremap <leader>5 :tabedit $MYNODESCRIPT<CR>
 " Edit test.py file 
 nnoremap <leader>6 :tabedit $MYPYTHONSCRIPT<CR>
-" Edit test.js file 
-nnoremap <leader>7 :tabedit $MYTMP<CR>
+" Edit shell bookmarks file 
+nnoremap <leader>8 :tabedit $MYZSHRC<CR>
+" Edit shell bookmarks file 
+nnoremap <leader>9 :tabedit $MYPSHELLBOOKMARKS<CR>
+" Edit web bookmarks file 
+nnoremap <leader>0 :tabedit $MYWEBBOOKMARKS<CR>
 " }}}
 " Strip trailing whitespace {{{
 " strip all trailing whitespace in the current file
