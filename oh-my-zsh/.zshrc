@@ -147,7 +147,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Automatically change the directory in bash after closing ranger
 function ranger-cd {
     tempfile="$(mktemp -t tmp.XXXXXX)"
-    /usr/local/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
     if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
         cd -- "$(cat "$tempfile")"
@@ -162,16 +162,8 @@ export EDITOR=/usr/local/bin/nvim
 neofetch
 
 
-####################################### URXVT #########################################
-export TERM="rxvt-unicode-256color"
 
-# disable Ctrl+s freeze for urxvt
-stty -ixon
-####################################### URXVT #########################################
-
-
-# xinput --list --short
-# xinput --list-props 12
+######################################## hardware ########################################
 TouchpadId="$(xinput --list --short | grep Touchpad | sed 's/^.*id=\([0-9]*\).*$/\1/p' | head -1)"
 TouchpadEnabled=$(xinput --list-props $TouchpadId | grep 'Tapping Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
 TouchpadNaturalScrolling=$(xinput --list-props $TouchpadId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
@@ -179,6 +171,21 @@ TouchpadSpeed=$(xinput --list-props $TouchpadId | grep 'Accel Speed ([0-9]*)' | 
 xinput set-prop $TouchpadId $TouchpadEnabled 1
 xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
 xinput set-prop $TouchpadId $TouchpadSpeed 0.55
+
+MouseId="$(xinput --list --short | grep "Wireless Mouse" | sed 's/^.*id=\([0-9]*\).*$/\1/p' | head -1)"
+MouseNaturalScrolling=$(xinput --list-props $MouseId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
+xinput set-prop $MouseId $MouseNaturalScrolling 1
+######################################## hardware ########################################
+
+
+
+####################################### URXVT #########################################
+export TERM="rxvt-unicode-256color"
+
+# disable Ctrl+s freeze for urxvt
+stty -ixon
+####################################### URXVT #########################################
+
 
 
 ######################################## fzf ########################################

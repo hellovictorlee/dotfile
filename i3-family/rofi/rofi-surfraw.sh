@@ -51,7 +51,7 @@ elif [[ $elvi == "!"* ]]; then
     if [[ $method == "surfraw" ]]; then
         sr ${bang} ${search}
     elif [[ $method == "custom" ]]; then
-        "$SURFRAW_graphical_browser" $SURFRAW_graphical_browser_args ${bang}"${search}"
+        "$SURFRAW_graphical_browser" ${bang}
     fi
 elif [[ $elvi == "?"* ]]; then
     name=$(echo "${elvi}" | awk '{ print $1 }' | cut -c 2-)
@@ -70,7 +70,7 @@ else
     if [[ $method == "surfraw" ]]; then
         sr ${bang} ${search}
     elif [[ $method == "custom" ]]; then
-        "$SURFRAW_graphical_browser" $SURFRAW_graphical_browser_args ${bang}"${search}"
+        "$SURFRAW_graphical_browser" ${bang}
     fi
 fi
 }
