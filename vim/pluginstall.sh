@@ -3,7 +3,6 @@ git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 git clone https://github.com/w0rp/ale.git ~/.vim/bundle/ale
 git clone https://github.com/skywind3000/asyncrun.vim.git ~/.vim/bundle/asyncrun.vim
 git clone https://github.com/metakirby5/codi.vim.git ~/.vim/bundle/codi.vim
-git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 git clone https://github.com/editorconfig/editorconfig-vim.git ~/.vim/bundle/editorconfig-vim
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 git clone https://github.com/wikitopian/hardmode.git ~/.vim/bundle/hardmode

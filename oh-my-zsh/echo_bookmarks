@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+if [ -f ~/.bookmarks ]; then
+  cat ~/.bookmarks | sed 's/#.*//g' | sed '/^\s*$/d'
+fi
