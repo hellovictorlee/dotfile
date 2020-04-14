@@ -54,3 +54,29 @@ a free, open source, and cross-platform media player
 ```
 yay -S mpv
 ```
+
+## leetcode cli
+
+install
+```
+sudo npm install -g leetcode-cli
+```
+
+[cookie login](https://github.com/skygragon/leetcode-cli-plugins/blob/master/docs/cookie.chrome.md)
+[issue and solution](https://github.com/skygragon/leetcode-cli/issues/153)
+
+login
+```
+leetcode user -l
+```
+
+leetcode config showing
+```
+leetcode config -a
+```
+
+leetcode config setup
+```
+leetcode config autologin:enable true
+leetcode config code:lang python3
+```

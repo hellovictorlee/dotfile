@@ -170,3 +170,14 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 " vim-live-latex-preview {{{
 let g:livepreview_previewer = 'zathura'
 " }}}
+" vim-tmux-navigator {{{
+" Disable tmux navigator when zooming the Vim pane
+" let g:tmux_navigator_disable_when_zoomed = 1
+" custom maps
+" let g:tmux_navigator_no_mappings = 1
+" nnoremap <silent> {Left-Mapping} :TmuxNavigateLeft<CR>
+" nnoremap <silent> {Down-Mapping} :TmuxNavigateDown<CR>
+" nnoremap <silent> {Up-Mapping} :TmuxNavigateUp<CR>
+" nnoremap <silent> {Right-Mapping} :TmuxNavigateRight<CR>
+" nnoremap <silent> <C-/> :TmuxNavigatePrevious<CR>
+" }}}
