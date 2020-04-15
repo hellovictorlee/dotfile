@@ -42,3 +42,5 @@ git clone git://github.com/chase/vim-ansible-yaml.git ~/.vim/bundle/vim-ansible-
 git clone https://github.com/xuhdev/vim-latex-live-preview.git ~/.vim/bundle/vim-live-latex-preview
 git clone https://github.com/junegunn/fzf.vim.git ~/.vim/bundle/fzf.vim
 git clone https://github.com/tmux-plugins/vim-tmux-focus-events.git ~/.vim/bundle/vim-tmux-focus-events
+git clone https://github.com/othree/javascript-libraries-syntax.vim.git ~/.vim/bundle/javascript-libraries-syntax.vim
+git clone https://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/vim-gutentags

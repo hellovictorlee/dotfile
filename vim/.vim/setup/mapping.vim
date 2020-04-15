@@ -196,7 +196,9 @@ nnoremap <C-b> :Buffers<CR>
 " Ack {{{
 " ag.vim deprecated so use ack.vim
 cnoreabbrev Ack Ack!
-nnoremap <Leader>a :Ack!<Space>
+" nnoremap <Leader>a :Ack!<Space>
+" fzf ag search
+nnoremap <Leader>a :Ag<Space>
 
 " use ag (The Silver Searcher)
 if executable('ag')
