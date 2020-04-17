@@ -247,3 +247,7 @@ let g:livepreview_previewer = 'zathura'
 " nnoremap <silent> {Right-Mapping} :TmuxNavigateRight<CR>
 " nnoremap <silent> <C-/> :TmuxNavigatePrevious<CR>
 " }}}
+" leetode.vim {{{
+let g:leetcode_browser = 'firefox'
+let g:leetcode_solution_filetype = 'python3'
+" }}}

@@ -122,3 +122,9 @@ sudo pacman -S fzf
 ```
 sudo pacman -S fd
 ```
+
+## diffmerge
+
+```
+yay -S diffmerge
+```

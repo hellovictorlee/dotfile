@@ -87,6 +87,12 @@ Install one of Python linter.
 <span style="color: #fab516;">★ ☆ ☆ </span>[hardmode](https://github.com/wikitopian/hardmode)<br>
 <hr>
 
+<span style="color: #fab516;">★ ☆ ☆ </span>[i3-vim-syntax](https://github.com/PotatoesMaster/i3-vim-syntax)<br>
+<hr>
+
+<span style="color: #fab516;">★ ★ ★ </span>[leetcode.vim](https://github.com/ianding1/leetcode.vim)<br>
+<hr>
+
 <span style="color: #fab516;">★ ☆ ☆ </span>[MatchTagAlways](https://github.com/Valloric/MatchTagAlways.git)<br>
 <hr>
 

@@ -44,3 +44,4 @@ git clone https://github.com/junegunn/fzf.vim.git ~/.vim/bundle/fzf.vim
 git clone https://github.com/tmux-plugins/vim-tmux-focus-events.git ~/.vim/bundle/vim-tmux-focus-events
 git clone https://github.com/othree/javascript-libraries-syntax.vim.git ~/.vim/bundle/javascript-libraries-syntax.vim
 git clone https://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/vim-gutentags
+git clone https://github.com/ianding1/leetcode.vim.git ~/.vim/bundle/leetcode.vim.
