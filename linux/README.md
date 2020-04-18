@@ -563,3 +563,14 @@ sudo pacman -S obs-studio
 ```
 yay -S simplescreenrecorder
 ```
+
+## Chinese input method
+```
+sudo pacman -Syu adobe-source-han-sans-tw-fonts
+sudo pacman -Syu adobe-source-han-serif-tw-fonts
+sudo pacman -Syu fcitx fcitx-chewing fcitx-googlepinyin fcitx-im fcitx-configtool
+```
+
+```
+cp .xinitrc ~
+```
