@@ -556,5 +556,10 @@ sudo pacman -S arandr
 ## Open Broadcaster Software(OBS)
 
 ```
-sudo snap install obs-studio
+sudo pacman -S obs-studio
+```
+
+## simplescreenrecorder
+```
+yay -S simplescreenrecorder
 ```
