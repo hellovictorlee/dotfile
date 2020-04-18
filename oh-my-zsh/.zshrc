@@ -170,16 +170,20 @@ neofetch
 
 ######################################## hardware ########################################
 TouchpadId="$(xinput --list --short | grep Touchpad | sed 's/^.*id=\([0-9]*\).*$/\1/p' | head -1)"
-TouchpadEnabled=$(xinput --list-props $TouchpadId | grep 'Tapping Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
-TouchpadNaturalScrolling=$(xinput --list-props $TouchpadId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
-TouchpadSpeed=$(xinput --list-props $TouchpadId | grep 'Accel Speed ([0-9]*)' | sed 's/^.*Speed (\([0-9]*\)).*$/\1/p' | head -1)
-xinput set-prop $TouchpadId $TouchpadEnabled 1
-xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
-xinput set-prop $TouchpadId $TouchpadSpeed 0.55
+if [ $TouchpadId ]; then
+  TouchpadEnabled=$(xinput --list-props $TouchpadId | grep 'Tapping Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
+  TouchpadNaturalScrolling=$(xinput --list-props $TouchpadId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
+  TouchpadSpeed=$(xinput --list-props $TouchpadId | grep 'Accel Speed ([0-9]*)' | sed 's/^.*Speed (\([0-9]*\)).*$/\1/p' | head -1)
+  xinput set-prop $TouchpadId $TouchpadEnabled 1
+  xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
+  xinput set-prop $TouchpadId $TouchpadSpeed 0.55
+fi
 
 MouseId="$(xinput --list --short | grep "Wireless Mouse" | sed 's/^.*id=\([0-9]*\).*$/\1/p' | head -1)"
-MouseNaturalScrolling=$(xinput --list-props $MouseId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
-xinput set-prop $MouseId $MouseNaturalScrolling 1
+if [ $MouseId ]; then
+  MouseNaturalScrolling=$(xinput --list-props $MouseId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
+  xinput set-prop $MouseId $MouseNaturalScrolling 1
+fi
 ######################################## hardware ########################################
 
 

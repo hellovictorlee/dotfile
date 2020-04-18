@@ -552,3 +552,9 @@ Display arragement GUI
 ```
 sudo pacman -S arandr
 ```
+
+## Open Broadcaster Software(OBS)
+
+```
+sudo snap install obs-studio
+```
