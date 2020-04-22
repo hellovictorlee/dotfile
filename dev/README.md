@@ -128,3 +128,9 @@ sudo pacman -S fd
 ```
 yay -S diffmerge
 ```
+
+## docker
+
+```
+sudo pacman -Syu docker
+```

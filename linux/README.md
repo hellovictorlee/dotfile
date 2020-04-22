@@ -574,3 +574,8 @@ sudo pacman -Syu fcitx fcitx-chewing fcitx-googlepinyin fcitx-im fcitx-configtoo
 ```
 cp .xinitrc ~
 ```
+
+## slack
+```
+yay -S slack-desktop
+```
