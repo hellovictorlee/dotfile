@@ -579,3 +579,8 @@ cp .xinitrc ~
 ```
 yay -S slack-desktop
 ```
+
+## openshot
+```
+sudo pacman -S openshot
+```
