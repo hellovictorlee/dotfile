@@ -122,3 +122,9 @@ is used to logout
 ```
 yay -S openbox
 ```
+
+## xclip & scrot
+is used to screenshot
+```
+sudo pacman -S xclip scrot
+```
