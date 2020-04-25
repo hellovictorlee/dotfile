@@ -187,6 +187,7 @@ function fman() {
   man -k . | fzf --prompt='Man> ' | awk '{print $1}' | xargs -r man
 }
 # cdb - cd to shell bookmarks
+# reference: https://dmitryfrank.com/articles/shell_shortcuts
 unalias cdb 2> /dev/null
 function cdb() {
   local dest_dir=$([ -f ~/.bookmarks ] && cat ~/.bookmarks | sed 's/#.*//g' | sed '/^\s*$/d' | fzf )
