@@ -42,3 +42,9 @@ plugins=(
 <span style="color: #fab516;">★ ★ ★ </span>[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)<br>
 <span style="color: #fab516;">★ ★ ★ </span>[zsh-completions](https://github.com/zsh-users/zsh-completions)<br>
 <span style="color: #fab516;">★ ★ ★ </span>[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)<br>
+
+## fzf
+my personal bookmarks
+```
+cp .bookmarks ~
+```

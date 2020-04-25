@@ -99,72 +99,34 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# bindkey '^ ' autosuggest-accept
-bindkey '^k' history-beginning-search-backward
-bindkey '^j' history-beginning-search-forward
-
-export MYVIMRC=$HOME/.vimrc
-export MYVIMSETTING=$HOME/.vim/setup/setting.vim
-export MYVIMBUNDLING=$HOME/.vim/setup/bundling.vim
-export MYVIMMAPPING=$HOME/.vim/setup/mapping.vim
-export MYNODESCRIPT=$HOME/github/javascript-improve-workflow/src/test.js
-export MYPYTHONSCRIPT=$HOME/github/javascript-improve-workflow/src/test.py
-export MYPYTHONSCRIPT=$HOME/github/algo/test.py
-export MYZSHRC=$HOME/.zshrc
-export MYPSHELLBOOKMARKS=$HOME/.bookmarks
-export MYWEBBOOKMARKS=$HOME/.config/rofi-surfraw/searchengines
-
-
 # execute tmux automatically
-# if [[ ! $TERM =~ screen ]]; then
-#     exec tmux
-# fi
-
-export TERM=xterm-256color
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+# [ ! $TERM =~ screen ] && exec tmux
 
 # alias
-if [ -f ~/.aliasrc ]; then
-	source ~/.aliasrc
-fi
+[ -f ~/.aliasrc ] && source ~/.aliasrc
 
 
-# check if ~/bin exist
-# If ~/bin exist, add the path to PATH
-if [ -d ~/bin ]; then
-	PATH=$PATH:$HOME/bin
-	export PATH
-fi
 
-
-export PS2="%{$fg_bold[yellow]%}>> %{$reset_color%}"
-
-# export EDITOR=/usr/local/bin/nvim
-
-# brew sbin
-export PATH=/usr/local/sbin:$PATH
-
+######################################## PATH ########################################
+[ -d ~/bin ] && PATH=$PATH:$HOME/bin
+which ruby >/dev/null && which gem >/dev/null && PATH="$PATH:$(ruby -r rubygems -e 'puts Gem.user_dir')/bin"
 # laravel path
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH
+######################################## PATH ########################################
 
+
+
+######################################## ranger ########################################
 # Automatically change the directory in bash after closing ranger
 function ranger-cd {
     tempfile="$(mktemp -t tmp.XXXXXX)"
     ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-        cd -- "$(cat "$tempfile")"
-    fi
+    [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ] && cd -- "$(cat "$tempfile")"
     rm -f -- "$tempfile"
 }
-bindkey -s '^O' 'ranger-cd^M'
-bindkey -s '^V' 'nvim $(fzf)^M'
-
-export EDITOR=/usr/local/bin/nvim
-
-neofetch
+######################################## ranger ########################################
 
 
 
@@ -178,7 +140,6 @@ if [ $TouchpadId ]; then
   xinput set-prop $TouchpadId $TouchpadNaturalScrolling 1
   xinput set-prop $TouchpadId $TouchpadSpeed 0.55
 fi
-
 MouseId="$(xinput --list --short | grep "Wireless Mouse" | sed 's/^.*id=\([0-9]*\).*$/\1/p' | head -1)"
 if [ $MouseId ]; then
   MouseNaturalScrolling=$(xinput --list-props $MouseId | grep 'Natural Scrolling Enabled ([0-9]*)' | sed 's/^.*Enabled (\([0-9]*\)).*$/\1/p' | head -1)
@@ -190,7 +151,6 @@ fi
 
 ####################################### URXVT #########################################
 export TERM="rxvt-unicode-256color"
-
 # disable Ctrl+s freeze for urxvt
 stty -ixon
 ####################################### URXVT #########################################
@@ -218,23 +178,65 @@ function gcot() {
 unalias fcd 2> /dev/null
 function fcd() {
   local dir
-  dir=$(find ${1:-.} -path '*/\.*' -prune \
-                  -o -type d -print 2> /dev/null | fzf +m) &&
+  dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 }
 # fman - quickly display a man page using fzf
 unalias fman 2> /dev/null
 function fman() {
-    man -k . | fzf --prompt='Man> ' | awk '{print $1}' | xargs -r man
+  man -k . | fzf --prompt='Man> ' | awk '{print $1}' | xargs -r man
 }
 # cdb - cd to shell bookmarks
 unalias cdb 2> /dev/null
 function cdb() {
-   local dest_dir=$(echo_bookmarks | fzf )
-   if [[ $dest_dir != '' ]]; then
-      cd "$dest_dir"
-   fi
-   ranger-cd
+  local dest_dir=$([ -f ~/.bookmarks ] && cat ~/.bookmarks | sed 's/#.*//g' | sed '/^\s*$/d' | fzf )
+  [[ $dest_dir != '' ]] && cd "$dest_dir"
+  ranger-cd
 }
-bindkey -s '^ ' 'cdb^M'
 ######################################## fzf ########################################
+
+
+
+######################################## bindkey ########################################
+# bindkey '^ ' autosuggest-accept
+bindkey '^k' history-beginning-search-backward
+bindkey '^j' history-beginning-search-forward
+bindkey -s '^O' 'ranger-cd^M'
+bindkey -s '^V' 'nvim $(fzf)^M'
+bindkey -s '^ ' 'cdb^M'
+######################################## bindkey ########################################
+
+
+
+######################################## S3 backup ########################################
+export BORG_REPO="/home/backup"
+export BORG_S3_BACKUP_BUCKET="borg-victor/backup"
+export BORG_S3_BACKUP_AWS_PROFILE="default"
+export BORG_EXCLUDES="${HOME}/.borgexcludes"
+######################################## S3 backup ########################################
+
+
+
+######################################## vim shortcut ########################################
+export MYVIMRC=$HOME/.vimrc
+export MYVIMSETTING=$HOME/.vim/setup/setting.vim
+export MYVIMBUNDLING=$HOME/.vim/setup/bundling.vim
+export MYVIMMAPPING=$HOME/.vim/setup/mapping.vim
+export MYNODESCRIPT=$HOME/github/javascript-improve-workflow/src/test.js
+export MYPYTHONSCRIPT=$HOME/github/javascript-improve-workflow/src/test.py
+export MYPYTHONSCRIPT=$HOME/github/algo/test.py
+export MYZSHRC=$HOME/.zshrc
+export MYPSHELLBOOKMARKS=$HOME/.bookmarks
+export MYWEBBOOKMARKS=$HOME/.config/rofi-surfraw/searchengines
+######################################## vim shortcut ########################################
+
+
+
+export GOPATH=~
+export BROWSER=$(which firefox)
+export EDITOR=/usr/bin/nvim
+export PS2="%{$fg_bold[yellow]%}>> %{$reset_color%}"
+neofetch
+
+export TERM=xterm-256color
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
