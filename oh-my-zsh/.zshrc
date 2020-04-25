@@ -99,7 +99,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-bindkey '^ ' autosuggest-accept
+# bindkey '^ ' autosuggest-accept
 bindkey '^k' history-beginning-search-backward
 bindkey '^j' history-beginning-search-forward
 
