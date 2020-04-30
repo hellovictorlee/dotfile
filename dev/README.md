@@ -134,3 +134,8 @@ yay -S diffmerge
 ```
 sudo pacman -Syu docker
 ```
+
+## graphql-playground
+```
+yay -Syu graphql-playground-electron
+```
