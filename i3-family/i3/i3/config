@@ -1,3 +1,6 @@
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #fea636
+
 # mod
 set $mod Mod4
 
@@ -5,7 +8,7 @@ set $mod Mod4
 # font pango: System San Francisco Display 10
 
 # hide window title
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 5
 new_window 1pixel
 
 # thin borders
