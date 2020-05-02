@@ -180,8 +180,6 @@ bindsym --release $mod+z exec --no-startup-id rofi -lines 10 -padding 0 -show ca
 bindsym --release $mod+b exec --no-startup-id ~/.config/rofi/rofi-bangs.sh
 bindsym --release $mod+x exec --no-startup-id ~/.config/rofi/rofi-surfraw.sh
 bindsym --release $mod+Tab exec --no-startup-id ~/.config/rofi/i3_switch_workspace.sh
-bindsym --release $mod+Shift+b exec --no-startup-id ~/.config/rofi/rofi-bluetooth
-bindsym --release $mod+Shift+n exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
 # screen screenshots with scrot
 bindsym --release $mod+p exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
 # OSX-like area selection screenshots

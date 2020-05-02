@@ -77,9 +77,12 @@ yay -S rofi-calc
 yay -S bluez-utils
 ```
 
-#### marcador
+## networkmanager-dmenu
 
-minimal bookmark manager with rofi front end.
 ```
-pip install marcador
+git clone https://github.com/hellovictorlee/networkmanager-dmenu.git
+cd networkmanager-dmenu
+mkdir -p ~/.config/networkmanager-dmenu
+cp config.ini ~/.config/networkmanager-dmenu
+cp networkmanager_dmenu ~/bin
 ```

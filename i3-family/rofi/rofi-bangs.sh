@@ -30,6 +30,10 @@ LABELS["calculator"]=""
 COMMANDS["clipboard"]="rofi -modi \"clipboard:greenclip print\" -show clipboard -theme onedark"
 LABELS["clipboard"]=""
 
+# open wifi
+COMMANDS["wifi"]="~/bin/networkmanager_dmenu"
+LABELS["wifi"]=""
+
 # open bluetooth
 COMMANDS["bluetooth"]="~/.config/rofi/rofi-bluetooth"
 LABELS["bluetooth"]=""
@@ -41,11 +45,6 @@ LABELS["favorite"]=""
 # open custom web searches
 COMMANDS["websearch"]="rofi -show search -theme onedark -modi search:~/.config/rofi/rofi-web-search.py"
 LABELS["websearch"]=""
-
-# open wifi
-COMMANDS["wifi"]="~/.config/rofi/rofi-wifi-menu.sh"
-LABELS["wifi"]=""
-
 
 # show clipboard history
 # source: https://bitbucket.org/pandozer/rofi-clipboard-manager/overview
@@ -85,7 +84,7 @@ function print_menu()
 ##
 function start()
 {
-    # print_menu | rofi -dmenu -p "?=>" 
+    # print_menu | rofi -dmenu -p "?=>"
     print_menu | sort | rofi -dmenu -i -p "rofi-bangs: " -theme onedark
 
 }
@@ -116,6 +115,6 @@ then
     eval ${COMMANDS[$choice]}
 else
  eval  $choice | rofi
- # prefer my above so I can use this same script to also launch apps like geany or leafpad etc (DK) 
+ # prefer my above so I can use this same script to also launch apps like geany or leafpad etc (DK)
  #   echo "Unknown command: ${choice}" | rofi -dmenu -p "error"
 fi
