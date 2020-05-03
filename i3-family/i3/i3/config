@@ -27,6 +27,12 @@ bindsym $mod+l focus right
 # bindsym $mod+Shift+x exec i3lock --color 475263
 # bindsym $mod+Shift+x exec i3lock-fancy
 
+# i3resize
+bindsym $mod+Control+h exec --no-startup-id i3resize left
+bindsym $mod+Control+j exec --no-startup-id i3resize down
+bindsym $mod+Control+k exec --no-startup-id i3resize up
+bindsym $mod+Control+l exec --no-startup-id i3resize right
+
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
@@ -102,10 +108,10 @@ bindsym $mod+Shift+e exec ~/.config/polybar/scripts/budgie-sysmenu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-    bindsym h resize shrink width 5 px or 5 ppt
-    bindsym j resize grow height 5 px or 5 ppt
-    bindsym k resize shrink height 5 px or 5 ppt
-    bindsym l resize grow width 5 px or 5 ppt
+    bindsym h resize shrink width 2 px or 2 ppt
+    bindsym j resize grow height 2 px or 2 ppt
+    bindsym k resize shrink height 2 px or 2 ppt
+    bindsym l resize grow width 2 px or 2 ppt
 
     bindsym Lefj resize shrink width 5 px or 5 ppt
     bindsym Down resize grow height 5 px or 5 ppt

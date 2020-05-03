@@ -39,7 +39,7 @@ main () {
 # Draw Menu
 HELP_MSG="<span color=\"$help_color\">Hit Ctrl+Space to complete Engine Name
 Searches without prepended engine use "${default}"</span>"
-elvi=$(echo -e "${list}\n${custom}" | rofi -dmenu -lines 10 -padding 0 -show find -theme onedark -mesg "${HELP_MSG}" -p "Search")
+elvi=$(echo -e "${list}\n${custom}" | rofi -dmenu -lines 10 -padding 0 -show find -theme onedark -p "🔖🔖🔖🔖")
 
 # Some logic
 if [[ $elvi == "" ]]; then exit
