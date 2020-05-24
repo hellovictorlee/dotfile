@@ -54,3 +54,8 @@ a free, open source, and cross-platform media player
 ```
 yay -S mpv
 ```
+
+## insect
+```
+yay -S insect
+```
