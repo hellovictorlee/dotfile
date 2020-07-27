@@ -47,3 +47,5 @@ git clone https://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/vim-
 git clone https://github.com/ianding1/leetcode.vim.git ~/.vim/bundle/leetcode.vim.
 git clone https://github.com/stephpy/vim-yaml.git ~/.vim/bundle/vim-yaml
 git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
+git clone https://github.com/prettier/vim-prettier.git ~/.vim/bundle/vim-prettier
+git clone https://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
