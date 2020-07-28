@@ -76,10 +76,14 @@ let g:ale_echo_msg_format = '[%linter%] [%code%] %s [%severity%]'
 " Sign is changable
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
+
+let g:jsx_ext_required = 0
+
 " auto fix after saving
 let g:ale_fixers = {
 \  'python': ['yapf'],
-\  'javascript': ['prettier', 'eslint']
+\  'javascript': ['prettier', 'eslint'],
+\  '*': ['remove_trailing_lines', 'trim_whitespace']
 \}
 " auto fix after saving
 " let g:ale_fix_on_save = 1

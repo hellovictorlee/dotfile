@@ -102,6 +102,8 @@ cnoremap <Up>    <Nop>
 " cnoremap <Del> <Nop>
 " " Disable enter
 " inoremap <Enter> <Nop>
+nnoremap Z <Nop>
+nnoremap ZZ <Nop>
 " }}}
 " Move between windows {{{
 tnoremap <C-w>h <C-\><C-n><C-w>h
@@ -214,15 +216,15 @@ nnoremap <leader>2 :tabedit $MYVIMSETTING<CR>
 nnoremap <leader>3 :tabedit $MYVIMBUNDLING<CR>
 " Edit mapping.vim
 nnoremap <leader>4 :tabedit $MYVIMMAPPING<CR>
-" Edit test.js file 
+" Edit test.js file
 nnoremap <leader>5 :tabedit $MYNODESCRIPT<CR>
-" Edit test.py file 
+" Edit test.py file
 nnoremap <leader>6 :tabedit $MYPYTHONSCRIPT<CR>
-" Edit shell bookmarks file 
+" Edit shell bookmarks file
 nnoremap <leader>8 :tabedit $MYZSHRC<CR>
-" Edit shell bookmarks file 
+" Edit shell bookmarks file
 nnoremap <leader>9 :tabedit $MYPSHELLBOOKMARKS<CR>
-" Edit web bookmarks file 
+" Edit web bookmarks file
 nnoremap <leader>0 :tabedit $MYWEBBOOKMARKS<CR>
 " }}}
 " Strip trailing whitespace {{{

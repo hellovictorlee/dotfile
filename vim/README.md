@@ -65,6 +65,8 @@ Search for keyword appearing in all file under current or project directory.
 ```
 pip3 install flake8
 pip3 install yapf
+npm install -g prettier
+npm install -g eslint
 ```
 Install one of Python linter.
 <hr>
