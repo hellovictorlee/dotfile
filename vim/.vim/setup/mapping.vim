@@ -102,8 +102,6 @@ cnoremap <Up>    <Nop>
 " cnoremap <Del> <Nop>
 " " Disable enter
 " inoremap <Enter> <Nop>
-nnoremap Z <Nop>
-nnoremap ZZ <Nop>
 " }}}
 " Move between windows {{{
 tnoremap <C-w>h <C-\><C-n><C-w>h

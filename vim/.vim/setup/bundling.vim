@@ -255,3 +255,6 @@ let g:livepreview_previewer = 'zathura'
 let g:leetcode_browser = 'firefox'
 let g:leetcode_solution_filetype = 'python3'
 " }}}
+" vim-terraform {{{
+let g:terraform_align=1
+" }}}
