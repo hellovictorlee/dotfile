@@ -35,7 +35,9 @@ let g:table_mode_corner='+'
 " This means that if you are in a virtual environment and you start vim in that directory
 " The first python that YCM will find will be the one in the virtual environment
 " So, jedi will be able to provide completions for every package you have in the virtual environment
-let g:ycm_python_binary_path = 'python'
+let pipenv_venv_path = system('pipenv --venv')
+let venv_path = substitute(pipenv_venv_path, '\n', '', '')
+let g:ycm_python_binary_path = venv_path . '/usr/local/bin/python3'
 let g:ycm_filetype_blacklist = {
       \ 'tagbar': 1,
       \ 'notes': 1,
@@ -83,6 +85,8 @@ let g:jsx_ext_required = 0
 let g:ale_fixers = {
 \  'python': ['yapf'],
 \  'javascript': ['prettier', 'eslint'],
+\  'scss': ['prettier'],
+\  'html': ['prettier'],
 \  '*': ['remove_trailing_lines', 'trim_whitespace']
 \}
 " auto fix after saving
@@ -254,7 +258,4 @@ let g:livepreview_previewer = 'zathura'
 " leetode.vim {{{
 let g:leetcode_browser = 'firefox'
 let g:leetcode_solution_filetype = 'python3'
-" }}}
-" vim-terraform {{{
-let g:terraform_align=1
 " }}}

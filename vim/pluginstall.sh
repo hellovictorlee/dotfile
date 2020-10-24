@@ -49,3 +49,7 @@ git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 git clone https://github.com/prettier/vim-prettier.git ~/.vim/bundle/vim-prettier
 git clone https://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
 git clone https://github.com/hashivim/vim-terraform.git ~/.vim/bundle/vim-terraform
+git clone https://github.com/vim-scripts/indentpython.vim--nianyang.git ~/.vim/bundle/indentpython.vim
+git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
+git clone https://github.com/nvie/vim-flake8.git ~/.vim/bundle/vim-flake8
+git clone https://github.com/kh3phr3n/python-syntax.git ~/.vim/bundle/python-syntax
