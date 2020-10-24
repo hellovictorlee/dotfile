@@ -37,7 +37,11 @@ let g:table_mode_corner='+'
 " So, jedi will be able to provide completions for every package you have in the virtual environment
 let pipenv_venv_path = system('pipenv --venv')
 let venv_path = substitute(pipenv_venv_path, '\n', '', '')
-let g:ycm_python_binary_path = venv_path . '/usr/local/bin/python3'
+if filereadable(venv_path . '/bin/python3')
+  let g:ycm_python_binary_path = venv_path . '/bin/python3'
+else
+  let g:ycm_python_binary_path = '/usr/local/bin/python3'
+endif
 let g:ycm_filetype_blacklist = {
       \ 'tagbar': 1,
       \ 'notes': 1,
