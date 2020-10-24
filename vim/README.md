@@ -240,6 +240,17 @@ If project directory is
 /user/xxxx/.tern-project  =>  NOT WORK
 ```
 
+For mac to install
+```
+brew install cmake macvim python mono go nodejs
+```
+
+Compile YCM
+```
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all
+```
+
 autocomplete for JS
 ```
 cd ~/.vim/bundle/YouCompleteMe/
