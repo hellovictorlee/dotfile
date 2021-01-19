@@ -15,7 +15,7 @@ let g:airline_section_warning = airline#section#create_right(['%{g:asyncrun_stat
 let g:airline#extensions#ale#enabled = 1
 
 " gutentags airline
-" let g:airline#extensions#gutentags#enabled = 1
+let g:airline#extensions#gutentags#enabled = 1
 " }}}
 " hardmode {{{
 " https://github.com/wikitopian/hardmode
@@ -260,6 +260,6 @@ let g:livepreview_previewer = 'zathura'
 " nnoremap <silent> <C-/> :TmuxNavigatePrevious<CR>
 " }}}
 " leetode.vim {{{
-let g:leetcode_browser = 'firefox'
+let g:leetcode_browser = 'chrome'
 let g:leetcode_solution_filetype = 'python3'
 " }}}

@@ -53,3 +53,4 @@ git clone https://github.com/vim-scripts/indentpython.vim--nianyang.git ~/.vim/b
 git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
 git clone https://github.com/nvie/vim-flake8.git ~/.vim/bundle/vim-flake8
 git clone https://github.com/kh3phr3n/python-syntax.git ~/.vim/bundle/python-syntax
+git clone https://github.com/voldikss/vim-floaterm.git ~/.vim/bundle/vim-floaterm

@@ -303,3 +303,6 @@ map <leader>tt :TestNearest<CR>
 map <leader>tf :TestFile<CR>
 map <leader>ts :TestSuite<CR>
 " }}}
+" floaterm {{{
+map <leader>ft :FloatermNew<CR>
+" }}}
